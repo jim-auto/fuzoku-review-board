@@ -21,6 +21,10 @@ const GENRES = [
   { name: 'メンズエステ', short: 'ES', color: '#00ff9f', desc: '施術・癒し系' },
   { name: 'イメクラ', short: 'IM', color: '#ffaa00', desc: 'コンセプト型' },
   { name: 'オナクラ', short: 'OK', color: '#00d4ff', desc: 'シンプル型' },
+  { name: 'キャバクラ', short: 'KY', color: '#f0c040', desc: 'お酒・会話型' },
+  { name: 'ラウンジ', short: 'LG', color: '#9966ff', desc: '高級ラウンジ型' },
+  { name: 'セクシーキャバクラ', short: 'SK', color: '#ff4499', desc: 'セクキャバ型' },
+  { name: 'コンセプトカフェ', short: 'CC', color: '#00ccaa', desc: 'コンカフェ型' },
 ]
 
 const POPULAR_TAGS = [

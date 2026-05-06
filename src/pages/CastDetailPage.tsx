@@ -8,11 +8,14 @@ import {
   Ruler,
   Sparkles,
   AlertCircle,
+  Store,
 } from 'lucide-react'
 import castsData from '../data/casts.json'
-import type { Cast } from '../types'
+import shopsData from '../data/shops.json'
+import type { Cast, Shop } from '../types'
 
 const allCasts = castsData as Cast[]
+const allShops = shopsData as Shop[]
 
 const GENRE_DESC: Record<string, string> = {
   'デリバリーヘルス': '出張・宅配型サービス',
@@ -34,6 +37,7 @@ const AREA_COLORS: Record<string, string> = {
 export default function CastDetailPage() {
   const { id } = useParams<{ id: string }>()
   const cast = allCasts.find(c => c.id === id)
+  const shop = cast ? allShops.find(s => s.id === cast.shopId) : undefined
 
   if (!cast) {
     return (
@@ -181,7 +185,7 @@ export default function CastDetailPage() {
           {/* Shop link */}
           <div className="mt-5 pt-5 border-t border-dark-600">
             <a
-              href={cast.shopUrl}
+              href={shop?.url ?? cast.shopUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
@@ -198,6 +202,43 @@ export default function CastDetailPage() {
           </div>
         </div>
       </div>
+
+      {/* Shop info */}
+      {shop && (
+        <div className="bg-dark-800 border border-dark-500 rounded-2xl overflow-hidden">
+          <div className="px-5 py-4 border-b border-dark-600 flex items-center gap-2">
+            <Store size={16} className="text-neon-cyan" />
+            <h2 className="font-bold text-text-bright text-base">店舗情報</h2>
+          </div>
+          <div className="px-5 py-4 space-y-3">
+            <h3 className="text-lg font-bold text-text-bright">{shop.name}</h3>
+            <div className="flex items-center gap-2 text-sm text-text-muted">
+              <MapPin size={13} style={{ color: AREA_COLORS[shop.area] ?? '#00d4ff' }} />
+              <span style={{ color: AREA_COLORS[shop.area] ?? '#00d4ff' }}>{shop.area}</span>
+              <span className="text-text-dim">·</span>
+              <span>{shop.genre}</span>
+            </div>
+            <p className="text-sm text-text-body leading-relaxed">{shop.description}</p>
+            {shop.tags.length > 0 && (
+              <div className="flex flex-wrap gap-1.5">
+                {shop.tags.map(tag => (
+                  <span
+                    key={tag}
+                    className="text-xs px-2.5 py-1 rounded-full border"
+                    style={{
+                      background: 'rgba(0,212,255,0.06)',
+                      borderColor: 'rgba(0,212,255,0.2)',
+                      color: '#00d4ff',
+                    }}
+                  >
+                    # {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Online trends / rumors */}
       <div className="bg-dark-800 border border-dark-500 rounded-2xl overflow-hidden">

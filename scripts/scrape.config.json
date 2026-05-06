@@ -1,0 +1,23 @@
+{
+  "name": "爆サイ東京-風俗掲示板",
+  "baseUrl": "https://bakusai.com",
+  "listPages": [
+    "/thr_tl/acode=3/ctgid=103/bid=412/",
+    "/thr_tl/acode=3/ctgid=103/bid=2026/",
+    "/thr_tl/acode=3/ctgid=103/bid=5919/"
+  ],
+  "maxPages": 1,
+  "selectors": {
+    "listItem": "#thrListInner li",
+    "name": "a.adult_thr_title",
+    "age": "",
+    "height": "",
+    "style": "",
+    "shop": "",
+    "area": "",
+    "genre": "",
+    "description": "",
+    "tags": "",
+    "detailLink": "a.adult_thr_title"
+  }
+}

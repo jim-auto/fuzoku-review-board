@@ -1,0 +1,23 @@
+{
+  "name": "爆サイ東海-名古屋風俗掲示板",
+  "baseUrl": "https://bakusai.com",
+  "listPages": [
+    "/thr_tl/acode=5/ctgid=103/bid=472/",
+    "/thr_tl/acode=5/ctgid=103/bid=1302/",
+    "/thr_tl/acode=5/ctgid=103/bid=1229/"
+  ],
+  "maxPages": 1,
+  "selectors": {
+    "listItem": "#thrListInner li",
+    "name": "a.adult_thr_title",
+    "age": "",
+    "height": "",
+    "style": "",
+    "shop": "",
+    "area": "",
+    "genre": "",
+    "description": "",
+    "tags": "",
+    "detailLink": "a.adult_thr_title"
+  }
+}

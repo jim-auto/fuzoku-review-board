@@ -1,0 +1,2342 @@
+[
+  {
+    "id": "cast-001",
+    "name": "ホテヘル",
+    "shop": "ホテヘル",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 153,
+    "style": "かわいい系",
+    "tags": [
+      "ホテヘル",
+      "池袋パラダイス",
+      "169",
+      ">>544",
+      "ペチャパイに全く興味ない"
+    ],
+    "description": ">>544 ペチャパイに全く興味ない",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13259585/tp=1/",
+    "rumors": [
+      ">>544 ペチャパイに全く興味ない"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9B%E3%83%86%E3%83%98%E3%83%AB&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-002",
+    "name": "ホテヘル",
+    "shop": "ホテヘル",
+    "shopId": "shop-003",
+    "area": "池袋西",
+    "genre": "デリバリーヘルス",
+    "age": 21,
+    "height": 152,
+    "style": "かわいい系",
+    "tags": [
+      "池袋西口",
+      "全裸プレミアム",
+      "ホテヘル",
+      ">>556"
+    ],
+    "description": ">>556 明日の予約も前日10時でネット予約不可。みんな9時30分に電話予約してるってことかあ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13122003/tp=1/",
+    "rumors": [
+      ">>556 明日の予約も前日10時でネット予約不可。みんな9時30分に電話予約してるってことかあ"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9B%E3%83%86%E3%83%98%E3%83%AB&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-003",
+    "name": "CINDERELLA",
+    "shop": "CINDERELLA",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "五反田",
+      "ピンサロ",
+      "CINDERELLA",
+      "シンデレラ",
+      ">>891"
+    ],
+    "description": ">>891 でも金払ってちんこ舐めてもらってますもんね。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13071121/tp=1/",
+    "rumors": [
+      ">>891 でも金払ってちんこ舐めてもらってますもんね。"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=CINDERELLA&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-004",
+    "name": "マリンブルーDX",
+    "shop": "マリンブルーDX",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 19,
+    "height": 168,
+    "style": "かわいい系",
+    "tags": [
+      "大塚ピンサロ",
+      "マリンブルーDX",
+      "104",
+      ">>5"
+    ],
+    "description": ">>5 撤去されてももう1人の顔四角ちゃんとおしゃべり時間潰し女いるし、Kもアオイも帰っちゃうから行く価値ないやろ。連休最終日なのにクソすぎ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13265756/tp=1/",
+    "rumors": [
+      ">>5 撤去されてももう1人の顔四角ちゃんとおしゃべり時間潰し女いるし、Kもアオイも帰っちゃうから行く価値ないやろ。連休最終日なのにクソすぎ"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%96%E3%83%AB%E3%83%BCDX&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-005",
+    "name": "ニューヨーク",
+    "shop": "ニューヨーク",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "恵比寿",
+      "箱ヘル",
+      "ニューヨーク",
+      ">>742",
+      "嬢ってより箱と値段かな"
+    ],
+    "description": ">>742 嬢ってより箱と値段かな 恵比寿はヘルスでこの値段は高すぎる。渋谷はいい子見つけたら40分や50分で通いやすい",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=12943164/tp=1/",
+    "rumors": [
+      ">>742 嬢ってより箱と値段かな 恵比寿はヘルスでこの値段は高すぎる。渋谷はいい子見つけたら40分や50分で通いやすい"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-006",
+    "name": "ミラクル",
+    "shop": "ミラクル",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 27,
+    "height": 152,
+    "style": "かわいい系",
+    "tags": [
+      "北千住ピンサロ",
+      "ミラクル",
+      ">>10"
+    ],
+    "description": ">>10 お前は既にガヤだから引っ込んでな！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13240973/tp=1/",
+    "rumors": [
+      ">>10 お前は既にガヤだから引っ込んでな！"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9F%E3%83%A9%E3%82%AF%E3%83%AB&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-007",
+    "name": "DMAX",
+    "shop": "DMAX",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "メンズエステ",
+    "age": 26,
+    "height": 155,
+    "style": "かわいい系",
+    "tags": [
+      "小岩風俗エステドリームマックス",
+      "DMAX",
+      ">>233",
+      "うののアナル開発しようぜ。",
+      "最初は抵抗されたけど、",
+      "抵抗しなくなった。"
+    ],
+    "description": ">>233 うののアナル開発しようぜ。 俺はバックの時、うののアナルに唾液垂らして、親指押し付けてる。 最初は抵抗されたけど、 俺いつもやってるから、慣れたのかな。 結構、強めに、アナルに親指押し付けても,抵抗しなくなった。 結構、めり込むよ。 みんな協力お願いします。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13248257/tp=1/",
+    "rumors": [
+      ">>233 うののアナル開発しようぜ。 俺はバックの時、うののアナルに唾液垂らして、親指押し付けてる。 最初は抵抗されたけど、 俺いつもやってるから、慣れたのかな。 結構、強めに、アナルに親指押し付け"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=DMAX&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-008",
+    "name": "リップス",
+    "shop": "リップス",
+    "shopId": "shop-001",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 169,
+    "style": "かわいい系",
+    "tags": [
+      "大塚ピンサロ",
+      "リップス",
+      "チチさん万年パンツ着用🥶",
+      ">>402",
+      "こいつ>>393",
+      "チチよ、涅槃で待つ👴"
+    ],
+    "description": "木刀ニキみのるついに逮捕されるのかｗ チチさん万年パンツ着用🥶 >>402 こいつ>>393 か？ 今までの出禁粘着野郎とは別モノっぽいけど逆恨みしてる輩かそれに便乗しているど阿呆か？ なんなんこの差し入れ腐ってるやん チチよ、涅槃で待つ👴",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13241117/tp=1/",
+    "rumors": [
+      "木刀ニキみのるついに逮捕されるのかｗ",
+      "チチさん万年パンツ着用🥶",
+      ">>402 こいつ>>393 か？ 今までの出禁粘着野郎とは別モノっぽいけど逆恨みしてる輩かそれに便乗しているど阿呆か？",
+      "なんなんこの差し入れ腐ってるやん",
+      "チチよ、涅槃で待つ👴"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%AA%E3%83%83%E3%83%97%E3%82%B9&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-009",
+    "name": "Puri-Puri",
+    "shop": "Puri-Puri",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 163,
+    "style": "かわいい系",
+    "tags": [
+      "ピンサロ",
+      "Puri-Puri",
+      "プリプリ",
+      "250",
+      ">>545"
+    ],
+    "description": ">>545 シンプルに疑問なんだけどエッチなことをしに来てるのに なんで相談なんか聞かなきゃいけないんだよ笑笑 オッサンに相談する内容なんてあるの？子育てとか？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13263058/tp=1/",
+    "rumors": [
+      ">>545 シンプルに疑問なんだけどエッチなことをしに来てるのに なんで相談なんか聞かなきゃいけないんだよ笑笑 オッサンに相談する内容なんてあるの？子育てとか？"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Puri-Puri&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-010",
+    "name": "マリア女学館",
+    "shop": "マリア女学館",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 153,
+    "style": "かわいい系",
+    "tags": [
+      "池袋西口",
+      "マリア女学館",
+      ">>471"
+    ],
+    "description": ">>471 早々にありがとうございました。かたじけない。 皆さん必ずしも賛同出来ない部分もあるでしょうが、それを超えて、貴兄の、上記嬢たちへの思い入れに敬服です。 （なお、私自身の想い出嬢達は全て含まれていることを確認しました。一覧の網羅性にも感服）",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13258207/tp=1/",
+    "rumors": [
+      ">>471 早々にありがとうございました。かたじけない。 皆さん必ずしも賛同出来ない部分もあるでしょうが、それを超えて、貴兄の、上記嬢たちへの思い入れに敬服です。 （なお、私自身の想い出嬢達は全て含ま"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9E%E3%83%AA%E3%82%A2%E5%A5%B3%E5%AD%A6%E9%A4%A8&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-011",
+    "name": "ファンタジー",
+    "shop": "ファンタジー",
+    "shopId": "shop-006",
+    "area": "池袋北",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 158,
+    "style": "かわいい系",
+    "tags": [
+      "池袋北口",
+      "ファンタジー",
+      ">>4",
+      "35分"
+    ],
+    "description": ">>4 35分",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13263479/tp=1/",
+    "rumors": [
+      ">>4 35分"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-012",
+    "name": "新橋平成女学園",
+    "shop": "新橋平成女学園",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "箱ヘル",
+      "新橋平成女学園",
+      ">>196"
+    ],
+    "description": ">>196 ○こ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13245663/tp=1/",
+    "rumors": [
+      ">>196 ○こ"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%96%B0%E6%A9%8B%E5%B9%B3%E6%88%90%E5%A5%B3%E5%AD%A6%E5%9C%92&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-013",
+    "name": "ミルキーラテ",
+    "shop": "ミルキーラテ",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "オナクラ",
+    "age": 24,
+    "height": 161,
+    "style": "かわいい系",
+    "tags": [
+      "渋谷オナクラ",
+      "ミルキーラテ",
+      ">>506",
+      "かのん、ゆな、もえ、あんな辺り"
+    ],
+    "description": ">>506 かのん、ゆな、もえ、あんな辺り",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13241176/tp=1/",
+    "rumors": [
+      ">>506 かのん、ゆな、もえ、あんな辺り"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%9F%E3%83%AB%E3%82%AD%E3%83%BC%E3%83%A9%E3%83%86&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-014",
+    "name": "ソープ",
+    "shop": "ソープ",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "ソープランド",
+    "age": 20,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "ソープ",
+      "深海魚",
+      ">>368",
+      "日本語でおk?"
+    ],
+    "description": ">>368 日本語でおk?",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13221814/tp=1/",
+    "rumors": [
+      ">>368 日本語でおk?"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%BD%E3%83%BC%E3%83%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-015",
+    "name": "渋谷M性感",
+    "shop": "渋谷M性感",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 161,
+    "style": "かわいい系",
+    "tags": [
+      "渋谷M性感",
+      "痴女風俗",
+      ">>563",
+      "どこで？"
+    ],
+    "description": ">>563 どこで？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=10554958/tp=1/",
+    "rumors": [
+      ">>563 どこで？"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%B8%8B%E8%B0%B7M%E6%80%A7%E6%84%9F&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-016",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-001",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 19,
+    "height": 158,
+    "style": "かわいい系",
+    "tags": [
+      "204",
+      ">>663",
+      "臭いから？"
+    ],
+    "description": ">>663 臭いから？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13261613/tp=1/",
+    "rumors": [
+      ">>663 臭いから？"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-017",
+    "name": "アデージョ",
+    "shop": "アデージョ",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 159,
+    "style": "かわいい系",
+    "tags": [
+      "大塚ピンサロ艶女",
+      "アデージョ",
+      "130",
+      ">>691",
+      "何を思い出すの？？"
+    ],
+    "description": ">>691 何を思い出すの？？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13242402/tp=1/",
+    "rumors": [
+      ">>691 何を思い出すの？？"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%A2%E3%83%87%E3%83%BC%E3%82%B8%E3%83%A7&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-018",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 30,
+    "height": 161,
+    "style": "お姉さん系",
+    "tags": [
+      "『華椿』",
+      ">>144"
+    ],
+    "description": ">>144 米澤さんランクアップ！めでたい！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13254459/tp=1/",
+    "rumors": [
+      ">>144 米澤さんランクアップ！めでたい！"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-019",
+    "name": "愛に恋",
+    "shop": "愛に恋",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 165,
+    "style": "かわいい系",
+    "tags": [
+      "大塚北口ピンサロ",
+      "愛に恋",
+      ">>773"
+    ],
+    "description": ">>773 お前理解してないだろ？！誰が構ってちゃんなんだ？🤣",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13247293/tp=1/",
+    "rumors": [
+      ">>773 お前理解してないだろ？！誰が構ってちゃんなんだ？🤣"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%84%9B%E3%81%AB%E6%81%8B&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-020",
+    "name": "ももいろ白書",
+    "shop": "ももいろ白書",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 23,
+    "height": 154,
+    "style": "かわいい系",
+    "tags": [
+      "ももいろ白書",
+      ">>657",
+      "マジで"
+    ],
+    "description": ">>657 マジで",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13212848/tp=1/",
+    "rumors": [
+      ">>657 マジで"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%82%E3%82%82%E3%81%84%E3%82%8D%E7%99%BD%E6%9B%B8&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-021",
+    "name": "目黒",
+    "shop": "目黒",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "アリスマリオン",
+      "104",
+      ">>164",
+      "スレ違い"
+    ],
+    "description": ">>164 スレ違い",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13262455/tp=1/",
+    "rumors": [
+      ">>164 スレ違い"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E7%9B%AE%E9%BB%92&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-022",
+    "name": "ハンドキャンパス新宿",
+    "shop": "ハンドキャンパス新宿",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 159,
+    "style": "かわいい系",
+    "tags": [
+      "ハンドキャンパス新宿",
+      ">>661",
+      "俺はそう思うけど",
+      "何をしたいかによるんじゃない"
+    ],
+    "description": ">>661 俺はそう思うけど フリーでAコースでオプション無しの人ーもいるし 何をしたいかによるんじゃない",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13215702/tp=1/",
+    "rumors": [
+      ">>661 俺はそう思うけど フリーでAコースでオプション無しの人ーもいるし 何をしたいかによるんじゃない"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%96%B0%E5%AE%BF&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-023",
+    "name": "CLUB",
+    "shop": "CLUB",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 22,
+    "height": 163,
+    "style": "かわいい系",
+    "tags": [
+      "CLUB",
+      "G-10",
+      "ジーテン",
+      ">>141"
+    ],
+    "description": ">>141 お前GW朝からバクサイで発狂って草",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13258254/tp=1/",
+    "rumors": [
+      ">>141 お前GW朝からバクサイで発狂って草"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=CLUB&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-024",
+    "name": "王朝宮殿",
+    "shop": "王朝宮殿",
+    "shopId": "shop-002",
+    "area": "池袋西",
+    "genre": "ソープランド",
+    "age": 29,
+    "height": 156,
+    "style": "かわいい系",
+    "tags": [
+      "池袋西口",
+      "ソープランド",
+      "王朝宮殿",
+      ">>316",
+      "日本語下手だな"
+    ],
+    "description": ">>316 日本語下手だな",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13259717/tp=1/",
+    "rumors": [
+      ">>316 日本語下手だな"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E7%8E%8B%E6%9C%9D%E5%AE%AE%E6%AE%BF&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-025",
+    "name": "手こき",
+    "shop": "手こき",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 22,
+    "height": 164,
+    "style": "かわいい系",
+    "tags": [
+      "手こき",
+      "ニュークリスタル",
+      ">>681"
+    ],
+    "description": ">>681 ダメ店員が長続きしてるのがそもそも良くない まともな昼職やどこにも行けない底辺が残ってる だからストーカーだ何だと昔から言われ続けてるんだろうな",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13221077/tp=1/",
+    "rumors": [
+      ">>681 ダメ店員が長続きしてるのがそもそも良くない まともな昼職やどこにも行けない底辺が残ってる だからストーカーだ何だと昔から言われ続けてるんだろうな"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%89%8B%E3%81%93%E3%81%8D&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-026",
+    "name": "カリテス",
+    "shop": "カリテス",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 160,
+    "style": "かわいい系",
+    "tags": [
+      "大塚駅",
+      "ピンサロ",
+      "カリテス",
+      ">>295",
+      "ストーカーか？"
+    ],
+    "description": ">>295 ストーカーか？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13244617/tp=1/",
+    "rumors": [
+      ">>295 ストーカーか？"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%AB%E3%83%AA%E3%83%86%E3%82%B9&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-027",
+    "name": "シンデレラ",
+    "shop": "シンデレラ",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 27,
+    "height": 167,
+    "style": "かわいい系",
+    "tags": [
+      "シンデレラ",
+      "コスプレサンシャイン",
+      "121",
+      ">>878"
+    ],
+    "description": ">>878 常連をできる限り排除して店外からの退店されたくないという強い意志を感じる",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13178143/tp=1/",
+    "rumors": [
+      ">>878 常連をできる限り排除して店外からの退店されたくないという強い意志を感じる"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%B7%E3%83%B3%E3%83%87%E3%83%AC%E3%83%A9&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-028",
+    "name": "ごほうびSPA",
+    "shop": "STAR",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 158,
+    "style": "かわいい系",
+    "tags": [
+      "STAR",
+      "ごほうびSPA",
+      "池袋店",
+      ">>684",
+      "こわいなストーカーおやじ"
+    ],
+    "description": ">>684 こわいなストーカーおやじ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=11249801/tp=1/",
+    "rumors": [
+      ">>684 こわいなストーカーおやじ"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%81%94%E3%81%BB%E3%81%86%E3%81%B3SPA&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-029",
+    "name": "渋谷平成女学園",
+    "shop": "渋谷平成女学園",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 167,
+    "style": "かわいい系",
+    "tags": [
+      "渋谷平成女学園",
+      ">>160",
+      "激ミニ生パンしか勝たんよな",
+      "水着も体型を隠すものばかり",
+      "技術の発達は男のロマンを奪う"
+    ],
+    "description": ">>160 激ミニ生パンしか勝たんよな 水着も体型を隠すものばかり 技術の発達は男のロマンを奪う",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13251571/tp=1/",
+    "rumors": [
+      ">>160 激ミニ生パンしか勝たんよな 水着も体型を隠すものばかり 技術の発達は男のロマンを奪う"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%B8%8B%E8%B0%B7%E5%B9%B3%E6%88%90%E5%A5%B3%E5%AD%A6%E5%9C%92&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-030",
+    "name": "ハンドキャンパス池袋",
+    "shop": "ハンドキャンパス池袋",
+    "shopId": "shop-001",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 159,
+    "style": "かわいい系",
+    "tags": [
+      "ハンドキャンパス池袋",
+      ">>373",
+      "新宿のいとも可愛い"
+    ],
+    "description": ">>373 新宿のいとも可愛い",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=412/tid=13166452/tp=1/",
+    "rumors": [
+      ">>373 新宿のいとも可愛い"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%8F%E3%83%B3%E3%83%89%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%91%E3%82%B9%E6%B1%A0%E8%A2%8B&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-031",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 156,
+    "style": "かわいい系",
+    "tags": [
+      "あの風俗嬢はどこへ②",
+      ">>4",
+      "最後に会ったのはいつですか？"
+    ],
+    "description": ">>4 最後に会ったのはいつですか？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=8708921/tp=1/",
+    "rumors": [
+      ">>4 最後に会ったのはいつですか？"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-032",
+    "name": "都内で働きやすい店",
+    "shop": "都内で働きやすい店",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 27,
+    "height": 153,
+    "style": "かわいい系",
+    "tags": [
+      "都内で働きやすい店",
+      ">>598",
+      "思いついたのはsugar",
+      "lady"
+    ],
+    "description": ">>598 思いついたのはsugar lady",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12648057/tp=1/",
+    "rumors": [
+      ">>598 思いついたのはsugar lady"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E9%83%BD%E5%86%85%E3%81%A7%E5%83%8D%E3%81%8D%E3%82%84%E3%81%99%E3%81%84%E5%BA%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-033",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 164,
+    "style": "かわいい系",
+    "tags": [
+      "東京で抜くなら１１",
+      "👈️前スレ",
+      "東京で抜くなら",
+      "この投稿は削除されました"
+    ],
+    "description": "👈️前スレ 東京で抜くなら ⑩ ハズレがいないしそこなら満足できると思うぞ テクがある良い女とプレイできるから好きだわ この投稿は削除されました ピュアメゾンに興味はあるけどまだ未体験",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12655537/tp=1/",
+    "rumors": [
+      "👈️前スレ 東京で抜くなら ⑩",
+      "ハズレがいないしそこなら満足できると思うぞ",
+      "テクがある良い女とプレイできるから好きだわ",
+      "この投稿は削除されました",
+      "ピュアメゾンに興味はあるけどまだ未体験"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-034",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 166,
+    "style": "かわいい系",
+    "tags": [
+      "素人女と風俗嬢のコスパ比較。",
+      "素人女も結構コストかかるよね。",
+      "どっちが得かな？",
+      "ここの殆どの乳房愛撫完了！"
+    ],
+    "description": "素人女も結構コストかかるよね。 どっちが得かな？ 俺も虎ノ門空港にまた入りたい！すごく良いプレイだったから。 ここの殆どの乳房愛撫完了！ ルックスが良い嬢が最高の気分にさせてくれるよな この前虎ノ門空港で初めて遊んだけど毎回違う女の人と遊んでみたくなるね。これからが楽しみ。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=11745958/tp=1/",
+    "rumors": [
+      "素人女も結構コストかかるよね。 どっちが得かな？",
+      "俺も虎ノ門空港にまた入りたい！すごく良いプレイだったから。",
+      "ここの殆どの乳房愛撫完了！",
+      "ルックスが良い嬢が最高の気分にさせてくれるよな",
+      "この前虎ノ門空港で初めて遊んだけど毎回違う女の人と遊んでみたくなるね。これからが楽しみ。"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-035",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 29,
+    "height": 151,
+    "style": "ロリ系",
+    "tags": [
+      "👈️前スレ",
+      "エロは欠かせないからな"
+    ],
+    "description": "👈️前スレ 現役女子大生がたくさん働いてる店 エロは欠かせないからな 渋谷の店がJDっぽい若い嬢が期待できそうだな 最初はガッツリ痴漢倶楽部みたいな店でロリカワの女の子と遊ぶのは正解かもね！ まだ遊んだ事が無いので今度、渋谷のホテヘルデビューしようかな。手始めにガッツリ痴漢倶楽部から！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12681573/tp=1/",
+    "rumors": [
+      "👈️前スレ 現役女子大生がたくさん働いてる店",
+      "エロは欠かせないからな",
+      "渋谷の店がJDっぽい若い嬢が期待できそうだな",
+      "最初はガッツリ痴漢倶楽部みたいな店でロリカワの女の子と遊ぶのは正解かもね！",
+      "まだ遊んだ事が無いので今度、渋谷のホテヘルデビューしようかな。手始めにガッツリ痴漢倶楽部から！"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-036",
+    "name": "いい店教えて下さい",
+    "shop": "いい店教えて下さい",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 27,
+    "height": 158,
+    "style": "かわいい系",
+    "tags": [
+      "いい店教えて下さい",
+      "👈️前スレ",
+      "いい店教えて下さい",
+      "めちゃ良い子発見💡",
+      "最高の一日になりましたね"
+    ],
+    "description": "👈️前スレ いい店教えて下さい ⑯ ジャルディーノならモデル系な泡姫に入れる可能性かなりあるんじゃないか めちゃ良い子発見💡 多恋人倶楽部の川村ちゃん！久し振りに行った吉原で大当たり🎯 予約なしでふらっと入って川村ちゃん その日最後だったんだよねローレックスマラソンてサブマリ買えてその勢いで多恋人 最高の一日になりましたね ジャルディーノってそれなりに人気あるの？ 評判は良い方じゃないかな？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12710452/tp=1/",
+    "rumors": [
+      "👈️前スレ いい店教えて下さい ⑯",
+      "ジャルディーノならモデル系な泡姫に入れる可能性かなりあるんじゃないか",
+      "めちゃ良い子発見💡 多恋人倶楽部の川村ちゃん！久し振りに行った吉原で大当たり🎯 予約なしでふらっと入って川村ちゃん その日最後だったんだよねローレックスマラソンてサブマリ買えてその勢いで多恋人 最",
+      "ジャルディーノってそれなりに人気あるの？",
+      "評判は良い方じゃないかな？数回しか行ったことない"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%81%84%E3%81%84%E5%BA%97%E6%95%99%E3%81%88%E3%81%A6%E4%B8%8B%E3%81%95%E3%81%84&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-037",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "メンズエステ",
+    "age": 24,
+    "height": 168,
+    "style": "かわいい系",
+    "tags": [
+      "ド素人でもはたらけますか？⑫",
+      ">>1"
+    ],
+    "description": ">>1 俺は大人のエッチなエステについて知りたい笑笑",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=13244563/tp=1/",
+    "rumors": [
+      ">>1 俺は大人のエッチなエステについて知りたい笑笑"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-038",
+    "name": "ピンサロ番長物語",
+    "shop": "ピンサロ番長物語",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 19,
+    "height": 161,
+    "style": "かわいい系",
+    "tags": [
+      "ピンサロ番長物語",
+      ">>616",
+      "waraじゃん"
+    ],
+    "description": ">>616 waraじゃん",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12632347/tp=1/",
+    "rumors": [
+      ">>616 waraじゃん"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%94%E3%83%B3%E3%82%B5%E3%83%AD%E7%95%AA%E9%95%B7%E7%89%A9%E8%AA%9E&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-039",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 29,
+    "height": 154,
+    "style": "かわいい系",
+    "tags": [
+      ">>153",
+      "探しにきて✨"
+    ],
+    "description": ">>153 目立つの苦手だからひっそりとしてる 探しにきて✨",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=2687225/tp=1/",
+    "rumors": [
+      ">>153 目立つの苦手だからひっそりとしてる 探しにきて✨"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-040",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 151,
+    "style": "かわいい系",
+    "tags": [
+      "どっちが稼げるんですか？⑩",
+      ">>38",
+      "やっぱりそうなんですね"
+    ],
+    "description": ">>38 やっぱりそうなんですね SNSで見る高級風俗嬢くらい、私も稼げるかな",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=13117708/tp=1/",
+    "rumors": [
+      ">>38 やっぱりそうなんですね SNSで見る高級風俗嬢くらい、私も稼げるかな"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-041",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 160,
+    "style": "かわいい系",
+    "tags": [
+      ">>898",
+      "1日10とか稼げるって聞くし"
+    ],
+    "description": ">>898 高級店でもガチガチのとこは厳しそうだし 少しカジュアルなカモミールがいいかなって思ってる 1日10とか稼げるって聞くし",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12647096/tp=1/",
+    "rumors": [
+      ">>898 高級店でもガチガチのとこは厳しそうだし 少しカジュアルなカモミールがいいかなって思ってる 1日10とか稼げるって聞くし"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-042",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "女子大生でも稼げるお仕事⑤",
+      ">>3",
+      "やっぱり稼ぎが第一"
+    ],
+    "description": ">>3 やっぱり稼ぎが第一 稼げなかったらどんなに働きやすい店でも病むもん",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=13265179/tp=1/",
+    "rumors": [
+      ">>3 やっぱり稼ぎが第一 稼げなかったらどんなに働きやすい店でも病むもん"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-043",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "働くなら何処がいい？⑦",
+      ">>530",
+      "伝え方が恐ろしいです🥶"
+    ],
+    "description": ">>530 伝え方が恐ろしいです🥶",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12650731/tp=1/",
+    "rumors": [
+      ">>530 伝え方が恐ろしいです🥶"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-044",
+    "name": "乳輪が大きい嬢",
+    "shop": "乳輪が大きい嬢",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 151,
+    "style": "かわいい系",
+    "tags": [
+      "乳輪が大きい嬢",
+      ">>10"
+    ],
+    "description": ">>10 少しサイトとか見たけどめぼしいかんじの巨乳輪はいなかった、",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=2485453/tp=1/",
+    "rumors": [
+      ">>10 少しサイトとか見たけどめぼしいかんじの巨乳輪はいなかった、"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E4%B9%B3%E8%BC%AA%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%84%E5%AC%A2&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-045",
+    "name": "口コミ情報局",
+    "shop": "物乞い倶-HOP",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 155,
+    "style": "かわいい系",
+    "tags": [
+      "口コミ情報局",
+      "物乞い倶-HOP",
+      "ACB",
+      "ジュウザ",
+      "独身ジジイ👴",
+      ">>609"
+    ],
+    "description": ">>609 逝様？ あぁ、情報局から書き込み禁止になったバカのこと？ 文字通り逝様になったよな🐵",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=13058456/tp=1/",
+    "rumors": [
+      ">>609 逝様？ あぁ、情報局から書き込み禁止になったバカのこと？ 文字通り逝様になったよな🐵"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E5%8F%A3%E3%82%B3%E3%83%9F%E6%83%85%E5%A0%B1%E5%B1%80&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-046",
+    "name": "大塚ピンサロ",
+    "shop": "分析シリーズのファンクラブ⑤",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 163,
+    "style": "かわいい系",
+    "tags": [
+      "大塚ピンサロ",
+      "分析シリーズのファンクラブ⑤",
+      ">>817",
+      "屋形船かあ、いいですねえ。",
+      "そいつは私も未経験。",
+      "鬼平犯科帳みたいですね。"
+    ],
+    "description": ">>817 屋形船かあ、いいですねえ。 そいつは私も未経験。 鬼平犯科帳みたいですね。 梵天丸もかくありたい。です。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12477846/tp=1/",
+    "rumors": [
+      ">>817 屋形船かあ、いいですねえ。 そいつは私も未経験。 鬼平犯科帳みたいですね。 梵天丸もかくありたい。です。"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E5%A4%A7%E5%A1%9A%E3%83%94%E3%83%B3%E3%82%B5%E3%83%AD&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-047",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-002",
+    "area": "大阪",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 156,
+    "style": "かわいい系",
+    "tags": [
+      "ステマ業者",
+      "中傷しながら擁護",
+      "ステマ業者",
+      "同一人物",
+      "ステマ業者",
+      "自己レス"
+    ],
+    "description": "ステマ業者 中傷しながら擁護 ステマ業者 中傷 擁護 同一人物 ステマ業者 アホ 自己レス 風俗関連スレでの大半の書き込みは悪質ステマ業者によるものです。 風俗店での成約件数を上げるために中傷 ステマ業者の営業のために同サイトの需要アピール いつまでも終わりなくダラダラと同じ書き込みをしたり 定期的に退店したキャストの話を引き合いに出したり 閲覧者が違和感を感じるのはその為です。 知り合いの店がそ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12715257/tp=1/",
+    "rumors": [
+      "ステマ業者 中傷しながら擁護 ステマ業者 中傷 擁護 同一人物 ステマ業者 アホ 自己レス",
+      "風俗関連スレでの大半の書き込みは悪質ステマ業者によるものです。 風俗店での成約件数を上げるために中傷 ステマ業者の営業のために同サイトの需要アピール いつまでも終わりなくダラダラと同じ書き込みをしたり",
+      "知り合いの店がそのステマ業者に騙されて契約してしまって昨年潰れてしまいました・・・・・",
+      "稼げる店ー 働きやすい店ー 出稼ぎOKの店ー ここがおすすめー 未経験でも稼げる店ー 良いお店ー 借金返すのにおすすめの店ー 悪質ステマ業者のルーティンです。 店員が投稿している、客が書いている、キャ",
+      "この度は、爆サイ荒らしの張本人である大阪のステマ業者による不適切な書込みにより、ご不快な思いをされておられる皆様にご報告があります。 当店はステマ業者との契約を解除いたしました。ステマ業者の不適切な発"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-048",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 19,
+    "height": 169,
+    "style": "かわいい系",
+    "tags": [
+      ">>328",
+      "そーなの？？"
+    ],
+    "description": ">>328 そーなの？？ 聖あるてみす学園とかも結構稼げるみたいだよ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12676488/tp=1/",
+    "rumors": [
+      ">>328 そーなの？？ 聖あるてみす学園とかも結構稼げるみたいだよ"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-049",
+    "name": "隣丸見え",
+    "shop": "隣丸見え",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 154,
+    "style": "かわいい系",
+    "tags": [
+      "遮断率の低いピンサロ",
+      "隣丸見え",
+      "前後丸見え",
+      ">>947"
+    ],
+    "description": ">>947 それは良いですね！ちなみに何番シートでしたか？私は愛に恋は何回か行きましたがまだ見えたことはないです😅",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=3144557/tp=1/",
+    "rumors": [
+      ">>947 それは良いですね！ちなみに何番シートでしたか？私は愛に恋は何回か行きましたがまだ見えたことはないです😅"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E9%9A%A3%E4%B8%B8%E8%A6%8B%E3%81%88&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-050",
+    "name": "働きやすいお店",
+    "shop": "働きやすいお店",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 152,
+    "style": "キレイ系",
+    "tags": [
+      "働きやすいお店12",
+      ">>782"
+    ],
+    "description": ">>782 カモミールパネル綺麗だよねー。あんな感じで私も撮って欲しいなー。移動したい。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12650480/tp=1/",
+    "rumors": [
+      ">>782 カモミールパネル綺麗だよねー。あんな感じで私も撮って欲しいなー。移動したい。"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E5%83%8D%E3%81%8D%E3%82%84%E3%81%99%E3%81%84%E3%81%8A%E5%BA%97&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-051",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 150,
+    "style": "かわいい系",
+    "tags": [
+      ">>789",
+      "高級店も良し悪しあると思う"
+    ],
+    "description": ">>789 客も高いお金払ってるからやっぱ人気嬢に集中しちゃうよね それに客少ない店だったら客つかないから稼げないよね 高級店も良し悪しあると思う",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12647164/tp=1/",
+    "rumors": [
+      ">>789 客も高いお金払ってるからやっぱ人気嬢に集中しちゃうよね それに客少ない店だったら客つかないから稼げないよね 高級店も良し悪しあると思う"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-052",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "ソープランド",
+    "age": 26,
+    "height": 152,
+    "style": "かわいい系",
+    "tags": [
+      ">>489",
+      "そうなんだ！"
+    ],
+    "description": ">>489 そうなんだ！ 高級店ってガチガチに厳しいかと思ってたけど、カジュアルな所もあるんだね ビジュアルは良くないといけなそうだけど頑張ってみる",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12651070/tp=1/",
+    "rumors": [
+      ">>489 そうなんだ！ 高級店ってガチガチに厳しいかと思ってたけど、カジュアルな所もあるんだね ビジュアルは良くないといけなそうだけど頑張ってみる"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-053",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "ソープランド",
+    "age": 29,
+    "height": 167,
+    "style": "かわいい系",
+    "tags": [
+      ">>105"
+    ],
+    "description": ">>105 夏目ちゃんがより可愛くなったよ😍",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=11703840/tp=1/",
+    "rumors": [
+      ">>105 夏目ちゃんがより可愛くなったよ😍"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-054",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "ソープランド",
+    "age": 18,
+    "height": 158,
+    "style": "かわいい系",
+    "tags": [
+      ">>301"
+    ],
+    "description": ">>301 いやー分かる。ソープだろうがデリだろうが高級店＆稼げてれば自信はつくよ。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12681638/tp=1/",
+    "rumors": [
+      ">>301 いやー分かる。ソープだろうがデリだろうが高級店＆稼げてれば自信はつくよ。"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-055",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 166,
+    "style": "かわいい系",
+    "tags": [
+      "初めて働く⑧",
+      ">>618"
+    ],
+    "description": ">>618 最近ちょっと名前聞く店だから、私も気になる 大衆くらいの店の方が客入りいいよね",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12647173/tp=1/",
+    "rumors": [
+      ">>618 最近ちょっと名前聞く店だから、私も気になる 大衆くらいの店の方が客入りいいよね"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-056",
+    "name": "渋谷ぱんつさん情報",
+    "shop": "渋谷ぱんつさん情報",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 22,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "渋谷ぱんつさん情報",
+      ">>53"
+    ],
+    "description": ">>53 それは無い。ぱんつはフェラの時でも必ず自分で装着するから。生ではやらない。徹底してるよ、そこは。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=2593921/tp=1/",
+    "rumors": [
+      ">>53 それは無い。ぱんつはフェラの時でも必ず自分で装着するから。生ではやらない。徹底してるよ、そこは。"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%B8%8B%E8%B0%B7%E3%81%B1%E3%82%93%E3%81%A4%E3%81%95%E3%82%93%E6%83%85%E5%A0%B1&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-057",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "イメクラ",
+    "age": 27,
+    "height": 166,
+    "style": "かわいい系",
+    "tags": [
+      ">>518"
+    ],
+    "description": ">>518 わかるw移籍してから精神的に楽で続けられた 基本は客の理想のプレイに付き合うって感じだし",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=11706423/tp=1/",
+    "rumors": [
+      ">>518 わかるw移籍してから精神的に楽で続けられた 基本は客の理想のプレイに付き合うって感じだし"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-058",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "ソープランド",
+    "age": 22,
+    "height": 168,
+    "style": "かわいい系",
+    "tags": [
+      "未経験者",
+      ">>378"
+    ],
+    "description": ">>378 ここエマーブルも見たけど高ランカーの日収ヤバ 学校帰りのバイトとしてやってこれ凄っ やっぱり高級ソープならではですね",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12652187/tp=1/",
+    "rumors": [
+      ">>378 ここエマーブルも見たけど高ランカーの日収ヤバ 学校帰りのバイトとしてやってこれ凄っ やっぱり高級ソープならではですね"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-059",
+    "name": "口コミ情報局",
+    "shop": "口コミ情報局",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "口コミ情報局",
+      ">>80",
+      "覚悟しときや"
+    ],
+    "description": ">>80 狂酢、お前とんでもない人を敵に回したな ヒューイさん、次回上京したら松戸に行ってお前と話を付けたると言うとったぞ 土下座して謝るか震えながらその日を待つかやな 覚悟しときや",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=12981393/tp=1/",
+    "rumors": [
+      ">>80 狂酢、お前とんでもない人を敵に回したな ヒューイさん、次回上京したら松戸に行ってお前と話を付けたると言うとったぞ 土下座して謝るか震えながらその日を待つかやな 覚悟しときや"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E5%8F%A3%E3%82%B3%E3%83%9F%E6%83%85%E5%A0%B1%E5%B1%80&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-060",
+    "name": "アラフォーが稼げる店",
+    "shop": "アラフォーが稼げる店",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 21,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "アラフォーが稼げる店",
+      ">>775"
+    ],
+    "description": ">>775 載ってない店だと仕方ないけど、行きたいとこのリアルなとこ知れるのでかいよね笑",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=2026/tid=7006814/tp=1/",
+    "rumors": [
+      ">>775 載ってない店だと仕方ないけど、行きたいとこのリアルなとこ知れるのでかいよね笑"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%A2%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC%E3%81%8C%E7%A8%BC%E3%81%92%E3%82%8B%E5%BA%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-061",
+    "name": "Deadball",
+    "shop": "Deadball",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 22,
+    "height": 156,
+    "style": "かわいい系",
+    "tags": [
+      "Deadball",
+      "デッドボール",
+      ">>903",
+      "お茶率.213。",
+      "最近では大分マシになったね。",
+      "でもまだ10人はお茶なんだね。"
+    ],
+    "description": ">>903 お茶率.213。 最近では大分マシになったね。 でもまだ10人はお茶なんだね。 その人達は風俗向いてないから辞めるべきだと思う。 その時間もったいないと思わないのかな。 お茶してるくらいなら絶対昼職すべきだよ。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13251127/tp=1/",
+    "rumors": [
+      ">>903 お茶率.213。 最近では大分マシになったね。 でもまだ10人はお茶なんだね。 その人達は風俗向いてないから辞めるべきだと思う。 その時間もったいないと思わないのかな。 お茶してるくらいな"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Deadball&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-062",
+    "name": "熟女紹介センター",
+    "shop": "池袋店",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 29,
+    "height": 160,
+    "style": "お姉さん系",
+    "tags": [
+      "熟女紹介センター",
+      "池袋店",
+      "また消すんだよ。不思議だね👴",
+      "で過去は？忘れたw",
+      "だから矛盾が出る",
+      "ソープランド"
+    ],
+    "description": "会話してるのかな？と問いかけて、誰も話を聞いてないと言う また消すんだよ。不思議だね👴 会話してるのかな？で話を逸らすと言い出すよ。会話してるんだと解釈するよね？ こいつらは自分で吐いたこと覚えてないんだよ。だから数分で物忘れして今の場面を語る で過去は？忘れたw で、 だから矛盾が出る ソープランド エリア 吉原 投稿日 2026年03月02日 料金（実際に支払った総額） 70分 25000円",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13248293/tp=1/",
+    "rumors": [
+      "会話してるのかな？と問いかけて、誰も話を聞いてないと言う また消すんだよ。不思議だね👴 会話してるのかな？で話を逸らすと言い出すよ。会話してるんだと解釈するよね？ こいつらは自分で吐いたこと覚えてな",
+      "で、 だから矛盾が出る ソープランド エリア 吉原 投稿日 2026年03月02日 料金（実際に支払った総額） 70分 25000円（室料込） 平日午前中料金70分コース25000円 このお店の利用回",
+      "で、 熟女紹介センター 池袋店の客だと語る総合から来た匿名くん 五反田アネージュ（ユメオト） 業種 人妻系ホテヘル＆デリヘル エリア 五反田 投稿日 2026年05月01日 困るとね、書き込めないよう",
+      "で、脳みそお花畑のソープ男独身くんも熟女紹介センターの客ですか？ 出会いと別れ 投稿者 投稿日 2020年10月06日 『出会いと別れ』 この7月末から風俗遊びを再開して、お気に入りの女の子が出来たの",
+      "なので総合で聞いたんですよ どうして、いい年こいて今でも独身んなですか？ 答えはシーーン。でも違うことは反論するんですよ😂"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E7%86%9F%E5%A5%B3%E7%B4%B9%E4%BB%8B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-063",
+    "name": "鶯谷デリ",
+    "shop": "鶯谷デリ",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 151,
+    "style": "かわいい系",
+    "tags": [
+      "鶯谷デリ",
+      ">>802",
+      ">>803",
+      ">>804",
+      "嘘つき野郎、黙れ",
+      ">>805"
+    ],
+    "description": "この店行ったけど確かにテストステロン上がりました。 女の子のサービス、ホスピタリティが良かったと思います。 何か前向きな気持ちになれました。ありがとう存じます。 >>802 >>803 >>804 嘘つき野郎、黙れ >>805 オキニ隠し必死w この店利用して本当に良かったです。 大型連休は友人連れて行こうと思います。 人気店ですから予約争奪戦なのが悩みです。 >>807 ここの店長は嘘つきだから",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13086467/tp=1/",
+    "rumors": [
+      "この店行ったけど確かにテストステロン上がりました。 女の子のサービス、ホスピタリティが良かったと思います。 何か前向きな気持ちになれました。ありがとう存じます。",
+      ">>802 >>803 >>804 嘘つき野郎、黙れ",
+      ">>805 オキニ隠し必死w",
+      "この店利用して本当に良かったです。 大型連休は友人連れて行こうと思います。 人気店ですから予約争奪戦なのが悩みです。",
+      ">>807 ここの店長は嘘つきだから、いくと後悔するよ。"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E9%B6%AF%E8%B0%B7%E3%83%87%E3%83%AA&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-064",
+    "name": "Unknown",
+    "shop": "Unknown",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 50,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "クリカリ-マッチングデリヘル",
+      ">>33",
+      "しっかりせい！"
+    ],
+    "description": ">>33 自意識過剰なブスなフリルふりふりの50歳過ぎた苛めしか生き甲斐ない下品な育ちの姫野ゆあ しっかりせい！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13261279/tp=1/",
+    "rumors": [
+      ">>33 自意識過剰なブスなフリルふりふりの50歳過ぎた苛めしか生き甲斐ない下品な育ちの姫野ゆあ しっかりせい！"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Unknown&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-065",
+    "name": "東京リップ",
+    "shop": "LIP",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 168,
+    "style": "かわいい系",
+    "tags": [
+      "LIP",
+      "東京リップ",
+      "上野店",
+      ">>924"
+    ],
+    "description": ">>924 宮井咲季ババアに執拗に虐められてる、清楚系モデルの女の子だわ 風俗や水商売なんて汚ぇ仕事いやだって言ってるし、一緒にすなや！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=12373482/tp=1/",
+    "rumors": [
+      ">>924 宮井咲季ババアに執拗に虐められてる、清楚系モデルの女の子だわ 風俗や水商売なんて汚ぇ仕事いやだって言ってるし、一緒にすなや！"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%9D%B1%E4%BA%AC%E3%83%AA%E3%83%83%E3%83%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-066",
+    "name": "熟女紹介センター",
+    "shop": "鶯谷店",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 29,
+    "height": 153,
+    "style": "お姉さん系",
+    "tags": [
+      "熟女紹介センター",
+      "鶯谷店",
+      ">>387",
+      "匿名さまに言われてもw"
+    ],
+    "description": ">>387 匿名さまに言われてもw はじめてではなく何回目でした。もう10回以上ですね。猿でも覚えますよ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13122857/tp=1/",
+    "rumors": [
+      ">>387 匿名さまに言われてもw はじめてではなく何回目でした。もう10回以上ですね。猿でも覚えますよ"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E7%86%9F%E5%A5%B3%E7%B4%B9%E4%BB%8B%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-067",
+    "name": "池袋デリヘル倶楽部",
+    "shop": "池袋デリヘル倶楽部",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 21,
+    "height": 150,
+    "style": "かわいい系",
+    "tags": [
+      "池袋デリヘル倶楽部",
+      ">>373"
+    ],
+    "description": ">>373 ぁあああ～っ！ダメっ、ああっ、それ気持ちぃいいい～！ねぇ、イっちゃうからダメっ ぁあああ～！イヤっ、イっちゃうから！イっちゃうイっちゃう...ぁあああ～！ イってるぅぅううう～！！イってるっ、イってるぅうううう～！！！ ぁああっ！ダメっ！！イっちゃイっちゃう....んぐぐっ！！イってるイってるぅうううう～！！！ ぅぅぅぅぐぐぐごわぁああああ！！イってるイってるぅうおおぉおおおおおおぉお",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13151843/tp=1/",
+    "rumors": [
+      ">>373 ぁあああ～っ！ダメっ、ああっ、それ気持ちぃいいい～！ねぇ、イっちゃうからダメっ ぁあああ～！イヤっ、イっちゃうから！イっちゃうイっちゃう...ぁあああ～！ イってるぅぅううう～！！イってる"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%B1%A0%E8%A2%8B%E3%83%87%E3%83%AA%E3%83%98%E3%83%AB%E5%80%B6%E6%A5%BD%E9%83%A8&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-068",
+    "name": "ぷるるんGANG",
+    "shop": "ぷるるんGANG",
+    "shopId": "shop-002",
+    "area": "池袋北",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 150,
+    "style": "かわいい系",
+    "tags": [
+      "池袋北口",
+      "ぷるるんGANG",
+      "134",
+      ">>285",
+      "こいつ、嘘ついてるんですよ"
+    ],
+    "description": ">>285 こいつ、嘘ついてるんですよ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13239794/tp=1/",
+    "rumors": [
+      ">>285 こいつ、嘘ついてるんですよ"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%81%B7%E3%82%8B%E3%82%8B%E3%82%93GANG&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-069",
+    "name": "排泄マニア",
+    "shop": "排泄マニア",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 23,
+    "height": 154,
+    "style": "かわいい系",
+    "tags": [
+      "排泄マニア",
+      ">>941",
+      "おまいがしろ❗️"
+    ],
+    "description": ">>941 おまいがしろ❗️",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13010416/tp=1/",
+    "rumors": [
+      ">>941 おまいがしろ❗️"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%8E%92%E6%B3%84%E3%83%9E%E3%83%8B%E3%82%A2&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-070",
+    "name": "LIBE",
+    "shop": "LIBE",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 26,
+    "height": 165,
+    "style": "かわいい系",
+    "tags": [
+      "ニューハーフヘルス",
+      "LIBE",
+      "ライブ",
+      ">>685",
+      "死ねよ。"
+    ],
+    "description": ">>685 死ねよ。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13073917/tp=1/",
+    "rumors": [
+      ">>685 死ねよ。"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=LIBE&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-071",
+    "name": "デリス池袋",
+    "shop": "デリス池袋",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "デリス池袋",
+      ">>614",
+      "俺も新規だけど普通に取れた"
+    ],
+    "description": ">>614 俺も新規だけど普通に取れた 新規でも選別してるのか？客側の評価とかあるのかな",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13251053/tp=1/",
+    "rumors": [
+      ">>614 俺も新規だけど普通に取れた 新規でも選別してるのか？客側の評価とかあるのかな"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%87%E3%83%AA%E3%82%B9%E6%B1%A0%E8%A2%8B&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-072",
+    "name": "クラスメイト",
+    "shop": "クラスメイト",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 22,
+    "height": 159,
+    "style": "かわいい系",
+    "tags": [
+      "クラスメイト",
+      "錦糸町",
+      ">>945",
+      "これな",
+      "マジで意味わからん"
+    ],
+    "description": ">>945 これな マジで意味わからん 五反田出勤なので交通費が別途じゃねーよクソ内勤",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=10535164/tp=1/",
+    "rumors": [
+      ">>945 これな マジで意味わからん 五反田出勤なので交通費が別途じゃねーよクソ内勤"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%A1%E3%82%A4%E3%83%88&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-073",
+    "name": "手コキ",
+    "shop": "手コキ",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 25,
+    "height": 160,
+    "style": "かわいい系",
+    "tags": [
+      "手コキ",
+      "ビギナーズ東京",
+      ">>309"
+    ],
+    "description": ">>309 超一流企業に勤めてるとかエリートを自称ってそれこそイキリサラリーマンの気が…",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13257296/tp=1/",
+    "rumors": [
+      ">>309 超一流企業に勤めてるとかエリートを自称ってそれこそイキリサラリーマンの気が…"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%89%8B%E3%82%B3%E3%82%AD&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-074",
+    "name": "ステラ東京",
+    "shop": "ステラ東京",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "池袋デリヘル",
+      "ステラ東京",
+      ">>674",
+      "わたし✨"
+    ],
+    "description": ">>674 わたし✨",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13240715/tp=1/",
+    "rumors": [
+      ">>674 わたし✨"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%B9%E3%83%86%E3%83%A9%E6%9D%B1%E4%BA%AC&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-075",
+    "name": "ぽちゃカワ女子専門店",
+    "shop": "ぽちゃカワ女子専門店",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 154,
+    "style": "かわいい系",
+    "tags": [
+      "錦糸町",
+      "ぽちゃカワ女子専門店",
+      ">>421"
+    ],
+    "description": ">>421 店長がいかれポンチだからリームー",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13150826/tp=1/",
+    "rumors": [
+      ">>421 店長がいかれポンチだからリームー"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%81%BD%E3%81%A1%E3%82%83%E3%82%AB%E3%83%AF%E5%A5%B3%E5%AD%90%E5%B0%82%E9%96%80%E5%BA%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-076",
+    "name": "C級ぐる女",
+    "shop": "C級ぐる女",
+    "shopId": "shop-005",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 166,
+    "style": "かわいい系",
+    "tags": [
+      "C級ぐる女",
+      "鶯谷店",
+      ">>703",
+      "可愛いです"
+    ],
+    "description": ">>703 可愛いです",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13260661/tp=1/",
+    "rumors": [
+      ">>703 可愛いです"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=C%E7%B4%9A%E3%81%90%E3%82%8B%E5%A5%B3&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-077",
+    "name": "My",
+    "shop": "My",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 160,
+    "style": "かわいい系",
+    "tags": [
+      "Essentials",
+      "マイエッセンシャルズ",
+      ">>21"
+    ],
+    "description": ">>21 明るいのも良いけど、新しい髪色も良いよね",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13219724/tp=1/",
+    "rumors": [
+      ">>21 明るいのも良いけど、新しい髪色も良いよね"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=My&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-078",
+    "name": "ROSE",
+    "shop": "ROSE",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 151,
+    "style": "かわいい系",
+    "tags": [
+      "ROSE",
+      "旧：鶯谷ピンクデリ",
+      ">>807",
+      "レスコピペ連発とかガイジかよ"
+    ],
+    "description": ">>807 ガチジジイだから効いちゃってンの糞ウケるw レスコピペ連発とかガイジかよ",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=12481223/tp=1/",
+    "rumors": [
+      ">>807 ガチジジイだから効いちゃってンの糞ウケるw レスコピペ連発とかガイジかよ"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=ROSE&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-079",
+    "name": "エピソード",
+    "shop": "エピソード",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 20,
+    "height": 155,
+    "style": "かわいい系",
+    "tags": [
+      "エピソード",
+      "149",
+      ">>817",
+      "うわっ、、、本人ココ見てる🥶"
+    ],
+    "description": ">>817 うわっ、、、本人ココ見てる🥶",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13246310/tp=1/",
+    "rumors": [
+      ">>817 うわっ、、、本人ココ見てる🥶"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-080",
+    "name": "デリス",
+    "shop": "デリス",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 23,
+    "height": 163,
+    "style": "かわいい系",
+    "tags": [
+      "デリス",
+      ">>566",
+      "誰にとって適当がいいのだ？"
+    ],
+    "description": ">>566 誰にとって適当がいいのだ？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13214406/tp=1/",
+    "rumors": [
+      ">>566 誰にとって適当がいいのだ？"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%87%E3%83%AA%E3%82%B9&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-081",
+    "name": "貧乳パラダイス",
+    "shop": "貧乳パラダイス",
+    "shopId": "shop-007",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 18,
+    "height": 155,
+    "style": "かわいい系",
+    "tags": [
+      "大久保",
+      "貧乳パラダイス",
+      ">>478",
+      "最初の写真はいいんだけど…",
+      "あとのがな…"
+    ],
+    "description": ">>478 最初の写真はいいんだけど… あとのがな…",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13141588/tp=1/",
+    "rumors": [
+      ">>478 最初の写真はいいんだけど… あとのがな…"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E8%B2%A7%E4%B9%B3%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%82%B9&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-082",
+    "name": "デリス新宿",
+    "shop": "デリス新宿",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 162,
+    "style": "かわいい系",
+    "tags": [
+      "デリス新宿",
+      "138",
+      ">>669",
+      "是非機会あったらやりたいです！"
+    ],
+    "description": ">>669 是非機会あったらやりたいです！",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13251739/tp=1/",
+    "rumors": [
+      ">>669 是非機会あったらやりたいです！"
+    ],
+    "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%87%E3%83%AA%E3%82%B9%E6%96%B0%E5%AE%BF&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-083",
+    "name": "HYPER",
+    "shop": "HYPER",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 23,
+    "height": 168,
+    "style": "かわいい系",
+    "tags": [
+      "HYPER",
+      ">>938",
+      "どういうこと？w"
+    ],
+    "description": ">>938 コピーしてんの？スクショしてんの？ どういうこと？w",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13082821/tp=1/",
+    "rumors": [
+      ">>938 コピーしてんの？スクショしてんの？ どういうこと？w"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=HYPER&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-084",
+    "name": "パイズリ挟射専門店",
+    "shop": "パイズリ挟射専門店",
+    "shopId": "shop-006",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 169,
+    "style": "かわいい系",
+    "tags": [
+      "五反田",
+      "パイズリ挟射専門店",
+      "もえりん",
+      ">>639",
+      "休み？？"
+    ],
+    "description": ">>639 休み？？ 誰？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13208436/tp=1/",
+    "rumors": [
+      ">>639 休み？？ 誰？"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%83%91%E3%82%A4%E3%82%BA%E3%83%AA%E6%8C%9F%E5%B0%84%E5%B0%82%E9%96%80%E5%BA%97&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-085",
+    "name": "新宿ハンドメイド",
+    "shop": "新宿ハンドメイド",
+    "shopId": "shop-003",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 19,
+    "height": 156,
+    "style": "かわいい系",
+    "tags": [
+      "新宿ハンドメイド",
+      ">>679",
+      "戻ってくると言ってました"
+    ],
+    "description": ">>679 戻ってくると言ってました",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13190034/tp=1/",
+    "rumors": [
+      ">>679 戻ってくると言ってました"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E6%96%B0%E5%AE%BF%E3%83%8F%E3%83%B3%E3%83%89%E3%83%A1%E3%82%A4%E3%83%89&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-086",
+    "name": "熟女の風俗最終章",
+    "shop": "鶯谷店",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 23,
+    "height": 166,
+    "style": "お姉さん系",
+    "tags": [
+      "熟女の風俗最終章",
+      "鶯谷店",
+      ">>211",
+      "ぶーちゃんなんだよな。"
+    ],
+    "description": ">>211 ぶーちゃんなんだよな。 ブーに見えないような日記に騙されたわ。 胸しか出さない嬢は大体ぶーちゃん。",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13223140/tp=1/",
+    "rumors": [
+      ">>211 ぶーちゃんなんだよな。 ブーに見えないような日記に騙されたわ。 胸しか出さない嬢は大体ぶーちゃん。"
+    ],
+    "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E7%86%9F%E5%A5%B3%E3%81%AE%E9%A2%A8%E4%BF%97%E6%9C%80%E7%B5%82%E7%AB%A0&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-087",
+    "name": "錦糸町ホテヘル",
+    "shop": "錦糸町ホテヘル",
+    "shopId": "shop-008",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 28,
+    "height": 155,
+    "style": "かわいい系",
+    "tags": [
+      "錦糸町ホテヘル",
+      "ウルトラハピネス",
+      ">>5",
+      "とりあえず検査行ってみたら？"
+    ],
+    "description": ">>5 とりあえず検査行ってみたら？ その症状だけで確実とは言えないし",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13257226/tp=1/",
+    "rumors": [
+      ">>5 とりあえず検査行ってみたら？ その症状だけで確実とは言えないし"
+    ],
+    "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E9%8C%A6%E7%B3%B8%E7%94%BA%E3%83%9B%E3%83%86%E3%83%98%E3%83%AB&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-088",
+    "name": "AV女優在籍",
+    "shop": "AV女優在籍",
+    "shopId": "shop-001",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 21,
+    "height": 159,
+    "style": "かわいい系",
+    "tags": [
+      "AV女優在籍",
+      "五反田",
+      "レッドベリル⑥",
+      ">>788"
+    ],
+    "description": ">>788 職人て感じ。写メ日記の印象と本人の雰囲気は大分違う",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=12695271/tp=1/",
+    "rumors": [
+      ">>788 職人て感じ。写メ日記の印象と本人の雰囲気は大分違う"
+    ],
+    "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=AV%E5%A5%B3%E5%84%AA%E5%9C%A8%E7%B1%8D&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": false
+  },
+  {
+    "id": "cast-089",
+    "name": "オナクラ",
+    "shop": "ちくキュンっ！学園",
+    "shopId": "shop-004",
+    "area": "東京",
+    "genre": "オナクラ",
+    "age": 29,
+    "height": 157,
+    "style": "かわいい系",
+    "tags": [
+      "五反田",
+      "オナクラ",
+      "ちくキュンっ！学園",
+      ">>73"
+    ],
+    "description": ">>73 マジレスすると乳輪大きいナチュラルロケットおっぱいだった",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=12778417/tp=1/",
+    "rumors": [
+      ">>73 マジレスすると乳輪大きいナチュラルロケットおっぱいだった"
+    ],
+    "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%82%AA%E3%83%8A%E3%82%AF%E3%83%A9&backgroundColor=1a0a12",
+    "isNew": false,
+    "isFeatured": true
+  },
+  {
+    "id": "cast-090",
+    "name": "しゅうかつ倶楽部",
+    "shop": "しゅうかつ倶楽部",
+    "shopId": "shop-002",
+    "area": "東京",
+    "genre": "デリバリーヘルス",
+    "age": 29,
+    "height": 169,
+    "style": "かわいい系",
+    "tags": [
+      "しゅうかつ倶楽部",
+      ">>620",
+      "本当ですか？"
+    ],
+    "description": ">>620 本当ですか？",
+    "shopUrl": "https://bakusai.com/thr_res/acode=3/ctgid=103/bid=5919/tid=13135054/tp=1/",
+    "rumors": [
+      ">>620 本当ですか？"
+    ],
+    "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=%E3%81%97%E3%82%85%E3%81%86%E3%81%8B%E3%81%A4%E5%80%B6%E6%A5%BD%E9%83%A8&backgroundColor=1a0a12",
+    "isNew": true,
+    "isFeatured": false
+  }
+]

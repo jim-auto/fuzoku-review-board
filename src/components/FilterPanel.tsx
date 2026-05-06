@@ -3,7 +3,7 @@ import { ChevronDown, SlidersHorizontal, X } from 'lucide-react'
 import type { FilterState } from '../types'
 
 const AREAS = ['東京', '大阪', '名古屋', '横浜', '福岡', '札幌']
-const GENRES = ['デリバリーヘルス', 'ソープランド', 'メンズエステ', 'イメクラ', 'オナクラ']
+const GENRES = ['デリバリーヘルス', 'ソープランド', 'メンズエステ', 'イメクラ', 'オナクラ', 'キャバクラ', 'ラウンジ', 'セクシーキャバクラ', 'コンセプトカフェ']
 const STYLES = ['かわいい系', 'キレイ系', 'ギャル系', 'お姉さん系', '癒し系', 'ロリ系']
 
 const AREA_COLORS: Record<string, string> = {
