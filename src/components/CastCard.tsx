@@ -8,6 +8,10 @@ const GENRE_SHORT: Record<string, string> = {
   'メンズエステ': 'ES',
   'イメクラ': 'IM',
   'オナクラ': 'OK',
+  'キャバクラ': 'KY',
+  'ラウンジ': 'LG',
+  'セクシーキャバクラ': 'SK',
+  'コンセプトカフェ': 'CC',
 }
 
 interface CastCardProps {
