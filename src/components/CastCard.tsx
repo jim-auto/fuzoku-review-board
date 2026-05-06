@@ -43,16 +43,32 @@ export default function CastCard({ cast }: CastCardProps) {
           <div className="flex items-start gap-3 mb-3">
             {/* Avatar */}
             <div
-              className="w-14 h-14 rounded-xl flex-shrink-0 flex items-center justify-center text-2xl font-black"
+              className="w-14 h-14 rounded-xl flex-shrink-0 overflow-hidden"
               style={{
-                background: `linear-gradient(135deg, ${cast.accentColor}18, ${cast.accentColor}45)`,
                 border: `1px solid ${cast.accentColor}40`,
-                color: cast.accentColor,
-                fontFamily: 'var(--font-display)',
-                textShadow: `0 0 12px ${cast.accentColor}80`,
+                boxShadow: `0 0 12px ${cast.accentColor}20`,
               }}
             >
-              {cast.name[0]}
+              {cast.imageUrl ? (
+                <img
+                  src={cast.imageUrl}
+                  alt={cast.name}
+                  className="w-full h-full object-cover"
+                  style={{ background: `${cast.accentColor}18` }}
+                />
+              ) : (
+                <div
+                  className="w-full h-full flex items-center justify-center text-2xl font-black"
+                  style={{
+                    background: `linear-gradient(135deg, ${cast.accentColor}18, ${cast.accentColor}45)`,
+                    color: cast.accentColor,
+                    fontFamily: 'var(--font-display)',
+                    textShadow: `0 0 12px ${cast.accentColor}80`,
+                  }}
+                >
+                  {cast.name[0]}
+                </div>
+              )}
             </div>
 
             <div className="flex-1 min-w-0">

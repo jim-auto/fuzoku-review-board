@@ -19,6 +19,7 @@
       "リピーターが多い傾向"
     ],
     "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Yuna&backgroundColor=1a0a12",
     "isNew": true,
     "isFeatured": true
   },
@@ -42,6 +43,7 @@
       "リピーターに人気という評判あり"
     ],
     "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Rei&backgroundColor=0a1020",
     "isNew": false,
     "isFeatured": true
   },
@@ -65,6 +67,7 @@
       "技術面の評価が高い傾向"
     ],
     "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Moka&backgroundColor=0a1a14",
     "isNew": false,
     "isFeatured": false
   },
@@ -88,6 +91,7 @@
       "安心感があるという声あり"
     ],
     "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Saki&backgroundColor=1a1400",
     "isNew": false,
     "isFeatured": true
   },
@@ -111,6 +115,7 @@
       "初心者にも人気という傾向"
     ],
     "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Hina&backgroundColor=120a1a",
     "isNew": true,
     "isFeatured": false
   },
@@ -134,6 +139,7 @@
       "リピーターに人気という傾向"
     ],
     "accentColor": "#ffaa00",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Nana&backgroundColor=1a1200",
     "isNew": false,
     "isFeatured": false
   },
@@ -157,6 +163,7 @@
       "静かな時間が好きな方に合うという傾向"
     ],
     "accentColor": "#00ff9f",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Rin&backgroundColor=0a1a12",
     "isNew": false,
     "isFeatured": false
   },
@@ -180,6 +187,7 @@
       "指名率が高い傾向"
     ],
     "accentColor": "#4488ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Aoi&backgroundColor=0a1020",
     "isNew": true,
     "isFeatured": true
   },
@@ -203,6 +211,7 @@
       "トークが楽しいという声あり"
     ],
     "accentColor": "#ff2d78",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Miu&backgroundColor=1a0a12",
     "isNew": true,
     "isFeatured": false
   },
@@ -226,6 +235,7 @@
       "安心感があるという評判あり"
     ],
     "accentColor": "#b44fff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Sara&backgroundColor=120a1a",
     "isNew": false,
     "isFeatured": true
   },
@@ -249,6 +259,7 @@
       "笑いが絶えないという声あり"
     ],
     "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Kaho&backgroundColor=0a1020",
     "isNew": false,
     "isFeatured": false
   },
@@ -272,6 +283,7 @@
       "頭が良さそうという声あり"
     ],
     "accentColor": "#00d4ff",
+    "imageUrl": "https://api.dicebear.com/9.x/lorelei/svg?seed=Tsuki&backgroundColor=0a1020",
     "isNew": false,
     "isFeatured": true
   }

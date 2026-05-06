@@ -17,6 +17,7 @@ export interface Cast {
   shopUrl: string
   rumors: string[]
   accentColor: string
+  imageUrl?: string
   isNew?: boolean
   isFeatured?: boolean
 }
