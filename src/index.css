@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neon accent colors */
+  --color-neon-pink: #ff2d78;
+  --color-neon-cyan: #00d4ff;
+  --color-neon-purple: #b44fff;
+  --color-neon-green: #00ff9f;
+  --color-neon-amber: #ffaa00;
+  --color-neon-blue: #4488ff;
+
+  /* Dark palette */
+  --color-dark-950: #06060e;
+  --color-dark-900: #0b0b17;
+  --color-dark-800: #0f0f1e;
+  --color-dark-700: #141428;
+  --color-dark-600: #1c1c35;
+  --color-dark-500: #252542;
+  --color-dark-400: #32325a;
+  --color-dark-300: #454570;
+
+  /* Text */
+  --color-text-bright: #f0f0fa;
+  --color-text-body: #c0c0d8;
+  --color-text-muted: #7070a0;
+  --color-text-dim: #3a3a58;
+
+  /* Typography */
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', system-ui, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #06060e;
+  color: #c0c0d8;
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #06060e; }
+::-webkit-scrollbar-thumb { background: #32325a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #b44fff; }
+
+@layer components {
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #f0f0fa;
+    margin-bottom: 1rem;
+  }
+
+  .card-base {
+    background: #0f0f1e;
+    border: 1px solid #252542;
+    border-radius: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  .card-base:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  }
+
+  .pill-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #7070a0;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .pill-btn:hover {
+    border-color: rgba(0, 212, 255, 0.4);
+    color: #00d4ff;
+  }
+
+  .pill-btn.active {
+    background: rgba(0, 212, 255, 0.12);
+    border-color: rgba(0, 212, 255, 0.5);
+    color: #00d4ff;
+  }
+
+  .input-base {
+    background: #141428;
+    border: 1px solid #252542;
+    border-radius: 0.5rem;
+    color: #f0f0fa;
+    font-size: 0.875rem;
+    transition: border-color 0.15s ease;
+    outline: none;
+  }
+
+  .input-base:focus {
+    border-color: rgba(0, 212, 255, 0.45);
+  }
+
+  .input-base::placeholder {
+    color: #3a3a58;
+  }
+}
