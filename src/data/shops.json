@@ -471,5 +471,472 @@
       ]
     },
     "castCount": "在籍15名以上"
+  },
+  {
+    "id": "shop-013",
+    "name": "プラチナレディース",
+    "area": "東京",
+    "genre": "ソープランド",
+    "url": "https://example.com",
+    "description": "新宿歌舞伎町のソープランド。超美形・美脚を揃えたプレミアム店。VIP対応・長身キャスト多数で高級志向層から人気。",
+    "tags": [
+      "超美形",
+      "高級感",
+      "長身多め",
+      "VIP対応"
+    ],
+    "price": {
+      "min": 45000,
+      "max": 100000,
+      "unit": "60分コース〜"
+    },
+    "hours": "11:00〜翌1:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": true,
+      "nn": true,
+      "extras": [
+        "本番",
+        "AF",
+        "69",
+        "ディープキス"
+      ]
+    },
+    "castCount": "在籍40名以上"
+  },
+  {
+    "id": "shop-014",
+    "name": "ファンタジーガール",
+    "area": "東京",
+    "genre": "イメクラ",
+    "url": "https://example.com",
+    "description": "東京新しいイメクラ専門店。制服・ナース・キャビンアテンダント等50種以上のコスプレ。リアルなセットで高い没入感。",
+    "tags": [
+      "コスプレ豊富",
+      "設定こだわり",
+      "没入感高い",
+      "リピーター多め"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 25000,
+      "unit": "60分コース〜"
+    },
+    "hours": "12:00〜翌4:00",
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": false,
+      "nn": false,
+      "extras": [
+        "コスプレ",
+        "ロールプレイ",
+        "フェラ",
+        "素股"
+      ]
+    },
+    "castCount": "在籍30名以上"
+  },
+  {
+    "id": "shop-015",
+    "name": "ゴールドプラス",
+    "area": "大阪",
+    "genre": "デリバリーヘルス",
+    "url": "https://example.com",
+    "description": "大阪梅田のデリバリーヘルス。若手から熟女まで幅広いラインナップ。駅近派遣で利便性も高く、ビジネスマン層に好評。",
+    "tags": [
+      "ラインナップ豊富",
+      "駅近",
+      "若手多め",
+      "ビジ向け"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 35000,
+      "unit": "60分コース〜"
+    },
+    "hours": "10:00〜翌6:00",
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "10:00〜13:00",
+      "discount": "朝割2,500円OFF"
+    },
+    "options": {
+      "ns": false,
+      "nn": false,
+      "extras": [
+        "素股",
+        "フェラ",
+        "手コキ"
+      ]
+    },
+    "castCount": "在籍50名以上"
+  },
+  {
+    "id": "shop-016",
+    "name": "キャビンプリンセス",
+    "area": "大阪",
+    "genre": "キャバクラ",
+    "url": "https://example.com",
+    "description": "心斎橋高級キャバクラ。セレブ向けのラグジュアリー空間。シャンパン・美女・上質なサービスで非日常を演出。",
+    "tags": [
+      "高級感",
+      "セレブ向け",
+      "美女揃い",
+      "VIP対応"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 50000,
+      "unit": "1セット（飲み放題込み）"
+    },
+    "hours": "20:00〜翌4:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "同伴OK",
+        "VIPルームあり",
+        "誕生日演出",
+        "シャンパン"
+      ]
+    },
+    "castCount": "在籍25名以上"
+  },
+  {
+    "id": "shop-017",
+    "name": "スカイスパ名古屋",
+    "area": "名古屋",
+    "genre": "メンズエステ",
+    "url": "https://example.com",
+    "description": "名古屋栄のメンズエステ。高級ホテル並みの施設と技術派セラピスト。オイルマッサージ＆前立腺マッサージで究極リラックス。",
+    "tags": [
+      "技術派",
+      "施設充実",
+      "高級感",
+      "リラックス"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 35000,
+      "unit": "60分コース〜"
+    },
+    "hours": "11:00〜翌0:00",
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "11:00〜12:30",
+      "discount": "朝割3,000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルマッサージ",
+        "アロマテラピー",
+        "リンパドレナージュ"
+      ]
+    },
+    "castCount": "在籍18名以上"
+  },
+  {
+    "id": "shop-018",
+    "name": "トロピカルビーチ",
+    "area": "名古屋",
+    "genre": "セクシーキャバクラ",
+    "url": "https://example.com",
+    "description": "名古屋大須セクキャバ。水着・ボディペイント・踊りなど過激パフォーマンス。若い女の子が多く、盛り上がり重視のお店。",
+    "tags": [
+      "過激系",
+      "若い",
+      "パフォーマンス豊富",
+      "盛り上がり系"
+    ],
+    "price": {
+      "min": 3000,
+      "max": 15000,
+      "unit": "1セット（飲み放題込み）"
+    },
+    "hours": "18:00〜翌5:00",
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ボディペイント",
+        "踊り",
+        "水着",
+        "ボディタッチ"
+      ]
+    },
+    "castCount": "在籍25名以上"
+  },
+  {
+    "id": "shop-019",
+    "name": "シティスパ横浜",
+    "area": "横浜",
+    "genre": "ソープランド",
+    "url": "https://example.com",
+    "description": "横浜みなとみらいのソープランド。眺望のいい個室でリラックス。経験豊富なベテランキャスト多数。高級志向に対応。",
+    "tags": [
+      "高級感",
+      "ベテラン多め",
+      "眺望いい",
+      "落ち着いた"
+    ],
+    "price": {
+      "min": 28000,
+      "max": 75000,
+      "unit": "60分コース〜"
+    },
+    "hours": "10:00〜翌3:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "10:00〜12:00",
+      "discount": "朝活割4,000円OFF"
+    },
+    "options": {
+      "ns": true,
+      "nn": true,
+      "extras": [
+        "本番",
+        "AF",
+        "ディープキス",
+        "素股"
+      ]
+    },
+    "castCount": "在籍22名以上"
+  },
+  {
+    "id": "shop-020",
+    "name": "ハートフル横浜",
+    "area": "横浜",
+    "genre": "メンズエステ",
+    "url": "https://example.com",
+    "description": "横浜のメンズエステ。アットホームな雰囲気で心身をリセット。女性スタッフの丁寧な対応がリピーターに評判。",
+    "tags": [
+      "アットホーム",
+      "対応丁寧",
+      "リピーター多め",
+      "リラックス"
+    ],
+    "price": {
+      "min": 5000,
+      "max": 20000,
+      "unit": "60分コース〜"
+    },
+    "hours": "10:00〜翌0:00",
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "10:00〜13:00",
+      "discount": "朝割2,000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "手技マッサージ",
+        "フットケア",
+        "ヘッドスパ"
+      ]
+    },
+    "castCount": "在籍10名以上"
+  },
+  {
+    "id": "shop-021",
+    "name": "トロピカルガール福岡",
+    "area": "福岡",
+    "genre": "デリバリーヘルス",
+    "url": "https://example.com",
+    "description": "福岡中心街のデリバリーヘルス。九州ノリの明るいキャスト多数。フレンドリーな雰囲気で初心者向けと好評。",
+    "tags": [
+      "明るい",
+      "フレンドリー",
+      "初心者向け",
+      "関西ノリ"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 38000,
+      "unit": "60分コース〜"
+    },
+    "hours": "10:00〜翌4:00",
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "10:00〜13:00",
+      "discount": "朝割3,000円OFF"
+    },
+    "options": {
+      "ns": false,
+      "nn": false,
+      "extras": [
+        "素股",
+        "フェラ",
+        "手コキ",
+        "ディープキス"
+      ]
+    },
+    "castCount": "在籍35名以上"
+  },
+  {
+    "id": "shop-022",
+    "name": "ラウンジブルー",
+    "area": "福岡",
+    "genre": "ラウンジ",
+    "url": "https://example.com",
+    "description": "天神ラウンジ。福岡屈指の高級感。大人向けの落ち着いた空間で接待・デート両対応。シャンパンセレクションも充実。",
+    "tags": [
+      "高級感",
+      "接待対応",
+      "大人向け",
+      "落ち着いた"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 60000,
+      "unit": "1セット（チャージ込み）"
+    },
+    "hours": "19:00〜翌3:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全個室",
+        "同伴OK",
+        "接待利用可",
+        "VIPルームあり"
+      ]
+    },
+    "castCount": "在籍15名以上"
+  },
+  {
+    "id": "shop-023",
+    "name": "ホワイトレディ札幌",
+    "area": "札幌",
+    "genre": "キャバクラ",
+    "url": "https://example.com",
+    "description": "札幌すすきのキャバクラ。北海道美女を集めたプレミアム店。落ち着いた大人向けのキャバ体験で高級志向に人気。",
+    "tags": [
+      "美女揃い",
+      "高級感",
+      "北海道美女",
+      "落ち着いた"
+    ],
+    "price": {
+      "min": 6000,
+      "max": 25000,
+      "unit": "1セット（飲み放題込み）"
+    },
+    "hours": "19:00〜翌5:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "同伴OK",
+        "誕生日演出",
+        "シャンパン",
+        "貸切対応"
+      ]
+    },
+    "castCount": "在籍28名以上"
+  },
+  {
+    "id": "shop-024",
+    "name": "アイスクリーム札幌",
+    "area": "札幌",
+    "genre": "コンセプトカフェ",
+    "url": "https://example.com",
+    "description": "札幌コンカフェ。美少女・アイドル・ゲーム系キャラクター・制服等多彩なコンセプト。マニア向けカスタマイズも充実。",
+    "tags": [
+      "キャラ豊富",
+      "オタク向け",
+      "カスタマイズ可",
+      "マニア対応"
+    ],
+    "price": {
+      "min": 800,
+      "max": 6000,
+      "unit": "入場料＋ドリンク代"
+    },
+    "hours": "13:00〜23:00",
+    "reservation": [
+      "Web予約",
+      "Twitter DM"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "13:00〜15:00",
+      "discount": "アフタヌーンタイムチャージ無料"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "チェキ撮影",
+        "グッズ販売",
+        "イベント開催",
+        "推し活対応"
+      ]
+    },
+    "castCount": "在籍20名以上"
   }
 ]
