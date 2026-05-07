@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { ArrowUpDown } from 'lucide-react'
 import castsData from '../data/casts.json'
 import type { Cast, FilterState } from '../types'
 import CastCard from '../components/CastCard'
@@ -7,6 +8,17 @@ import FilterPanel from '../components/FilterPanel'
 import SearchBar from '../components/SearchBar'
 
 const allCasts = castsData as Cast[]
+
+type SortKey = 'default' | 'age_asc' | 'age_desc' | 'name_asc' | 'height_asc' | 'new_first'
+
+const SORT_OPTIONS: { value: SortKey; label: string }[] = [
+  { value: 'default', label: 'デフォルト' },
+  { value: 'new_first', label: 'NEW優先' },
+  { value: 'age_asc', label: '年齢が若い順' },
+  { value: 'age_desc', label: '年齢が高い順' },
+  { value: 'height_asc', label: '身長が低い順' },
+  { value: 'name_asc', label: '名前順（A→Z）' },
+]
 
 const DEFAULT_FILTER: FilterState = {
   area: '',
@@ -41,6 +53,18 @@ function applyFilter(casts: Cast[], f: FilterState): Cast[] {
   })
 }
 
+function applySort(casts: Cast[], sort: SortKey): Cast[] {
+  const arr = [...casts]
+  switch (sort) {
+    case 'age_asc': return arr.sort((a, b) => a.age - b.age)
+    case 'age_desc': return arr.sort((a, b) => b.age - a.age)
+    case 'height_asc': return arr.sort((a, b) => a.height - b.height)
+    case 'name_asc': return arr.sort((a, b) => a.name.localeCompare(b.name))
+    case 'new_first': return arr.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0))
+    default: return arr
+  }
+}
+
 export default function CastListPage() {
   const [searchParams] = useSearchParams()
 
@@ -52,7 +76,13 @@ export default function CastListPage() {
     tags: searchParams.get('tag') ? [searchParams.get('tag')!] : [],
   })
 
+  const [sort, setSort] = useState<SortKey>('default')
+  const [sortOpen, setSortOpen] = useState(false)
+
   const filtered = useMemo(() => applyFilter(allCasts, filter), [filter])
+  const sorted = useMemo(() => applySort(filtered, sort), [filtered, sort])
+
+  const currentSortLabel = SORT_OPTIONS.find(o => o.value === sort)?.label ?? 'デフォルト'
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-4">
@@ -64,22 +94,51 @@ export default function CastListPage() {
         >
           CAST LIST
         </h1>
-        <span className="text-sm text-text-dim">{filtered.length}名表示</span>
+        <span className="text-sm text-text-dim">{sorted.length}名表示</span>
       </div>
 
       {/* Search */}
       <SearchBar value={filter.search} onChange={search => setFilter(f => ({ ...f, search }))} />
 
-      {/* Filters */}
-      <FilterPanel
-        filter={filter}
-        onChange={setFilter}
-        totalCount={allCasts.length}
-        filteredCount={filtered.length}
-      />
+      {/* Filters + Sort row */}
+      <div className="flex items-start gap-2">
+        <div className="flex-1">
+          <FilterPanel
+            filter={filter}
+            onChange={setFilter}
+            totalCount={allCasts.length}
+            filteredCount={sorted.length}
+          />
+        </div>
+
+        {/* Sort dropdown */}
+        <div className="relative flex-shrink-0">
+          <button
+            onClick={() => setSortOpen(o => !o)}
+            className="flex items-center gap-1.5 px-3 py-3 rounded-xl bg-dark-800 border border-dark-500 text-sm text-text-body hover:bg-dark-700/50 transition-colors"
+          >
+            <ArrowUpDown size={14} className="text-neon-cyan" />
+            <span className="hidden sm:inline text-text-muted text-xs">{currentSortLabel}</span>
+          </button>
+
+          {sortOpen && (
+            <div className="absolute right-0 top-full mt-1 z-50 bg-dark-800 border border-dark-500 rounded-xl overflow-hidden shadow-2xl min-w-40">
+              {SORT_OPTIONS.map(opt => (
+                <button
+                  key={opt.value}
+                  onClick={() => { setSort(opt.value); setSortOpen(false) }}
+                  className={`w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-dark-700 ${sort === opt.value ? 'text-neon-cyan' : 'text-text-body'}`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Results */}
-      {filtered.length === 0 ? (
+      {sorted.length === 0 ? (
         <div className="flex flex-col items-center justify-center py-20 gap-4">
           <div className="text-5xl opacity-30">🔍</div>
           <p className="text-text-muted text-sm">条件に一致するキャストが見つかりませんでした</p>
@@ -92,7 +151,7 @@ export default function CastListPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-          {filtered.map(cast => (
+          {sorted.map(cast => (
             <CastCard key={cast.id} cast={cast} />
           ))}
         </div>

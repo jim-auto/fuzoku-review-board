@@ -23,6 +23,10 @@ const GENRE_DESC: Record<string, string> = {
   'メンズエステ': '施術・癒し系サービス',
   'イメクラ': 'コンセプト・設定型サービス',
   'オナクラ': 'シンプル型サービス',
+  'キャバクラ': 'お酒と会話を楽しむ接客サービス',
+  'ラウンジ': '高級感あふれる大人の社交場',
+  'セクシーキャバクラ': 'セクシーな演出のあるキャバクラ',
+  'コンセプトカフェ': 'キャラクターや世界観を楽しむカフェ',
 }
 
 const AREA_COLORS: Record<string, string> = {
@@ -130,7 +134,12 @@ export default function CastDetailPage() {
                 <MapPin size={13} className="flex-shrink-0" style={{ color: areaColor }} />
                 <span style={{ color: areaColor }}>{cast.area}</span>
                 <span className="text-text-dim">·</span>
-                <span>{cast.shop}</span>
+                <Link
+                  to={`/shops/${cast.shopId}`}
+                  className="hover:text-neon-cyan transition-colors underline-offset-2 hover:underline"
+                >
+                  {cast.shop}
+                </Link>
               </div>
 
               <div className="mt-2">
@@ -211,7 +220,12 @@ export default function CastDetailPage() {
             <h2 className="font-bold text-text-bright text-base">店舗情報</h2>
           </div>
           <div className="px-5 py-4 space-y-3">
-            <h3 className="text-lg font-bold text-text-bright">{shop.name}</h3>
+            <Link
+              to={`/shops/${shop.id}`}
+              className="text-lg font-bold text-text-bright hover:text-neon-cyan transition-colors underline-offset-2 hover:underline"
+            >
+              {shop.name}
+            </Link>
             <div className="flex items-center gap-2 text-sm text-text-muted">
               <MapPin size={13} style={{ color: AREA_COLORS[shop.area] ?? '#00d4ff' }} />
               <span style={{ color: AREA_COLORS[shop.area] ?? '#00d4ff' }}>{shop.area}</span>
