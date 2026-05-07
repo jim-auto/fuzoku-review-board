@@ -11,7 +11,7 @@ export default function Header() {
     e.preventDefault()
     const q = searchQuery.trim()
     if (q) {
-      navigate(`/casts?q=${encodeURIComponent(q)}`)
+      navigate(`/shops?q=${encodeURIComponent(q)}`)
       setMenuOpen(false)
       setSearchQuery('')
     }
@@ -47,6 +47,16 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6 ml-4">
+          <NavLink
+            to="/shops"
+            className={({ isActive }) =>
+              `text-sm font-medium transition-colors ${
+                isActive ? 'text-neon-cyan' : 'text-text-muted hover:text-text-body'
+              }`
+            }
+          >
+            店舗を探す
+          </NavLink>
           <NavLink
             to="/casts"
             className={({ isActive }) =>
@@ -96,7 +106,7 @@ export default function Header() {
                 type="text"
                 value={searchQuery}
                 onChange={e => setSearchQuery(e.target.value)}
-                placeholder="名前・タグで検索..."
+                placeholder="店舗名・ジャンルで検索..."
                 className="input-base w-full pl-8 pr-4 py-2 text-sm rounded-full"
               />
             </div>
@@ -107,6 +117,19 @@ export default function Header() {
               検索
             </button>
           </form>
+          <NavLink
+            to="/shops"
+            className={({ isActive }) =>
+              `block py-2 pl-3 text-sm border-l-2 transition-colors ${
+                isActive
+                  ? 'border-neon-cyan text-neon-cyan'
+                  : 'border-dark-500 text-text-muted hover:text-text-body hover:border-dark-400'
+              }`
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            店舗を探す
+          </NavLink>
           <NavLink
             to="/casts"
             className={({ isActive }) =>

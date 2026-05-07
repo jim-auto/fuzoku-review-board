@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, MapPin, Sparkles, TrendingUp, Tag } from 'lucide-react'
+import shopsData from '../data/shops.json'
 import castsData from '../data/casts.json'
-import type { Cast } from '../types'
+import type { Shop, Cast } from '../types'
+import ShopCard from '../components/ShopCard'
 import CastCard from '../components/CastCard'
 
+const shops = shopsData as Shop[]
 const casts = castsData as Cast[]
 
 const AREAS = [
@@ -28,33 +31,31 @@ const GENRES = [
 ]
 
 const POPULAR_TAGS = [
-  '会話重視', '癒し系', '清楚系', '初心者向け', 'リピーター多め',
-  'キレイ系', 'かわいい系', '落ち着いた雰囲気', '指名率高め', '技術派',
-  '経験豊富', 'スレンダー', 'グラマー', 'ギャル系', 'お姉さん系',
+  '接客丁寧', '清潔感', '高級感', '朝活対応', 'リピーター多め',
+  '初心者向け', 'キャスト多め', '技術高め', '盛り上がり系', 'リラックス重視',
 ]
 
 const TRENDS = [
-  '東京・大阪エリアはキャスト数が多く、選択肢が豊富という声あり',
-  '「会話重視」タグのキャストはリピーターが多い傾向',
-  '初心者向けタグのキャストはデリバリーヘルスジャンルに多い傾向',
-  'メンズエステは技術面の評価が高いキャストが多い傾向',
-  '年齢層は20代が中心で、バランスよく分布している傾向',
+  '朝活対応の店舗が増加中。時間を有効活用したい方に人気',
+  'デリバリーヘルス・ソープランドのNS/NN対応が重視される傾向',
+  'メンズエステは技術・サービス品質で選ぶユーザーが増加',
+  'キャバクラ・ラウンジは落ち着いた雰囲気が選ぶポイント',
+  '東京・大阪のジャンル多様性が他地域より充実している',
 ]
 
 export default function HomePage() {
-  const featured = casts.filter(c => c.isFeatured).slice(0, 4)
+  const featuredShops = shops.slice(0, 6)
   const newCasts = casts.filter(c => c.isNew)
 
   const areasWithCount = AREAS.map(a => ({
     ...a,
-    count: casts.filter(c => c.area === a.name).length,
+    count: shops.filter(s => s.area === a.name).length,
   }))
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-14">
       {/* ── Hero ─────────────────────────────────────────── */}
       <section className="relative text-center py-14 overflow-hidden">
-        {/* Subtle grid backdrop */}
         <div
           className="absolute inset-0 pointer-events-none opacity-[0.025]"
           style={{
@@ -63,12 +64,9 @@ export default function HomePage() {
             backgroundSize: '40px 40px',
           }}
         />
-        {/* Glow blobs */}
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] rounded-full pointer-events-none opacity-10"
-          style={{
-            background: 'radial-gradient(ellipse, #b44fff 0%, transparent 70%)',
-          }}
+          style={{ background: 'radial-gradient(ellipse, #b44fff 0%, transparent 70%)' }}
         />
 
         <div className="relative z-10 space-y-5">
@@ -85,14 +83,14 @@ export default function HomePage() {
             <span style={{ color: '#ff2d78', textShadow: '0 0 40px rgba(255,45,120,0.35)' }}>BOARD</span>
           </h1>
 
-          <p className="text-text-muted text-lg">風俗キャスト情報データベース</p>
+          <p className="text-text-muted text-lg">風俗店舗情報データベース</p>
           <p className="text-text-dim text-sm max-w-sm mx-auto">
-            タグ・特徴・雰囲気で探せる、シンプルでモダンな情報検索体験
+            料金・朝活・NS/NNで探せる、シンプルでモダンな店舗検索体験
           </p>
 
           <div className="flex items-center justify-center gap-3 pt-2">
             <Link
-              to="/casts"
+              to="/shops"
               className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full font-semibold text-sm transition-all hover:-translate-y-0.5"
               style={{
                 background: 'linear-gradient(135deg, rgba(0,212,255,0.15), rgba(180,79,255,0.15))',
@@ -101,10 +99,10 @@ export default function HomePage() {
                 boxShadow: '0 0 20px rgba(0,212,255,0.1)',
               }}
             >
-              キャストを探す
+              店舗を探す
               <ArrowRight size={15} />
             </Link>
-            <span className="text-text-dim text-sm">{casts.length}名登録中</span>
+            <span className="text-text-dim text-sm">{shops.length}店舗登録中</span>
           </div>
         </div>
       </section>
@@ -120,7 +118,7 @@ export default function HomePage() {
           {areasWithCount.map(area => (
             <Link
               key={area.name}
-              to={`/casts?area=${encodeURIComponent(area.name)}`}
+              to={`/shops?area=${encodeURIComponent(area.name)}`}
               className="flex flex-col items-center p-3 rounded-xl border transition-all duration-200 hover:-translate-y-1"
               style={{ background: `${area.color}0c`, borderColor: `${area.color}30` }}
               onMouseEnter={e => {
@@ -143,7 +141,7 @@ export default function HomePage() {
               <span className="text-sm font-medium mt-0.5" style={{ color: area.color }}>
                 {area.name}
               </span>
-              <span className="text-xs text-text-dim mt-0.5">{area.count}名</span>
+              <span className="text-xs text-text-dim mt-0.5">{area.count}店</span>
             </Link>
           ))}
         </div>
@@ -160,7 +158,7 @@ export default function HomePage() {
           {GENRES.map(genre => (
             <Link
               key={genre.name}
-              to={`/casts?genre=${encodeURIComponent(genre.name)}`}
+              to={`/shops?genre=${encodeURIComponent(genre.name)}`}
               className="flex flex-col p-4 rounded-xl border transition-all duration-200 hover:-translate-y-1"
               style={{ background: `${genre.color}0c`, borderColor: `${genre.color}30` }}
               onMouseEnter={e => {
@@ -187,24 +185,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Featured Casts ───────────────────────────────── */}
+      {/* ── Featured Shops ───────────────────────────────── */}
       <section>
         <div className="flex items-center justify-between mb-4">
           <h2 className="section-title mb-0">
             <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-amber to-neon-pink flex-shrink-0" />
             <Sparkles size={16} className="text-neon-amber" />
-            注目のキャスト
+            注目の店舗
           </h2>
           <Link
-            to="/casts"
+            to="/shops"
             className="flex items-center gap-1 text-xs text-neon-cyan hover:text-neon-cyan/70 transition-colors"
           >
             すべて見る <ArrowRight size={12} />
           </Link>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {featured.map(cast => (
-            <CastCard key={cast.id} cast={cast} />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {featuredShops.map(shop => (
+            <ShopCard key={shop.id} shop={shop} />
           ))}
         </div>
       </section>
@@ -244,7 +242,7 @@ export default function HomePage() {
           {POPULAR_TAGS.map(tag => (
             <Link
               key={tag}
-              to={`/casts?tag=${encodeURIComponent(tag)}`}
+              to={`/shops?genre=${encodeURIComponent(tag)}`}
               className="text-sm px-4 py-1.5 rounded-full border transition-all duration-150 text-text-muted"
               style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.08)' }}
               onMouseEnter={e => {
@@ -279,11 +277,9 @@ export default function HomePage() {
           </p>
           <ul className="space-y-2.5">
             {TRENDS.map((trend, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-text-body">
-                <span className="text-neon-cyan/50 flex-shrink-0 mt-0.5 font-mono text-xs">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                {trend}
+              <li key={i} className="flex gap-3">
+                <span className="text-neon-cyan font-bold flex-shrink-0">→</span>
+                <span className="text-sm text-text-body">{trend}</span>
               </li>
             ))}
           </ul>
