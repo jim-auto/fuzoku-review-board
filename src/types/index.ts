@@ -22,6 +22,24 @@ export interface Cast {
   isFeatured?: boolean
 }
 
+export interface ShopPrice {
+  min: number
+  max: number
+  unit: string
+}
+
+export interface ShopMorning {
+  available: boolean
+  hours?: string
+  discount?: string
+}
+
+export interface ShopOptions {
+  ns: boolean | null
+  nn: boolean | null
+  extras: string[]
+}
+
 export interface Shop {
   id: string
   name: string
@@ -30,6 +48,12 @@ export interface Shop {
   url: string
   description: string
   tags: string[]
+  price: ShopPrice
+  hours: string
+  reservation: string[]
+  morning: ShopMorning
+  options: ShopOptions
+  castCount: string
 }
 
 export interface FilterState {
