@@ -86,6 +86,9 @@ export default function CastCard({ cast }: CastCardProps) {
                 <span className="text-xs px-1.5 py-0.5 rounded bg-dark-600 text-text-dim border border-dark-500 leading-none">
                   {GENRE_SHORT[cast.genre] ?? cast.genre}
                 </span>
+                <span className="text-xs px-1.5 py-0.5 rounded bg-neon-amber/10 text-neon-amber border border-neon-amber/30 font-medium leading-none">
+                  DEMO
+                </span>
               </div>
 
               {/* Name */}

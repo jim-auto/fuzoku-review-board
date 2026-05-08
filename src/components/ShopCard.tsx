@@ -54,7 +54,10 @@ export default function ShopCard({ shop }: Props) {
             <h3 className="font-bold text-text-bright text-sm leading-tight truncate group-hover:text-white transition-colors">
               {shop.name}
             </h3>
-            <div className="flex items-center gap-1.5 mt-0.5 text-xs text-text-dim">
+            <div className="flex items-center gap-1.5 mt-0.5 text-xs text-text-dim flex-wrap">
+              <span className="px-1.5 py-0.5 rounded border border-neon-amber/30 bg-neon-amber/10 text-neon-amber font-bold leading-none">
+                DEMO
+              </span>
               <MapPin size={10} style={{ color: areaColor }} />
               <span style={{ color: areaColor }}>{shop.area}</span>
               <span>·</span>

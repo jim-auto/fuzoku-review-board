@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom'
 import {
   ArrowLeft,
   MapPin,
-  ExternalLink,
   MessageSquare,
   User,
   Ruler,
@@ -111,6 +110,9 @@ export default function CastDetailPage() {
             <div className="flex-1 min-w-0">
               {/* Name + badges */}
               <div className="flex items-center gap-2 flex-wrap mb-1">
+                <span className="text-xs px-2 py-0.5 rounded bg-neon-amber/10 text-neon-amber border border-neon-amber/30 font-semibold">
+                  架空サンプル
+                </span>
                 {cast.isNew && (
                   <span className="text-xs px-2 py-0.5 rounded bg-neon-pink/15 text-neon-pink border border-neon-pink/30 font-semibold">
                     NEW
@@ -193,10 +195,7 @@ export default function CastDetailPage() {
 
           {/* Shop link */}
           <div className="mt-5 pt-5 border-t border-dark-600">
-            <a
-              href={shop?.url ?? cast.shopUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
               style={{
                 background: `${cast.accentColor}15`,
@@ -205,9 +204,11 @@ export default function CastDetailPage() {
                 boxShadow: `0 0 16px ${cast.accentColor}10`,
               }}
             >
-              <ExternalLink size={14} />
-              店舗サイトを見る（{cast.shop}）
-            </a>
+              店舗サイトURLは未設定（デモデータ）
+            </div>
+            <p className="text-xs text-neon-amber mt-2">
+              このキャスト・店舗情報は架空サンプルです。実在店舗への問い合わせには利用できません。
+            </p>
           </div>
         </div>
       </div>
@@ -258,15 +259,15 @@ export default function CastDetailPage() {
       <div className="bg-dark-800 border border-dark-500 rounded-2xl overflow-hidden">
         <div className="px-5 py-4 border-b border-dark-600 flex items-center gap-2">
           <MessageSquare size={16} className="text-neon-purple" />
-          <h2 className="font-bold text-text-bright text-base">ネット上で見られる傾向</h2>
+          <h2 className="font-bold text-text-bright text-base">デモ用プロフィール傾向</h2>
         </div>
 
         <div className="px-5 py-4">
           <div className="flex items-start gap-2 mb-4 p-3 rounded-lg bg-dark-700 border border-dark-600">
             <AlertCircle size={14} className="text-text-dim flex-shrink-0 mt-0.5" />
             <p className="text-xs text-text-dim leading-relaxed">
-              以下はネット上で目にする声や傾向をまとめたものです。
-              断定・保証するものではありません。情報は参考程度にご利用ください。
+              以下は架空データで生成したプロフィール傾向です。
+              実在人物・実在店舗の評判や口コミではありません。
             </p>
           </div>
 

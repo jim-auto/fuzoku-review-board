@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import {
-  ArrowLeft, MapPin, ExternalLink, Users, Store, Tag,
+  ArrowLeft, MapPin, Users, Store, Tag,
   Clock, Phone, Sun, CircleCheck, CircleX, CircleMinus, Banknote, CalendarCheck,
 } from 'lucide-react'
 import shopsData from '../data/shops.json'
@@ -98,6 +98,9 @@ export default function ShopDetailPage() {
                 {shop.name}
               </h1>
               <div className="flex items-center gap-2 text-sm flex-wrap">
+                <span className="text-xs px-2 py-0.5 rounded border border-neon-amber/30 bg-neon-amber/10 text-neon-amber font-bold">
+                  架空サンプル
+                </span>
                 <span className="flex items-center gap-1 text-text-muted">
                   <MapPin size={12} style={{ color: areaColor }} />
                   <span style={{ color: areaColor }}>{shop.area}</span>
@@ -224,12 +227,12 @@ export default function ShopDetailPage() {
 
           {/* CTA */}
           <div className="flex flex-wrap items-center gap-2 pt-1">
-            <a href={shop.url} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
+            <div
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium"
               style={{ background: `${genreColor}15`, border: `1px solid ${genreColor}40`, color: genreColor, boxShadow: `0 0 16px ${genreColor}10` }}>
-              <ExternalLink size={14} />公式サイトを見る
-            </a>
-            <span className="text-xs text-text-dim">掲載情報はサンプルです。最新条件は公式側で確認してください。</span>
+              公式サイトURLは未設定（デモデータ）
+            </div>
+            <span className="text-xs text-neon-amber">この店舗は架空サンプルです。実在店舗ではなく、予約・来店には利用できません。</span>
           </div>
 
           {/* NS/NN */}

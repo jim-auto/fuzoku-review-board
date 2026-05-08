@@ -12,15 +12,15 @@ export default function Footer() {
               <span style={{ color: '#00d4ff' }}>FUZZ</span>
               <span style={{ color: '#ff2d78' }}>BOARD</span>
             </div>
-            <p className="text-xs text-text-dim">風俗キャスト情報データベース</p>
+            <p className="text-xs text-text-dim">架空データの検索UIデモ</p>
           </div>
 
           {/* Disclaimer */}
           <div className="max-w-sm">
             <p className="text-xs text-text-dim leading-relaxed">
-              本サイトに掲載されている情報はサンプルデータです。
-              掲載情報の正確性・完全性を保証するものではありません。
-              ご利用は自己責任でお願いします。
+              本サイトはUI/検索体験の検証用デモです。
+              掲載店舗・キャスト・料金・割引・URLは架空のサンプルで、実在店舗とは関係ありません。
+              予約・来店・問い合わせには利用できません。
             </p>
           </div>
         </div>
