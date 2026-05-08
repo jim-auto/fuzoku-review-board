@@ -11,7 +11,7 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 py-2.5 flex items-start gap-2 text-neon-amber">
           <AlertTriangle size={16} className="mt-0.5 flex-shrink-0" />
           <p className="text-xs leading-relaxed">
-            デモサイトです。掲載店舗・キャスト・料金・割引・URLはすべて架空のサンプルデータで、実在店舗とは関係ありません。検索や予約には利用できません。
+            実在店舗データに切り替え中です。料金・営業時間・割引は掲載元確認時点の情報です。予約前に必ず公式サイトまたは掲載元で最新情報を確認してください。
           </p>
         </div>
       </div>

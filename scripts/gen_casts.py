@@ -1,5 +1,6 @@
 import json
 import random
+import sys
 
 NAMES = [
     'Yuna', 'Rei', 'Moka', 'Saki', 'Hina', 'Nana', 'Rin', 'Aoi', 'Miu', 'Sara',
@@ -98,6 +99,12 @@ def make_cast(next_id, shop, serial):
     }
 
 def main():
+    if '--synthetic' not in sys.argv:
+        raise SystemExit(
+            'This script generates synthetic cast profiles and is disabled by default. '
+            'Use --synthetic only for local UI testing, never for production data.'
+        )
+
     random.seed(84)
     with open('src/data/shops.json', 'r', encoding='utf-8') as f:
         shops = json.load(f)

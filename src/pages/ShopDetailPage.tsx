@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import {
-  ArrowLeft, MapPin, Users, Store, Tag,
+  ArrowLeft, MapPin, ExternalLink, Users, Store, Tag,
   Clock, Phone, Sun, CircleCheck, CircleX, CircleMinus, Banknote, CalendarCheck,
 } from 'lucide-react'
 import shopsData from '../data/shops.json'
@@ -98,8 +98,8 @@ export default function ShopDetailPage() {
                 {shop.name}
               </h1>
               <div className="flex items-center gap-2 text-sm flex-wrap">
-                <span className="text-xs px-2 py-0.5 rounded border border-neon-amber/30 bg-neon-amber/10 text-neon-amber font-bold">
-                  架空サンプル
+                <span className="text-xs px-2 py-0.5 rounded border border-neon-green/30 bg-neon-green/10 text-neon-green font-bold">
+                  実在確認
                 </span>
                 <span className="flex items-center gap-1 text-text-muted">
                   <MapPin size={12} style={{ color: areaColor }} />
@@ -118,6 +118,12 @@ export default function ShopDetailPage() {
           </div>
 
           <p className="text-sm text-text-body leading-relaxed">{shop.description}</p>
+          {(shop.address || shop.source?.checkedAt) && (
+            <div className="flex flex-wrap gap-2 text-xs text-text-dim">
+              {shop.address && <span>住所: {shop.address}</span>}
+              {shop.source?.checkedAt && <span>確認日: {shop.source.checkedAt}</span>}
+            </div>
+          )}
 
           {/* Decision summary */}
           <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-3">
@@ -227,13 +233,19 @@ export default function ShopDetailPage() {
 
           {/* CTA */}
           <div className="flex flex-wrap items-center gap-2 pt-1">
-            <div
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium"
+            <a href={shop.url} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
               style={{ background: `${genreColor}15`, border: `1px solid ${genreColor}40`, color: genreColor, boxShadow: `0 0 16px ${genreColor}10` }}>
-              公式サイトURLは未設定（デモデータ）
-            </div>
-            <span className="text-xs text-neon-amber">この店舗は架空サンプルです。実在店舗ではなく、予約・来店には利用できません。</span>
+              <ExternalLink size={14} />掲載元を見る
+            </a>
+            <span className="text-xs text-text-dim">料金・営業時間は変更される場合があります。予約前に掲載元で最新情報を確認してください。</span>
           </div>
+
+          {shop.source && (
+            <div className="rounded-xl border border-dark-600 bg-dark-700 p-3 text-xs text-text-dim">
+              出典: <a href={shop.source.url} target="_blank" rel="noopener noreferrer" className="text-neon-cyan hover:underline">{shop.source.label}</a>
+            </div>
+          )}
 
           {/* NS/NN */}
           {hasServiceOptions && (

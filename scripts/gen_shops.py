@@ -1,5 +1,6 @@
 import json
 import random
+import sys
 
 GENRES = ['デリバリーヘルス','ソープランド','メンズエステ','イメクラ','オナクラ','キャバクラ','ラウンジ','セクシーキャバクラ','コンセプトカフェ']
 SEXUAL_GENRES = {'デリバリーヘルス','ソープランド','オナクラ','イメクラ'}
@@ -114,6 +115,12 @@ def gen_options(g):
     return {'ns': None, 'nn': None, 'extras': random.sample(pool, 2)}
 
 def main():
+    if '--synthetic' not in sys.argv:
+        raise SystemExit(
+            'This script generates synthetic shops and is disabled by default. '
+            'Use --synthetic only for local UI testing, never for production data.'
+        )
+
     with open('src/data/shops.json', 'r', encoding='utf-8') as f:
         shops = json.load(f)
 

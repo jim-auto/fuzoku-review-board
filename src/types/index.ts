@@ -46,6 +46,13 @@ export interface Shop {
   area: Area
   genre: Genre
   url: string
+  source?: {
+    label: string
+    url: string
+    checkedAt: string
+  }
+  address?: string
+  phone?: string
   description: string
   tags: string[]
   price: ShopPrice

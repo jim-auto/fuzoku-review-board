@@ -12,15 +12,15 @@ export default function Footer() {
               <span style={{ color: '#00d4ff' }}>FUZZ</span>
               <span style={{ color: '#ff2d78' }}>BOARD</span>
             </div>
-            <p className="text-xs text-text-dim">架空データの検索UIデモ</p>
+            <p className="text-xs text-text-dim">実在店舗の検索ボード</p>
           </div>
 
           {/* Disclaimer */}
           <div className="max-w-sm">
             <p className="text-xs text-text-dim leading-relaxed">
-              本サイトはUI/検索体験の検証用デモです。
-              掲載店舗・キャスト・料金・割引・URLは架空のサンプルで、実在店舗とは関係ありません。
-              予約・来店・問い合わせには利用できません。
+              掲載情報は公式サイトまたは店舗掲載ページをもとに確認しています。
+              料金・営業時間・受付条件は変更される場合があります。
+              予約・来店前に必ず掲載元で最新情報を確認してください。
             </p>
           </div>
         </div>

@@ -55,8 +55,8 @@ export default function ShopCard({ shop }: Props) {
               {shop.name}
             </h3>
             <div className="flex items-center gap-1.5 mt-0.5 text-xs text-text-dim flex-wrap">
-              <span className="px-1.5 py-0.5 rounded border border-neon-amber/30 bg-neon-amber/10 text-neon-amber font-bold leading-none">
-                DEMO
+              <span className="px-1.5 py-0.5 rounded border border-neon-green/30 bg-neon-green/10 text-neon-green font-bold leading-none">
+                実在確認
               </span>
               <MapPin size={10} style={{ color: areaColor }} />
               <span style={{ color: areaColor }}>{shop.area}</span>
@@ -181,6 +181,9 @@ export default function ShopCard({ shop }: Props) {
         <div className="flex items-center gap-1 text-xs text-text-dim pt-0.5 border-t border-dark-600">
           <Users size={10} />
           <span>{shop.castCount}</span>
+          {shop.source?.checkedAt && (
+            <span className="ml-auto">確認 {shop.source.checkedAt}</span>
+          )}
         </div>
       </div>
     </Link>

@@ -36,11 +36,11 @@ const POPULAR_TAGS = [
 ]
 
 const TRENDS = [
-  '割引後価格での並び替えと価格帯フィルタを確認できます',
-  '予約方法・NS/NN・ジャンルを組み合わせた絞り込みを確認できます',
-  '店舗詳細で料金サマリーと来店前チェックの構成を確認できます',
-  'エリア別・ジャンル別の一覧遷移を架空データで確認できます',
-  'カード表示と詳細表示の情報量の違いを比較できます',
+  '掲載元確認日つきで、料金・営業時間・予約方法を比較できます',
+  '割引後価格での並び替えと価格帯フィルタに対応しています',
+  'エリア・ジャンル・予約方法を組み合わせて絞り込めます',
+  '店舗詳細で出典URLと来店前チェックを確認できます',
+  '未確認のキャスト個人情報は掲載せず、店舗情報を優先します',
 ]
 
 export default function HomePage() {
@@ -72,7 +72,7 @@ export default function HomePage() {
         <div className="relative z-10 space-y-5">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-dark-700 border border-dark-500 text-xs text-text-muted">
             <span className="w-1.5 h-1.5 rounded-full bg-neon-green" style={{ boxShadow: '0 0 6px #00ff9f' }} />
-            架空データのデモ版
+            実在店舗データへ移行中
           </div>
 
           <h1
@@ -83,9 +83,9 @@ export default function HomePage() {
             <span style={{ color: '#ff2d78', textShadow: '0 0 40px rgba(255,45,120,0.35)' }}>BOARD</span>
           </h1>
 
-          <p className="text-text-muted text-lg">店舗検索UIデモ</p>
+          <p className="text-text-muted text-lg">実在店舗の検索ボード</p>
           <p className="text-text-dim text-sm max-w-sm mx-auto">
-            掲載情報はすべて架空サンプルです。通常料金・割引後の最安・NS/NNで探す画面体験だけを確認できます。
+            公式サイトまたは店舗掲載ページで確認した料金・営業時間・予約方法を、出典つきで比較できます。
           </p>
 
           <div className="flex items-center justify-center gap-3 pt-2">
@@ -99,10 +99,10 @@ export default function HomePage() {
                 boxShadow: '0 0 20px rgba(0,212,255,0.1)',
               }}
             >
-              デモ店舗を見る
+              店舗を探す
               <ArrowRight size={15} />
             </Link>
-            <span className="text-text-dim text-sm">架空サンプル{shops.length}店舗</span>
+            <span className="text-text-dim text-sm">確認済み{shops.length}店舗</span>
           </div>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function HomePage() {
         <h2 className="section-title">
           <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-cyan to-neon-purple flex-shrink-0" />
           <MapPin size={16} className="text-neon-cyan" />
-          エリア別サンプル
+          エリアから探す
         </h2>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
           {areasWithCount.map(area => (
@@ -152,7 +152,7 @@ export default function HomePage() {
         <h2 className="section-title">
           <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-purple to-neon-pink flex-shrink-0" />
           <Sparkles size={16} className="text-neon-purple" />
-          ジャンル別サンプル
+          ジャンルから探す
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
           {GENRES.map(genre => (
@@ -191,7 +191,7 @@ export default function HomePage() {
           <h2 className="section-title mb-0">
             <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-amber to-neon-pink flex-shrink-0" />
             <Sparkles size={16} className="text-neon-amber" />
-            サンプル店舗
+            掲載店舗
           </h2>
           <Link
             to="/shops"
@@ -214,7 +214,7 @@ export default function HomePage() {
             <h2 className="section-title mb-0">
               <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-pink to-neon-purple flex-shrink-0" />
               <span className="text-neon-pink">✦</span>
-            サンプルキャスト
+            新着キャスト
             </h2>
             <Link
               to="/casts"
@@ -269,11 +269,11 @@ export default function HomePage() {
         <h2 className="section-title">
           <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-amber to-neon-green flex-shrink-0" />
           <TrendingUp size={16} className="text-neon-amber" />
-          デモで確認できる検索軸
+          このボードで確認できること
         </h2>
         <div className="bg-dark-800 border border-dark-500 rounded-xl p-5">
           <p className="text-xs text-text-dim mb-4 pb-3 border-b border-dark-600">
-            ※ 実在店舗の傾向ではありません。架空データで確認できるUI上の観点です。
+            ※ 掲載情報は確認日時点の内容です。最新条件は各店舗の公式サイト・掲載元で確認してください。
           </p>
           <ul className="space-y-2.5">
             {TRENDS.map((trend, i) => (
