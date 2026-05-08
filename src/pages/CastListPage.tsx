@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { ArrowUpDown } from 'lucide-react'
 import castsData from '../data/casts.json'
@@ -8,6 +8,7 @@ import FilterPanel from '../components/FilterPanel'
 import SearchBar from '../components/SearchBar'
 
 const allCasts = castsData as Cast[]
+const DISPLAY_STEP = 80
 
 type SortKey = 'default' | 'age_asc' | 'age_desc' | 'name_asc' | 'height_asc' | 'new_first'
 
@@ -78,11 +79,22 @@ export default function CastListPage() {
 
   const [sort, setSort] = useState<SortKey>('default')
   const [sortOpen, setSortOpen] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(DISPLAY_STEP)
 
   const filtered = useMemo(() => applyFilter(allCasts, filter), [filter])
   const sorted = useMemo(() => applySort(filtered, sort), [filtered, sort])
+  const visibleCasts = useMemo(() => sorted.slice(0, visibleCount), [sorted, visibleCount])
 
   const currentSortLabel = SORT_OPTIONS.find(o => o.value === sort)?.label ?? 'デフォルト'
+  const updateFilter = (next: FilterState | ((current: FilterState) => FilterState)) => {
+    setFilter(current => typeof next === 'function' ? next(current) : next)
+    setVisibleCount(DISPLAY_STEP)
+  }
+
+  const updateSort = (next: SortKey) => {
+    setSort(next)
+    setVisibleCount(DISPLAY_STEP)
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-4">
@@ -94,18 +106,18 @@ export default function CastListPage() {
         >
           CAST LIST
         </h1>
-        <span className="text-sm text-text-dim">{sorted.length}名表示</span>
+        <span className="text-sm text-text-dim">{visibleCasts.length} / {sorted.length}名表示</span>
       </div>
 
       {/* Search */}
-      <SearchBar value={filter.search} onChange={search => setFilter(f => ({ ...f, search }))} />
+      <SearchBar value={filter.search} onChange={search => updateFilter(f => ({ ...f, search }))} />
 
       {/* Filters + Sort row */}
       <div className="flex items-start gap-2">
         <div className="flex-1">
           <FilterPanel
             filter={filter}
-            onChange={setFilter}
+            onChange={updateFilter}
             totalCount={allCasts.length}
             filteredCount={sorted.length}
           />
@@ -126,7 +138,7 @@ export default function CastListPage() {
               {SORT_OPTIONS.map(opt => (
                 <button
                   key={opt.value}
-                  onClick={() => { setSort(opt.value); setSortOpen(false) }}
+                  onClick={() => { updateSort(opt.value); setSortOpen(false) }}
                   className={`w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-dark-700 ${sort === opt.value ? 'text-neon-cyan' : 'text-text-body'}`}
                 >
                   {opt.label}
@@ -143,7 +155,7 @@ export default function CastListPage() {
           <div className="text-5xl opacity-30">🔍</div>
           <p className="text-text-muted text-sm">条件に一致するキャストが見つかりませんでした</p>
           <button
-            onClick={() => setFilter(DEFAULT_FILTER)}
+            onClick={() => updateFilter(DEFAULT_FILTER)}
             className="text-xs text-neon-cyan hover:underline transition-colors"
           >
             フィルターをリセット
@@ -151,9 +163,20 @@ export default function CastListPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-          {sorted.map(cast => (
+          {visibleCasts.map(cast => (
             <CastCard key={cast.id} cast={cast} />
           ))}
+        </div>
+      )}
+
+      {visibleCasts.length < sorted.length && (
+        <div className="flex justify-center pt-2">
+          <button
+            onClick={() => setVisibleCount(count => count + DISPLAY_STEP)}
+            className="px-5 py-2.5 rounded-full border border-neon-cyan/35 bg-neon-cyan/5 text-neon-cyan text-sm font-medium hover:border-neon-cyan/60 transition-colors"
+          >
+            さらに表示
+          </button>
         </div>
       )}
     </div>

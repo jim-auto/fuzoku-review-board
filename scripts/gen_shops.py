@@ -49,6 +49,15 @@ PRICE_RANGES = {
     'コンセプトカフェ': (500,1500,3000,8000,'入場料＋ドリンク代'),
 }
 
+DISCOUNT_CAPS = {
+    'デリバリーヘルス': 5000,
+    'ソープランド': 8000,
+    'メンズエステ': 3000,
+    'イメクラ': 3000,
+    'オナクラ': 2000,
+    'コンセプトカフェ': 500,
+}
+
 GENRE_TAGS = {
     'デリバリーヘルス': ['出張対応','エリア広い','即日対応','24時間'],
     'ソープランド': ['高級感','設備充実','完全個室'],
@@ -71,12 +80,21 @@ def gen_price(g):
     a, b, c, d, u = PRICE_RANGES[g]
     return {'min': random.randint(a,b), 'max': random.randint(c,d), 'unit': u}
 
-def gen_morning(g):
+def max_discount_for(g, min_price):
+    genre_cap = DISCOUNT_CAPS.get(g, 0)
+    price_cap = min_price - 500
+    ratio_cap = int((min_price * 0.4) // 500) * 500
+    return max(0, min(genre_cap, price_cap, ratio_cap))
+
+def gen_morning(g, price):
     if g in CABARET_GENRES:
         return {'available': False}
     if random.random() < 0.4:
+        max_disc = max_discount_for(g, price['min'])
+        if max_disc < 500:
+            return {'available': False}
         h = random.randint(9, 12)
-        disc = random.randint(3, 10) * 500
+        disc = random.randint(1, max_disc // 500) * 500
         return {'available': True, 'hours': f'{h}:00〜{random.randint(13,16)}:00', 'discount': f'朝割{disc}円OFF'}
     return {'available': False}
 
@@ -120,6 +138,7 @@ def main():
             if name is None:
                 name = f'{area}店舗{next_id}'
             existing.add(name)
+            price = gen_price(genre)
             shops.append({
                 'id': f'shop-{next_id:03d}',
                 'name': name,
@@ -128,10 +147,10 @@ def main():
                 'url': 'https://example.com',
                 'description': f'{area}{loc}エリアの{genre}。{random.choice(DESCS)}',
                 'tags': gen_tags(genre),
-                'price': gen_price(genre),
+                'price': price,
                 'hours': f'{random.randint(9,12)}:00〜翌{random.randint(0,5)}:00',
                 'reservation': random.sample(['電話','LINE','Web予約','Twitter DM'], random.randint(2,3)),
-                'morning': gen_morning(genre),
+                'morning': gen_morning(genre, price),
                 'options': gen_options(genre),
                 'castCount': f'在籍{random.randint(8,60)}名以上',
             })

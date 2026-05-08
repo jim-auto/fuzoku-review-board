@@ -1,12 +1,13 @@
 import { useParams, Link } from 'react-router-dom'
 import {
   ArrowLeft, MapPin, ExternalLink, Users, Store, Tag,
-  Clock, Phone, Sun, CircleCheck, CircleX, CircleMinus, Banknote,
+  Clock, Phone, Sun, CircleCheck, CircleX, CircleMinus, Banknote, CalendarCheck,
 } from 'lucide-react'
 import shopsData from '../data/shops.json'
 import castsData from '../data/casts.json'
 import type { Cast, Shop } from '../types'
 import CastCard from '../components/CastCard'
+import { getDiscountPrice } from '../utils/pricing'
 
 const allShops = shopsData as Shop[]
 const allCasts = castsData as Cast[]
@@ -69,12 +70,15 @@ export default function ShopDetailPage() {
   const shopCasts = allCasts.filter(c => c.shopId === shop.id)
   const areaColor = AREA_COLORS[shop.area] ?? '#00d4ff'
   const genreColor = GENRE_COLORS[shop.genre] ?? '#00d4ff'
+  const discountPrice = getDiscountPrice(shop)
+  const displayedMinPrice = discountPrice.isEstimateValid ? discountPrice.discountedMin : shop.price.min
+  const hasServiceOptions = shop.options.ns !== null || shop.options.nn !== null
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
       {/* Back */}
-      <Link to="/casts" className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-text-body transition-colors">
-        <ArrowLeft size={15} />キャスト一覧
+      <Link to="/shops" className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-text-body transition-colors">
+        <ArrowLeft size={15} />店舗一覧
       </Link>
 
       {/* Shop hero */}
@@ -112,77 +116,124 @@ export default function ShopDetailPage() {
 
           <p className="text-sm text-text-body leading-relaxed">{shop.description}</p>
 
-          {/* Info grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {/* Price */}
-            <div className="bg-dark-700 rounded-xl p-4 border border-dark-600">
-              <div className="flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest mb-2">
-                <Banknote size={12} className="text-neon-green" />料金
-              </div>
-              <div className="flex items-baseline gap-1">
-                <span className="text-lg font-black text-text-bright">
-                  ¥{shop.price.min.toLocaleString()}
-                </span>
-                <span className="text-text-dim text-sm">〜</span>
-                <span className="text-base font-bold text-text-body">
-                  ¥{shop.price.max.toLocaleString()}
-                </span>
-              </div>
-              <div className="text-xs text-text-dim mt-0.5">{shop.price.unit}</div>
-            </div>
-
-            {/* Hours */}
-            <div className="bg-dark-700 rounded-xl p-4 border border-dark-600">
-              <div className="flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest mb-2">
-                <Clock size={12} className="text-neon-cyan" />営業時間
-              </div>
-              <div className="text-sm font-bold text-text-bright">{shop.hours}</div>
-              {shop.morning.available && (
-                <div className="mt-1.5 flex items-center gap-1.5 text-xs px-2 py-1 rounded-lg"
-                  style={{ background: 'rgba(255,170,0,0.1)', color: '#ffaa00' }}>
-                  <Sun size={11} />
-                  <span className="font-semibold">朝活対応</span>
-                  <span>{shop.morning.hours}</span>
+          {/* Decision summary */}
+          <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-3">
+            <div className="bg-dark-700 rounded-xl border border-dark-600 overflow-hidden">
+              <div className="px-4 py-3 border-b border-dark-600 flex items-center justify-between gap-3">
+                <div className="flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest">
+                  <Banknote size={12} className="text-neon-green" />料金サマリー
                 </div>
-              )}
-            </div>
-
-            {/* Reservation */}
-            <div className="bg-dark-700 rounded-xl p-4 border border-dark-600">
-              <div className="flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest mb-2">
-                <Phone size={12} className="text-neon-purple" />予約方法
-              </div>
-              <div className="flex flex-wrap gap-1.5">
-                {shop.reservation.map(r => (
-                  <span key={r} className="text-xs px-2.5 py-1 rounded-full border"
-                    style={{ background: 'rgba(180,79,255,0.08)', borderColor: 'rgba(180,79,255,0.3)', color: '#b44fff' }}>
-                    {r}
+                {discountPrice.isEstimateValid && (
+                  <span className="text-xs px-2 py-0.5 rounded-full border border-neon-green/30 bg-neon-green/10 text-neon-green font-semibold">
+                    割引適用可
                   </span>
-                ))}
+                )}
+              </div>
+              <div className="p-4">
+                <div className="flex items-end gap-2 mb-3">
+                  <div>
+                    <div className="text-xs text-text-dim mb-0.5">
+                      {discountPrice.isEstimateValid ? '割引後の最安目安' : '通常最安'}
+                    </div>
+                    <div className="text-3xl font-black text-text-bright leading-none">
+                      ¥{displayedMinPrice.toLocaleString()}
+                    </div>
+                  </div>
+                  <div className="text-xs text-text-dim pb-1">{shop.price.unit}</div>
+                </div>
+
+                <div className="divide-y divide-dark-600 rounded-lg border border-dark-600 overflow-hidden">
+                  <div className="grid grid-cols-2 gap-3 px-3 py-2 text-xs">
+                    <span className="text-text-dim">通常料金</span>
+                    <span className="text-right text-text-body font-semibold">
+                      ¥{shop.price.min.toLocaleString()}〜¥{shop.price.max.toLocaleString()}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 px-3 py-2 text-xs">
+                    <span className="text-text-dim">割引額</span>
+                    <span className={`text-right font-semibold ${discountPrice.hasAmount ? 'text-neon-green' : 'text-text-dim'}`}>
+                      {discountPrice.hasAmount ? `-${discountPrice.amount.toLocaleString()}円` : 'なし'}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 px-3 py-2 text-xs">
+                    <span className="text-text-dim">割引後目安</span>
+                    <span className="text-right text-text-bright font-bold">
+                      {discountPrice.isEstimateValid ? `¥${discountPrice.discountedMin.toLocaleString()}〜` : '条件確認'}
+                    </span>
+                  </div>
+                </div>
+
+                {discountPrice.hasAmount && !discountPrice.isEstimateValid && (
+                  <div className="mt-2 text-xs text-neon-amber">
+                    割引額が通常最安を上回るため、適用条件の確認が必要です。
+                  </div>
+                )}
+                {!discountPrice.hasAmount && (
+                  <div className="mt-2 text-xs text-text-dim">金額割引データはありません。</div>
+                )}
               </div>
             </div>
 
-            {/* Morning detail */}
-            <div className="bg-dark-700 rounded-xl p-4 border border-dark-600">
-              <div className="flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest mb-2">
-                <Sun size={12} className="text-neon-amber" />朝活情報
+            <div className="bg-dark-700 rounded-xl border border-dark-600 overflow-hidden">
+              <div className="px-4 py-3 border-b border-dark-600 flex items-center gap-1.5 text-xs font-medium text-text-dim uppercase tracking-widest">
+                <CalendarCheck size={12} className="text-neon-cyan" />来店前チェック
               </div>
-              {shop.morning.available ? (
-                <div className="space-y-1">
-                  <div className="text-sm font-bold" style={{ color: '#ffaa00' }}>対応あり</div>
-                  <div className="text-xs text-text-body">{shop.morning.hours}</div>
-                  {shop.morning.discount && (
-                    <div className="text-xs font-semibold text-neon-green">{shop.morning.discount}</div>
+              <div className="p-4 space-y-3">
+                <div>
+                  <div className="flex items-center gap-1.5 text-xs text-text-dim mb-1">
+                    <Clock size={12} className="text-neon-cyan" />営業時間
+                  </div>
+                  <div className="text-sm font-bold text-text-bright">{shop.hours}</div>
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-1.5 text-xs text-text-dim mb-1">
+                    <Sun size={12} className="text-neon-amber" />割引条件
+                  </div>
+                  {shop.morning.available ? (
+                    <div className="space-y-1">
+                      <div className="text-sm font-bold" style={{ color: discountPrice.isEstimateValid ? '#00ff9f' : '#ffaa00' }}>
+                        {discountPrice.hasAmount ? `${discountPrice.amount.toLocaleString()}円OFF` : '時間帯特典あり'}
+                      </div>
+                      <div className="text-xs text-text-body">{shop.morning.hours}</div>
+                      {shop.morning.discount && (
+                        <div className="text-xs font-semibold text-neon-green">{shop.morning.discount}</div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="text-sm text-text-dim">割引条件データなし</div>
                   )}
                 </div>
-              ) : (
-                <div className="text-sm text-text-dim">朝活プランなし</div>
-              )}
+
+                <div>
+                  <div className="flex items-center gap-1.5 text-xs text-text-dim mb-1">
+                    <Phone size={12} className="text-neon-purple" />予約方法
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {shop.reservation.map(r => (
+                      <span key={r} className="text-xs px-2.5 py-1 rounded-full border"
+                        style={{ background: 'rgba(180,79,255,0.08)', borderColor: 'rgba(180,79,255,0.3)', color: '#b44fff' }}>
+                        {r}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
+          {/* CTA */}
+          <div className="flex flex-wrap items-center gap-2 pt-1">
+            <a href={shop.url} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
+              style={{ background: `${genreColor}15`, border: `1px solid ${genreColor}40`, color: genreColor, boxShadow: `0 0 16px ${genreColor}10` }}>
+              <ExternalLink size={14} />公式サイトを見る
+            </a>
+            <span className="text-xs text-text-dim">掲載情報はサンプルです。最新条件は公式側で確認してください。</span>
+          </div>
+
           {/* NS/NN */}
-          {(shop.options.ns !== null || shop.options.nn !== null) && (
+          {hasServiceOptions && (
             <div>
               <div className="text-xs font-medium text-text-dim uppercase tracking-widest mb-2">サービスオプション</div>
               <div className="flex flex-wrap gap-2 mb-3">
@@ -234,14 +285,6 @@ export default function ShopDetailPage() {
             </div>
           )}
 
-          {/* CTA */}
-          <div className="pt-2 border-t border-dark-600">
-            <a href={shop.url} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
-              style={{ background: `${genreColor}15`, border: `1px solid ${genreColor}40`, color: genreColor, boxShadow: `0 0 16px ${genreColor}10` }}>
-              <ExternalLink size={14} />公式サイトを見る
-            </a>
-          </div>
         </div>
       </div>
 

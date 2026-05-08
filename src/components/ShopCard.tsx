@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { MapPin, Clock, Sun, CircleCheck, CircleX, Users } from 'lucide-react'
+import { MapPin, Clock, Banknote, CircleCheck, CircleX, Users, Phone } from 'lucide-react'
 import type { Shop } from '../types'
+import { getDiscountPrice } from '../utils/pricing'
 
 const AREA_COLORS: Record<string, string> = {
   '東京': '#00d4ff', '大阪': '#ff2d78', '名古屋': '#b44fff',
@@ -25,6 +26,8 @@ export default function ShopCard({ shop }: Props) {
   const areaColor = AREA_COLORS[shop.area] ?? '#00d4ff'
   const genreColor = GENRE_COLORS[shop.genre] ?? '#00d4ff'
   const short = GENRE_SHORT[shop.genre] ?? '??'
+  const discountPrice = getDiscountPrice(shop)
+  const hasOptions = shop.options.ns !== null || shop.options.nn !== null
 
   return (
     <Link
@@ -37,7 +40,7 @@ export default function ShopCard({ shop }: Props) {
       {/* Top accent bar */}
       <div className="h-1 w-full" style={{ background: `linear-gradient(90deg, ${genreColor}, ${areaColor})` }} />
 
-      <div className="p-4 space-y-3">
+      <div className="p-4 space-y-3.5">
         {/* Header row */}
         <div className="flex items-start gap-3">
           {/* Genre badge */}
@@ -61,53 +64,102 @@ export default function ShopCard({ shop }: Props) {
         </div>
 
         {/* Price */}
-        <div className="flex items-baseline gap-1">
-          <span className="text-base font-black text-text-bright">
-            ¥{shop.price.min.toLocaleString()}
-          </span>
-          <span className="text-text-dim text-xs">〜</span>
-          <span className="text-sm font-semibold text-text-body">
-            ¥{shop.price.max.toLocaleString()}
-          </span>
-          <span className="text-xs text-text-dim ml-0.5">/ {shop.price.unit}</span>
-        </div>
-
-        {/* Hours + morning badge */}
-        <div className="flex items-center gap-2 text-xs text-text-dim">
-          <Clock size={11} className="text-neon-cyan flex-shrink-0" />
-          <span className="truncate">{shop.hours}</span>
-          {shop.morning.available && (
-            <span
-              className="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full flex-shrink-0"
-              style={{ background: 'rgba(255,170,0,0.12)', color: '#ffaa00', border: '1px solid rgba(255,170,0,0.3)' }}
-            >
-              <Sun size={9} />朝活
-            </span>
+        <div className="space-y-1.5 border-y border-dark-600 py-3">
+          {discountPrice.isEstimateValid ? (
+            <>
+              <div className="flex items-start justify-between gap-2">
+                <div className="min-w-0">
+                  <div className="flex items-baseline gap-1.5">
+                    <span className="text-xs font-semibold text-neon-green">割引後</span>
+                    <span className="text-xl font-black text-text-bright leading-none">
+                      ¥{discountPrice.discountedMin.toLocaleString()}
+                    </span>
+                  </div>
+                  <div className="text-xs text-text-dim mt-1 truncate">{shop.price.unit}</div>
+                </div>
+                <span
+                  className="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full flex-shrink-0 text-xs"
+                  style={{ background: 'rgba(0,255,159,0.1)', color: '#00ff9f', border: '1px solid rgba(0,255,159,0.28)' }}
+                >
+                  <Banknote size={9} />最安割引
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 text-xs min-w-0">
+                <span className="text-text-dim line-through">通常 ¥{shop.price.min.toLocaleString()}</span>
+                <span className="text-neon-green font-semibold">-{discountPrice.amount.toLocaleString()}円</span>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-start justify-between gap-2">
+              <div className="min-w-0">
+                <div className="flex items-baseline gap-1">
+                  <span className="text-lg font-black text-text-bright">
+                    ¥{shop.price.min.toLocaleString()}
+                  </span>
+                  <span className="text-text-dim text-xs">〜</span>
+                  <span className="text-sm font-semibold text-text-body">
+                    ¥{shop.price.max.toLocaleString()}
+                  </span>
+                </div>
+                <div className="text-xs text-text-dim mt-1 truncate">{shop.price.unit}</div>
+              </div>
+              {discountPrice.hasAmount && (
+                <span
+                  className="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full flex-shrink-0 text-xs"
+                  style={{ background: 'rgba(255,170,0,0.1)', color: '#ffaa00', border: '1px solid rgba(255,170,0,0.28)' }}
+                >
+                  <Banknote size={9} />割引要確認
+                </span>
+              )}
+            </div>
           )}
         </div>
 
-        {/* NS/NN badges (only for sexual services) */}
-        {(shop.options.ns !== null || shop.options.nn !== null) && (
-          <div className="flex gap-1.5">
-            {(['ns', 'nn'] as const).map(key => {
-              const val = shop.options[key]
-              if (val === null) return null
-              return (
+        {/* Hours */}
+        <div className="flex items-center gap-1.5 text-xs text-text-dim min-w-0">
+          <Clock size={11} className="text-neon-cyan flex-shrink-0" />
+          <span className="truncate">{shop.hours}</span>
+        </div>
+
+        {/* Reservation + NS/NN */}
+        <div className="space-y-2">
+          {shop.reservation.length > 0 && (
+            <div className="flex flex-wrap gap-1">
+              {shop.reservation.slice(0, 3).map(method => (
                 <span
-                  key={key}
-                  className="flex items-center gap-0.5 text-xs px-2 py-0.5 rounded-full border font-bold"
-                  style={val
-                    ? { background: 'rgba(255,45,120,0.08)', borderColor: 'rgba(255,45,120,0.3)', color: '#ff2d78' }
-                    : { background: 'rgba(100,100,120,0.06)', borderColor: 'rgba(100,100,120,0.2)', color: '#888' }
-                  }
+                  key={method}
+                  className="flex items-center gap-0.5 text-xs px-2 py-0.5 rounded-full border"
+                  style={{ background: 'rgba(0,212,255,0.06)', borderColor: 'rgba(0,212,255,0.22)', color: '#00d4ff' }}
                 >
-                  {val ? <CircleCheck size={10} /> : <CircleX size={10} />}
-                  {key.toUpperCase()}
+                  <Phone size={9} />
+                  {method}
                 </span>
-              )
-            })}
-          </div>
-        )}
+              ))}
+            </div>
+          )}
+
+          {hasOptions && (
+            <div className="flex gap-1.5">
+              {(['ns', 'nn'] as const).map(key => {
+                const val = shop.options[key]
+                if (val === null) return null
+                return (
+                  <span
+                    key={key}
+                    className="flex items-center gap-0.5 text-xs px-2 py-0.5 rounded-full border font-bold"
+                    style={val
+                      ? { background: 'rgba(255,45,120,0.08)', borderColor: 'rgba(255,45,120,0.3)', color: '#ff2d78' }
+                      : { background: 'rgba(100,100,120,0.06)', borderColor: 'rgba(100,100,120,0.2)', color: '#888' }
+                    }
+                  >
+                    {val ? <CircleCheck size={10} /> : <CircleX size={10} />}
+                    {key.toUpperCase()}
+                  </span>
+                )
+              })}
+            </div>
+          )}
+        </div>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-1">

@@ -31,12 +31,12 @@ const GENRES = [
 ]
 
 const POPULAR_TAGS = [
-  '接客丁寧', '清潔感', '高級感', '朝活対応', 'リピーター多め',
+  '接客丁寧', '清潔感', '高級感', '割引あり', 'リピーター多め',
   '初心者向け', 'キャスト多め', '技術高め', '盛り上がり系', 'リラックス重視',
 ]
 
 const TRENDS = [
-  '朝活対応の店舗が増加中。時間を有効活用したい方に人気',
+  '時間帯割引や朝割を使った実質最安で比較するユーザーが増加',
   'デリバリーヘルス・ソープランドのNS/NN対応が重視される傾向',
   'メンズエステは技術・サービス品質で選ぶユーザーが増加',
   'キャバクラ・ラウンジは落ち着いた雰囲気が選ぶポイント',
@@ -85,7 +85,7 @@ export default function HomePage() {
 
           <p className="text-text-muted text-lg">風俗店舗情報データベース</p>
           <p className="text-text-dim text-sm max-w-sm mx-auto">
-            料金・朝活・NS/NNで探せる、シンプルでモダンな店舗検索体験
+            通常料金・割引後の最安・NS/NNで探せる、シンプルでモダンな店舗検索体験
           </p>
 
           <div className="flex items-center justify-center gap-3 pt-2">
@@ -242,7 +242,7 @@ export default function HomePage() {
           {POPULAR_TAGS.map(tag => (
             <Link
               key={tag}
-              to={`/shops?genre=${encodeURIComponent(tag)}`}
+              to={tag === '割引あり' ? '/shops?discount=1' : `/shops?q=${encodeURIComponent(tag)}`}
               className="text-sm px-4 py-1.5 rounded-full border transition-all duration-150 text-text-muted"
               style={{ background: 'rgba(255,255,255,0.03)', borderColor: 'rgba(255,255,255,0.08)' }}
               onMouseEnter={e => {
