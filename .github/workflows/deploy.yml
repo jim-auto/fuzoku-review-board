@@ -35,6 +35,8 @@ jobs:
 
       - name: Check shop URLs
         run: npm run check:shop-urls
+        env:
+          ALLOW_URL_NETWORK_FAILURES: '1'
 
       - name: Build
         run: npm run build

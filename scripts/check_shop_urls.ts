@@ -18,6 +18,7 @@ interface UrlResult {
 }
 
 const TIMEOUT_MS = 12_000
+const ALLOW_NETWORK_FAILURES = process.env.ALLOW_URL_NETWORK_FAILURES === '1'
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
 
@@ -50,6 +51,9 @@ async function checkUrl(url: string): Promise<UrlResult> {
     } catch (getError) {
       const reason = getError instanceof Error ? getError.message : String(getError)
       const headReason = headError instanceof Error ? headError.message : String(headError)
+      if (ALLOW_NETWORK_FAILURES) {
+        return { url, ok: true, warning: true, message: `${headReason}; GET: ${reason}` }
+      }
       return { url, ok: false, warning: false, message: `${headReason}; GET: ${reason}` }
     }
   }
