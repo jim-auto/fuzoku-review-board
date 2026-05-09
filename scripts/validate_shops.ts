@@ -20,7 +20,7 @@ interface Shop {
   reservation?: string[]
 }
 
-const VALID_AREAS = new Set(['東京', '大阪', '名古屋', '横浜', '福岡', '札幌'])
+const VALID_AREAS = new Set(['東京', '大阪', '名古屋', '岐阜', '横浜', '福岡', '札幌'])
 const FORBIDDEN_PATTERNS = [
   /example\.com/i,
   /架空/,

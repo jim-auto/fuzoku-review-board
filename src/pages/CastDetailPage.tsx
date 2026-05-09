@@ -33,6 +33,7 @@ const AREA_COLORS: Record<string, string> = {
   '東京': '#00d4ff',
   '大阪': '#ff2d78',
   '名古屋': '#b44fff',
+  '岐阜': '#66dd88',
   '横浜': '#ffaa00',
   '福岡': '#00ff9f',
   '札幌': '#4488ff',

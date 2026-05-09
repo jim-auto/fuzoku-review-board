@@ -13,6 +13,7 @@ const AREAS = [
   { name: '東京', color: '#00d4ff' },
   { name: '大阪', color: '#ff2d78' },
   { name: '名古屋', color: '#b44fff' },
+  { name: '岐阜', color: '#66dd88' },
   { name: '横浜', color: '#ffaa00' },
   { name: '福岡', color: '#00ff9f' },
   { name: '札幌', color: '#4488ff' },
