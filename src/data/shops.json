@@ -1776,5 +1776,41 @@
     "morning": { "available": true, "hours": "新規限定", "discount": "1000円OFF" },
     "options": { "ns": null, "nn": null, "extras": ["ロイヤルエステ", "オリジナルオイル"] },
     "castCount": "掲載元で確認"
+  },
+  {
+    "id": "shop-real-096",
+    "name": "癒し屋本舗",
+    "area": "福岡",
+    "genre": "メンズエステ",
+    "url": "https://estama.jp/shop/35361/menu/",
+    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/35361/menu/", "checkedAt": "2026-05-09" },
+    "address": "福岡県福岡市博多区博多駅前",
+    "phone": "",
+    "description": "福岡・博多エリアのメンズエステ。掲載元で90分コース料金と所在地を確認。",
+    "tags": ["博多", "掲載元確認", "料金確認済み"],
+    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "hours": "掲載元で確認",
+    "reservation": ["電話"],
+    "morning": { "available": false },
+    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "リラクゼーション"] },
+    "castCount": "掲載元で確認"
+  },
+  {
+    "id": "shop-real-097",
+    "name": "M esthe -エムエステ-",
+    "area": "大阪",
+    "genre": "メンズエステ",
+    "url": "https://estama.jp/shop/30039/menu/",
+    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/30039/menu/", "checkedAt": "2026-05-09" },
+    "address": "大阪府大阪市淀川区十三東",
+    "phone": "",
+    "description": "大阪・十三エリアのメンズエステ。掲載元で90分通常料金と所在地を確認。",
+    "tags": ["十三", "掲載元確認", "料金確認済み"],
+    "price": { "min": 12000, "max": 12000, "unit": "90分コース目安" },
+    "hours": "掲載元で確認",
+    "reservation": ["電話"],
+    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "1000円OFF" },
+    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "リラクゼーション"] },
+    "castCount": "掲載元で確認"
   }
 ]
