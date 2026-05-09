@@ -21,6 +21,17 @@ interface Shop {
 }
 
 const VALID_AREAS = new Set(['東京', '大阪', '名古屋', '岐阜', '横浜', '福岡', '札幌'])
+const VALID_GENRES = new Set([
+  'デリバリーヘルス',
+  'ソープランド',
+  'メンズエステ',
+  'イメクラ',
+  'オナクラ',
+  'キャバクラ',
+  'ラウンジ',
+  'セクシーキャバクラ',
+  'コンセプトカフェ',
+])
 const FORBIDDEN_PATTERNS = [
   /example\.com/i,
   /架空/,
@@ -69,7 +80,7 @@ for (const shop of shops) {
   if (!VALID_AREAS.has(shop.area)) fail(`${shop.id} has invalid area "${shop.area}"`)
   areaCounts.set(shop.area, (areaCounts.get(shop.area) ?? 0) + 1)
 
-  if (!shop.genre) fail(`${shop.id} is missing genre`)
+  if (!VALID_GENRES.has(shop.genre)) fail(`${shop.id} has invalid genre "${shop.genre}"`)
   if (!shop.url.startsWith('https://')) fail(`${shop.id} url must be https`)
   if (!shop.source?.label) fail(`${shop.id} is missing source.label`)
   if (!shop.source?.url?.startsWith('https://')) fail(`${shop.id} source.url must be https`)
