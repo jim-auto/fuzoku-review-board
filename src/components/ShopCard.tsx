@@ -2,24 +2,7 @@ import { Link } from 'react-router-dom'
 import { MapPin, Clock, Banknote, CircleCheck, CircleX, Users, Phone } from 'lucide-react'
 import type { Shop } from '../types'
 import { getDiscountPrice } from '../utils/pricing'
-
-const AREA_COLORS: Record<string, string> = {
-  '東京': '#00d4ff', '大阪': '#ff2d78', '名古屋': '#b44fff',
-  '岐阜': '#66dd88',
-  '横浜': '#ffaa00', '福岡': '#00ff9f', '札幌': '#4488ff',
-}
-
-const GENRE_COLORS: Record<string, string> = {
-  'デリバリーヘルス': '#ff2d78', 'ソープランド': '#b44fff', 'メンズエステ': '#00ff9f',
-  'イメクラ': '#ffaa00', 'オナクラ': '#00d4ff', 'キャバクラ': '#f0c040',
-  'ラウンジ': '#9966ff', 'セクシーキャバクラ': '#ff4499', 'コンセプトカフェ': '#00ccaa',
-}
-
-const GENRE_SHORT: Record<string, string> = {
-  'デリバリーヘルス': 'DH', 'ソープランド': 'SP', 'メンズエステ': 'ES',
-  'イメクラ': 'IM', 'オナクラ': 'OK', 'キャバクラ': 'KY',
-  'ラウンジ': 'LG', 'セクシーキャバクラ': 'SK', 'コンセプトカフェ': 'CC',
-}
+import { AREA_COLORS, GENRE_COLORS, GENRE_SHORT } from '../constants/taxonomy'
 
 interface Props { shop: Shop }
 

@@ -1,4 +1,5 @@
 import * as fs from 'node:fs'
+import { AREA_NAMES, GENRE_NAMES } from '../src/constants/taxonomy'
 
 interface Shop {
   id: string
@@ -20,18 +21,8 @@ interface Shop {
   reservation?: string[]
 }
 
-const VALID_AREAS = new Set(['東京', '大阪', '名古屋', '岐阜', '横浜', '福岡', '札幌'])
-const VALID_GENRES = new Set([
-  'デリバリーヘルス',
-  'ソープランド',
-  'メンズエステ',
-  'イメクラ',
-  'オナクラ',
-  'キャバクラ',
-  'ラウンジ',
-  'セクシーキャバクラ',
-  'コンセプトカフェ',
-])
+const VALID_AREAS = new Set<string>(AREA_NAMES)
+const VALID_GENRES = new Set<string>(GENRE_NAMES)
 const FORBIDDEN_PATTERNS = [
   /example\.com/i,
   /架空/,

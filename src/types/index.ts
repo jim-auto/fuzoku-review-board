@@ -1,5 +1,7 @@
-export type Area = '東京' | '大阪' | '名古屋' | '岐阜' | '横浜' | '福岡' | '札幌'
-export type Genre = 'デリバリーヘルス' | 'ソープランド' | 'メンズエステ' | 'イメクラ' | 'オナクラ' | 'キャバクラ' | 'ラウンジ' | 'セクシーキャバクラ' | 'コンセプトカフェ'
+import type { AREA_NAMES, GENRE_NAMES } from '../constants/taxonomy'
+
+export type Area = (typeof AREA_NAMES)[number]
+export type Genre = (typeof GENRE_NAMES)[number]
 export type Style = 'かわいい系' | 'キレイ系' | 'ギャル系' | 'お姉さん系' | '癒し系' | 'ロリ系'
 
 export interface Cast {

@@ -13,31 +13,10 @@ import {
 import castsData from '../data/casts.json'
 import shopsData from '../data/shops.json'
 import type { Cast, Shop } from '../types'
+import { AREA_COLORS, GENRE_DESC } from '../constants/taxonomy'
 
 const allCasts = castsData as Cast[]
 const allShops = shopsData as Shop[]
-
-const GENRE_DESC: Record<string, string> = {
-  'デリバリーヘルス': '出張・宅配型サービス',
-  'ソープランド': '高級浴場型サービス',
-  'メンズエステ': '施術・癒し系サービス',
-  'イメクラ': 'コンセプト・設定型サービス',
-  'オナクラ': 'シンプル型サービス',
-  'キャバクラ': 'お酒と会話を楽しむ接客サービス',
-  'ラウンジ': '高級感あふれる大人の社交場',
-  'セクシーキャバクラ': 'セクシーな演出のあるキャバクラ',
-  'コンセプトカフェ': 'キャラクターや世界観を楽しむカフェ',
-}
-
-const AREA_COLORS: Record<string, string> = {
-  '東京': '#00d4ff',
-  '大阪': '#ff2d78',
-  '名古屋': '#b44fff',
-  '岐阜': '#66dd88',
-  '横浜': '#ffaa00',
-  '福岡': '#00ff9f',
-  '札幌': '#4488ff',
-}
 
 export default function CastDetailPage() {
   const { id } = useParams<{ id: string }>()

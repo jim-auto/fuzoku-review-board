@@ -6,26 +6,9 @@ import type { Shop } from '../types'
 import ShopCard from '../components/ShopCard'
 import SearchBar from '../components/SearchBar'
 import { getDiscountPrice } from '../utils/pricing'
+import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRE_NAMES } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
-
-const AREAS = ['東京', '大阪', '名古屋', '岐阜', '横浜', '福岡', '札幌']
-const GENRES = [
-  'デリバリーヘルス', 'ソープランド', 'メンズエステ', 'イメクラ', 'オナクラ',
-  'キャバクラ', 'ラウンジ', 'セクシーキャバクラ', 'コンセプトカフェ',
-]
-
-const AREA_COLORS: Record<string, string> = {
-  '東京': '#00d4ff', '大阪': '#ff2d78', '名古屋': '#b44fff',
-  '岐阜': '#66dd88',
-  '横浜': '#ffaa00', '福岡': '#00ff9f', '札幌': '#4488ff',
-}
-
-const GENRE_COLORS: Record<string, string> = {
-  'デリバリーヘルス': '#ff2d78', 'ソープランド': '#b44fff', 'メンズエステ': '#00ff9f',
-  'イメクラ': '#ffaa00', 'オナクラ': '#00d4ff', 'キャバクラ': '#f0c040',
-  'ラウンジ': '#9966ff', 'セクシーキャバクラ': '#ff4499', 'コンセプトカフェ': '#00ccaa',
-}
 
 type SortKey = 'default' | 'price_asc' | 'price_desc' | 'discount_asc'
 
@@ -191,7 +174,7 @@ export default function ShopListPage() {
               : 'border-dark-500 text-text-dim hover:text-text-body'
           }`}
         >すべてのエリア</button>
-        {AREAS.map(area => {
+        {AREA_NAMES.map(area => {
           const color = AREA_COLORS[area]
           const active = filter.area === area
           return (
@@ -302,7 +285,7 @@ export default function ShopListPage() {
                     : 'border-dark-500 text-text-dim hover:text-text-body'
                 }`}
               >すべて</button>
-              {GENRES.map(genre => {
+              {GENRE_NAMES.map(genre => {
                 const color = GENRE_COLORS[genre]
                 const active = filter.genre === genre
                 return (

@@ -1,18 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MapPin } from 'lucide-react'
 import type { Cast } from '../types'
-
-const GENRE_SHORT: Record<string, string> = {
-  'デリバリーヘルス': 'DH',
-  'ソープランド': 'SP',
-  'メンズエステ': 'ES',
-  'イメクラ': 'IM',
-  'オナクラ': 'OK',
-  'キャバクラ': 'KY',
-  'ラウンジ': 'LG',
-  'セクシーキャバクラ': 'SK',
-  'コンセプトカフェ': 'CC',
-}
+import { GENRE_SHORT } from '../constants/taxonomy'
 
 interface CastCardProps {
   cast: Cast
