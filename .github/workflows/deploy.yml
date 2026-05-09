@@ -33,6 +33,9 @@ jobs:
       - name: Validate shop data
         run: npm run validate:shops
 
+      - name: Check shop URLs
+        run: npm run check:shop-urls
+
       - name: Build
         run: npm run build
 
