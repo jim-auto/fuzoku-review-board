@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "validate:shops": "tsx scripts/validate_shops.ts"
+    "validate:shops": "tsx scripts/validate_shops.ts",
+    "check:shop-urls": "tsx scripts/check_shop_urls.ts"
   },
   "dependencies": {
     "lucide-react": "^1.14.0",

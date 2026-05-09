@@ -13,12 +13,31 @@
     "address": "東京都台東区千束4-17-2",
     "phone": "03-3871-3254",
     "description": "吉原エリアのソープランド。掲載元で料金システム、営業時間、予約条件を確認。",
-    "tags": ["吉原", "公式URL掲載", "料金確認済み"],
-    "price": { "min": 15000, "max": 28000, "unit": "50分〜90分コース目安" },
+    "tags": [
+      "吉原",
+      "公式URL掲載",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 28000,
+      "unit": "50分〜90分コース目安"
+    },
     "hours": "09:00〜24:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用OK", "領収書発行OK"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用OK",
+        "領収書発行OK"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -35,34 +54,31 @@
     "address": "東京都台東区千束4-32-3",
     "phone": "03-3875-4777",
     "description": "吉原エリアのソープランド。掲載元で料金、営業時間、所在地を確認。",
-    "tags": ["吉原", "料金確認済み", "カード情報あり"],
-    "price": { "min": 44000, "max": 111000, "unit": "60分〜180分コース目安" },
-    "hours": "10:00〜翌0:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-003",
-    "name": "Sense",
-    "area": "大阪",
-    "genre": "メンズエステ",
-    "url": "https://sense-official.com/system",
-    "source": {
-      "label": "Sense 公式料金システム",
-      "url": "https://sense-official.com/system",
-      "checkedAt": "2026-05-09"
+    "tags": [
+      "吉原",
+      "料金確認済み",
+      "カード情報あり"
+    ],
+    "price": {
+      "min": 44000,
+      "max": 111000,
+      "unit": "60分〜180分コース目安"
     },
-    "address": "大阪府 日本橋エリア",
-    "phone": "090-4297-1192",
-    "description": "大阪・日本橋エリアのメンズエステ。公式ページで基本コース料金と営業時間を確認。",
-    "tags": ["日本橋", "公式サイト", "料金確認済み"],
-    "price": { "min": 11000, "max": 24000, "unit": "70分〜120分コース目安" },
-    "hours": "11:00〜05:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指名料あり", "リラクゼーション"] },
+    "hours": "10:00〜翌0:00",
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -79,12 +95,31 @@
     "address": "大阪府 日本橋エリア",
     "phone": "06-6121-6778",
     "description": "大阪・日本橋エリアのメンズエステ。公式ページで標準コース料金と受付時間を確認。",
-    "tags": ["日本橋", "公式サイト", "完全予約制"],
-    "price": { "min": 10000, "max": 34000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "日本橋",
+      "公式サイト",
+      "完全予約制"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 34000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "10:00〜05:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全予約制", "カード利用可"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全予約制",
+        "カード利用可"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -101,12 +136,32 @@
     "address": "愛知県名古屋市",
     "phone": "080-7009-1331",
     "description": "名古屋のメンズエステ。公式ページでコース料金、営業時間、利用規約を確認。",
-    "tags": ["名古屋", "公式サイト", "料金確認済み"],
-    "price": { "min": 9000, "max": 24000, "unit": "40分〜120分コース目安" },
+    "tags": [
+      "名古屋",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 9000,
+      "max": 24000,
+      "unit": "40分〜120分コース目安"
+    },
     "hours": "11:00〜05:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指名料あり", "リラクゼーション"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "指名料あり",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -123,12 +178,32 @@
     "address": "愛知県名古屋市",
     "phone": "050-1807-0380",
     "description": "名古屋のメンズエステ。公式ページでベーシック、オリジナル、デトックス各コース料金を確認。",
-    "tags": ["名古屋", "公式サイト", "料金確認済み"],
-    "price": { "min": 13000, "max": 23000, "unit": "90分〜130分コース目安" },
+    "tags": [
+      "名古屋",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 23000,
+      "unit": "90分〜130分コース目安"
+    },
     "hours": "10:00〜03:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指名料あり", "オイルチェンジ"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "指名料あり",
+        "オイルチェンジ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -145,12 +220,33 @@
     "address": "神奈川県 横浜エリア",
     "phone": "070-8907-8141",
     "description": "横浜エリアのメンズエステ。掲載元で基本コース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "料金確認済み", "掲載元確認"],
-    "price": { "min": 15000, "max": 24000, "unit": "70分〜120分コース目安" },
+    "tags": [
+      "横浜",
+      "料金確認済み",
+      "掲載元確認"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 24000,
+      "unit": "70分〜120分コース目安"
+    },
     "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "4000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ディープリンパ込み", "オプションあり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元キャンペーン",
+      "discount": "4000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ディープリンパ込み",
+        "オプションあり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -167,12 +263,32 @@
     "address": "神奈川県 横浜エリア",
     "phone": "",
     "description": "横浜エリアのメンズエステ。公式ページで料金システムと営業時間を確認。",
-    "tags": ["横浜", "公式サイト", "料金確認済み"],
-    "price": { "min": 15000, "max": 26000, "unit": "70分〜120分コース目安" },
+    "tags": [
+      "横浜",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 26000,
+      "unit": "70分〜120分コース目安"
+    },
     "hours": "10:00〜05:00",
-    "reservation": ["電話", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -189,34 +305,32 @@
     "address": "福岡県 博多エリア",
     "phone": "",
     "description": "福岡・博多エリアのメンズエステ。公式ページで料金システムと営業時間を確認。",
-    "tags": ["博多", "公式サイト", "料金確認済み"],
-    "price": { "min": 13000, "max": 30000, "unit": "90分コース以上目安" },
-    "hours": "10:00〜05:00",
-    "reservation": ["電話", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-010",
-    "name": "エルベル",
-    "area": "札幌",
-    "genre": "メンズエステ",
-    "url": "https://elbelle.net/system",
-    "source": {
-      "label": "エルベル 公式料金システム",
-      "url": "https://elbelle.net/system",
-      "checkedAt": "2026-05-09"
+    "tags": [
+      "博多",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 30000,
+      "unit": "90分コース以上目安"
     },
-    "address": "北海道 札幌・すすきのエリア",
-    "phone": "",
-    "description": "札幌・すすきのエリアのメンズエステ。公式ページで料金システムと営業時間を確認。",
-    "tags": ["すすきの", "公式サイト", "料金確認済み"],
-    "price": { "min": 14000, "max": 26000, "unit": "90分コース以上目安" },
-    "hours": "10:00〜03:00",
-    "reservation": ["電話", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
+    "hours": "10:00〜05:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -233,12 +347,33 @@
     "address": "東京都 表参道・渋谷・赤坂・日本橋・東京駅エリア",
     "phone": "03-4405-2698",
     "description": "東京エリアのメンズエステ。公式ページで料金、営業時間、予約方法を確認。",
-    "tags": ["東京", "公式サイト", "料金確認済み"],
-    "price": { "min": 16000, "max": 30000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "東京",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 16000,
+      "max": 30000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話", "LINE", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全予約制", "指名料あり"] },
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全予約制",
+        "指名料あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -255,12 +390,33 @@
     "address": "東京都 中目黒エリア",
     "phone": "080-6353-4424",
     "description": "東京・中目黒エリアのメンズエステ。公式ページで料金、営業時間、完全予約制を確認。",
-    "tags": ["中目黒", "公式サイト", "完全予約制"],
-    "price": { "min": 12000, "max": 15000, "unit": "70分〜90分コース目安" },
+    "tags": [
+      "中目黒",
+      "公式サイト",
+      "完全予約制"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 15000,
+      "unit": "70分〜90分コース目安"
+    },
     "hours": "12:00〜05:00",
-    "reservation": ["電話", "LINE", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全予約制", "領収書対応"] },
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全予約制",
+        "領収書対応"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -277,12 +433,32 @@
     "address": "大阪府 日本橋エリア",
     "phone": "070-8514-0673",
     "description": "大阪・日本橋エリアのメンズエステ。掲載元で予算、営業時間、電話番号、料金システムを確認。",
-    "tags": ["日本橋", "掲載元確認", "料金確認済み"],
-    "price": { "min": 13000, "max": 18000, "unit": "60分〜90分コース目安" },
+    "tags": [
+      "日本橋",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 18000,
+      "unit": "60分〜90分コース目安"
+    },
     "hours": "10:00〜翌2:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -299,12 +475,31 @@
     "address": "大阪府 大阪市エリア",
     "phone": "",
     "description": "大阪のメンズエステ。公式ページで90分・120分のコース料金と利用規約を確認。",
-    "tags": ["大阪", "公式サイト", "カード利用可"],
-    "price": { "min": 18000, "max": 24000, "unit": "90分〜120分コース目安" },
+    "tags": [
+      "大阪",
+      "公式サイト",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 18000,
+      "max": 24000,
+      "unit": "90分〜120分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "提携駐車場あり"] },
+    "reservation": [
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "提携駐車場あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -321,12 +516,32 @@
     "address": "愛知県名古屋市東区泉",
     "phone": "090-2220-3014",
     "description": "名古屋市東区泉のメンズエステ。公式ページで料金、営業時間、住所、電話番号を確認。",
-    "tags": ["名古屋", "公式サイト", "料金確認済み"],
-    "price": { "min": 11000, "max": 24000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "名古屋",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 11000,
+      "max": 24000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "指名料あり"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "指名料あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -343,12 +558,33 @@
     "address": "神奈川県 横浜エリア",
     "phone": "080-6415-4281",
     "description": "横浜エリアのメンズエステ。掲載元で料金表、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "割引あり"],
-    "price": { "min": 17000, "max": 32000, "unit": "75分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "割引あり"
+    ],
+    "price": {
+      "min": 17000,
+      "max": 32000,
+      "unit": "75分〜180分コース目安"
+    },
     "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["初回ネット指名無料", "延長あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元キャンペーン",
+      "discount": "2000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "初回ネット指名無料",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -365,12 +601,31 @@
     "address": "神奈川県 横浜エリア",
     "phone": "070-8358-3803",
     "description": "横浜エリアのメンズエステ。公式ページで基本コース料金、受付時間、営業時間を確認。",
-    "tags": ["横浜", "公式サイト", "料金確認済み"],
-    "price": { "min": 15000, "max": 32000, "unit": "70分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 32000,
+      "unit": "70分〜180分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全予約制", "延長あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全予約制",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -387,12 +642,34 @@
     "address": "福岡県福岡市博多区博多駅前4丁目",
     "phone": "080-6460-5750",
     "description": "福岡・博多エリアのメンズエステ。公式ページでルーム/出張コース料金、営業時間、所在地を確認。",
-    "tags": ["博多", "公式サイト", "出張対応"],
-    "price": { "min": 14000, "max": 25000, "unit": "80分〜120分コース目安" },
+    "tags": [
+      "博多",
+      "公式サイト",
+      "出張対応"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 25000,
+      "unit": "80分〜120分コース目安"
+    },
     "hours": "13:00〜00:00",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": true, "hours": "事前予約", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "ヘッドマッサージ"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "事前予約",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "ヘッドマッサージ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -409,12 +686,33 @@
     "address": "福岡県福岡市博多区博多駅南・博多駅前",
     "phone": "080-7986-2019",
     "description": "福岡・博多エリアのメンズエステ。公式ページで割引後料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "公式サイト", "割引あり"],
-    "price": { "min": 12000, "max": 19000, "unit": "90分〜180分コース目安" },
+    "tags": [
+      "博多",
+      "公式サイト",
+      "割引あり"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 19000,
+      "unit": "90分〜180分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["PayPay利用可", "指名料あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元キャンペーン",
+      "discount": "2000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "PayPay利用可",
+        "指名料あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -431,12 +729,31 @@
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-3165-9704",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で予算、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "10:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -453,12 +770,33 @@
     "address": "北海道札幌市中央区南六条西8丁目",
     "phone": "080-5722-1683",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で予算、営業時間、住所、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 10000, "max": 11000, "unit": "90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 11000,
+      "unit": "90分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元クーポン", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元クーポン",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -475,34 +813,33 @@
     "address": "大阪府 京橋エリア",
     "phone": "080-4981-1607",
     "description": "大阪京橋エリアのメンズエステ。公式ページでコース料金、営業時間、電話番号を確認。",
-    "tags": ["京橋", "公式サイト", "カード利用可"],
-    "price": { "min": 13000, "max": 21000, "unit": "90分〜150分コース目安" },
-    "hours": "10:00〜翌5:00",
-    "reservation": ["電話", "LINE", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "完全個室"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-027",
-    "name": "名古屋あおいSPA",
-    "area": "名古屋",
-    "genre": "メンズエステ",
-    "url": "https://www.aoispa.com/system/",
-    "source": {
-      "label": "名古屋あおいSPA 公式料金システム",
-      "url": "https://www.aoispa.com/system/",
-      "checkedAt": "2026-05-09"
+    "tags": [
+      "京橋",
+      "公式サイト",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 21000,
+      "unit": "90分〜150分コース目安"
     },
-    "address": "愛知県名古屋市中区葵2丁目",
-    "phone": "",
-    "description": "名古屋市中区葵のメンズエステ。公式ページでドライ/オイルコース料金と営業時間を確認。",
-    "tags": ["名古屋", "公式サイト", "料金確認済み"],
-    "price": { "min": 20000, "max": 33000, "unit": "70分〜150分コース目安" },
-    "hours": "11:00〜翌2:00",
-    "reservation": ["LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード決済可", "オプション込み"] },
+    "hours": "10:00〜翌5:00",
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "完全個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -519,12 +856,32 @@
     "address": "福岡県 博多エリア",
     "phone": "080-7989-3651",
     "description": "福岡・博多エリアのメンズエステ。公式ページで料金、営業時間、完全予約制を確認。",
-    "tags": ["博多", "公式サイト", "完全予約制"],
-    "price": { "min": 11000, "max": 24000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "博多",
+      "公式サイト",
+      "完全予約制"
+    ],
+    "price": {
+      "min": 11000,
+      "max": 24000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "10:00〜LAST",
-    "reservation": ["電話", "LINE"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全予約制", "指名料あり"] },
+    "reservation": [
+      "電話",
+      "LINE"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全予約制",
+        "指名料あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -541,12 +898,33 @@
     "address": "北海道札幌市中央区南5条西8丁目",
     "phone": "080-9610-6444",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で料金、営業時間、住所、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "初回割引あり"],
-    "price": { "min": 9000, "max": 13000, "unit": "70分〜100分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "初回割引あり"
+    ],
+    "price": {
+      "min": 9000,
+      "max": 13000,
+      "unit": "70分〜100分コース目安"
+    },
     "hours": "10:00〜翌3:00",
-    "reservation": ["電話", "LINE", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["完全個室", "完全予約制"] },
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "完全個室",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -563,12 +941,33 @@
     "address": "東京都 池袋・要町・亀有エリア",
     "phone": "070-8930-2452",
     "description": "東京池袋・要町・亀有エリアのメンズエステ。公式ページで料金、営業時間、電話番号を確認。",
-    "tags": ["池袋", "公式サイト", "Web予約"],
-    "price": { "min": 10000, "max": 30000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "池袋",
+      "公式サイト",
+      "Web予約"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 30000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "10:00〜LAST",
-    "reservation": ["電話", "LINE", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指名料あり", "延長あり"] },
+    "reservation": [
+      "電話",
+      "LINE",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "指名料あり",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -585,12 +984,31 @@
     "address": "東京都 錦糸町エリア",
     "phone": "080-3278-8403",
     "description": "東京・錦糸町エリアのメンズエステ。掲載元で料金表、営業時間、電話番号を確認。",
-    "tags": ["錦糸町", "掲載元確認", "出張対応"],
-    "price": { "min": 15000, "max": 30000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "錦糸町",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 30000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "12:00〜翌6:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "延長あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -607,34 +1025,31 @@
     "address": "東京都 錦糸町エリア",
     "phone": "080-2102-6809",
     "description": "東京・錦糸町エリアのメンズエステ。掲載元で料金表、営業時間、カード利用情報を確認。",
-    "tags": ["錦糸町", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 28000, "unit": "60分〜150分コース目安" },
-    "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "完全個室"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-033",
-    "name": "High End Tokyo",
-    "area": "横浜",
-    "genre": "メンズエステ",
-    "url": "https://menesth.jp/9/shop/44838/system/",
-    "source": {
-      "label": "メンズリラク 料金システム",
-      "url": "https://menesth.jp/9/shop/44838/system/",
-      "checkedAt": "2026-05-09"
+    "tags": [
+      "錦糸町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 28000,
+      "unit": "60分〜150分コース目安"
     },
-    "address": "神奈川県 横浜エリア",
-    "phone": "080-7154-0770",
-    "description": "横浜エリアのメンズエステ。掲載元で基本コース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "料金確認済み"],
-    "price": { "min": 13000, "max": 26000, "unit": "60分〜120分コース目安" },
-    "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指名料あり", "延長あり"] },
+    "hours": "11:00〜翌5:00",
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "完全個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -651,12 +1066,31 @@
     "address": "神奈川県 横浜エリア",
     "phone": "090-4857-6723",
     "description": "横浜エリアのメンズエステ。掲載元でレギュラーコース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "料金確認済み"],
-    "price": { "min": 12000, "max": 38000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 38000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "12:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["研修中コースあり", "税込表示"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "研修中コースあり",
+        "税込表示"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -673,34 +1107,32 @@
     "address": "神奈川県 横浜エリア",
     "phone": "080-7399-5216",
     "description": "横浜エリアのメンズエステ。掲載元でコース料金、営業時間、ネット予約対応を確認。",
-    "tags": ["横浜", "掲載元確認", "Web予約"],
-    "price": { "min": 15000, "max": 28000, "unit": "60分〜150分コース目安" },
-    "hours": "12:00〜翌5:00",
-    "reservation": ["電話", "Web予約"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["現金払い", "延長あり"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-036",
-    "name": "Relaxation Salon Iris",
-    "area": "横浜",
-    "genre": "メンズエステ",
-    "url": "https://menesth.jp/9/shop/33702/system/",
-    "source": {
-      "label": "メンズリラク 料金システム",
-      "url": "https://menesth.jp/9/shop/33702/system/",
-      "checkedAt": "2026-05-09"
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "Web予約"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 28000,
+      "unit": "60分〜150分コース目安"
     },
-    "address": "神奈川県 横浜エリア",
-    "phone": "080-6807-5892",
-    "description": "横浜エリアのメンズエステ。掲載元でオイルトリートメントコース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "料金確認済み"],
-    "price": { "min": 14000, "max": 24000, "unit": "60分〜120分コース目安" },
-    "hours": "10:00〜翌0:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "指名料あり"] },
+    "hours": "12:00〜翌5:00",
+    "reservation": [
+      "電話",
+      "Web予約"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "現金払い",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -717,12 +1149,31 @@
     "address": "神奈川県 横浜エリア",
     "phone": "045-642-5360",
     "description": "横浜エリアのメンズエステ。掲載元で複数コース料金、営業時間、カード利用情報を確認。",
-    "tags": ["横浜", "掲載元確認", "カード利用可"],
-    "price": { "min": 3000, "max": 22000, "unit": "30分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 3000,
+      "max": 22000,
+      "unit": "30分〜180分コース目安"
+    },
     "hours": "12:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "複数コース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "複数コース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -739,12 +1190,31 @@
     "address": "東京都 錦糸町エリア",
     "phone": "090-3310-1047",
     "description": "東京・錦糸町エリアのメンズエステ。掲載元で料金、営業時間、カード利用情報を確認。",
-    "tags": ["錦糸町", "掲載元確認", "カード利用可"],
-    "price": { "min": 10000, "max": 35000, "unit": "90分〜300分コース目安" },
+    "tags": [
+      "錦糸町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 35000,
+      "unit": "90分〜300分コース目安"
+    },
     "hours": "11:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "延長あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -761,12 +1231,31 @@
     "address": "神奈川県 横浜・桜木町エリア",
     "phone": "090-3404-6633",
     "description": "横浜・桜木町エリアのメンズエステ。掲載元でオイルトリートメント、リンパドレナージュ料金と営業時間を確認。",
-    "tags": ["桜木町", "掲載元確認", "料金確認済み"],
-    "price": { "min": 4950, "max": 14850, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "桜木町",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 4950,
+      "max": 14850,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "11:00〜23:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "リンパドレナージュ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルトリートメント",
+        "リンパドレナージュ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -775,16 +1264,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/43081/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43081/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/43081/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・名駅エリア",
     "phone": "090-9189-4445",
     "description": "名古屋・名駅エリアのメンズエステ。掲載元でアロマコース料金、営業時間、電話番号を確認。",
-    "tags": ["名駅", "掲載元確認", "カード利用可"],
-    "price": { "min": 10000, "max": 20000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "名駅",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 20000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "アロマコース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "アロマコース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -793,16 +1305,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/31358/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/31358/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/31358/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-3149-2121",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元でスタンダード/フルパッケージコース料金、営業時間を確認。",
-    "tags": ["すすきの", "掲載元確認", "年中無休"],
-    "price": { "min": 10000, "max": 21000, "unit": "80分〜130分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "年中無休"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 21000,
+      "unit": "80分〜130分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ホットオイル", "ディープ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ホットオイル",
+        "ディープ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -811,16 +1346,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/38686/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/38686/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/38686/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-1386-8222",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 18000, "unit": "90分〜100分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 18000,
+      "unit": "90分〜100分コース目安"
+    },
     "hours": "09:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リンパオイル", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リンパオイル",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -829,16 +1387,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/31253/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/31253/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/31253/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきの・東区・白石区エリア",
     "phone": "080-6096-0810",
     "description": "札幌エリアのメンズエステ。掲載元で90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "料金確認済み"],
-    "price": { "min": 10000, "max": 22000, "unit": "60分〜90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 22000,
+      "unit": "60分〜90分コース目安"
+    },
     "hours": "12:00〜翌6:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リンパ集中コース", "Wコースあり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リンパ集中コース",
+        "Wコースあり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -847,16 +1428,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/29258/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/29258/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/29258/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "080-6462-2229",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で予算、営業時間、電話番号を確認。",
-    "tags": ["札幌", "掲載元確認", "カード利用可"],
-    "price": { "min": 10000, "max": 11000, "unit": "80分〜90分コース目安" },
+    "tags": [
+      "札幌",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 11000,
+      "unit": "80分〜90分コース目安"
+    },
     "hours": "10:00〜翌1:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "アロマコース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "アロマコース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -865,16 +1469,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/38257/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/38257/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/38257/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "070-8360-6063",
     "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "カード利用可"],
-    "price": { "min": 18000, "max": 22000, "unit": "90分〜100分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 18000,
+      "max": 22000,
+      "unit": "90分〜100分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "オイルコース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "オイルコース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -883,16 +1510,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/44493/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/44493/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/44493/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 福岡市エリア",
     "phone": "090-9285-6935",
     "description": "福岡市エリアのメンズエステ。掲載元でお試し/ショートコース料金、営業時間、電話番号を確認。",
-    "tags": ["福岡市", "掲載元確認", "料金確認済み"],
-    "price": { "min": 10000, "max": 13000, "unit": "60分〜90分コース目安" },
+    "tags": [
+      "福岡市",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 13000,
+      "unit": "60分〜90分コース目安"
+    },
     "hours": "10:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "お試しコース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルトリートメント",
+        "お試しコース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -901,16 +1551,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/46321/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/46321/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/46321/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道札幌市中央区南8条西6丁目",
     "phone": "070-3251-9057",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で90分予算、営業時間、所在地、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 18000, "unit": "80分〜90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 18000,
+      "unit": "80分〜90分コース目安"
+    },
     "hours": "10:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ディープリンパ", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ディープリンパ",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -919,16 +1592,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/41747/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/41747/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/41747/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 堺筋本町・梅田・大阪駅エリア",
     "phone": "080-6111-6719",
     "description": "大阪・堺筋本町/梅田/大阪駅エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["大阪", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 19000, "unit": "90分〜120分コース目安" },
+    "tags": [
+      "大阪",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 19000,
+      "unit": "90分〜120分コース目安"
+    },
     "hours": "10:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["疲労回復コース", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "疲労回復コース",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -937,16 +1633,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/41466/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/41466/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/41466/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "090-1019-3600",
     "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 21000, "unit": "90分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 21000,
+      "unit": "90分コース目安"
+    },
     "hours": "10:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "キングコース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "キングコース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -955,16 +1674,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/38485/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/38485/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/38485/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-3895-0732",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "料金確認済み"],
-    "price": { "min": 10000, "max": 16000, "unit": "60分〜90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 16000,
+      "unit": "60分〜90分コース目安"
+    },
     "hours": "12:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["お試しコース", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "お試しコース",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -973,16 +1715,41 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/29741/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/29741/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/29741/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "080-8395-8823",
     "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元で90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "割引あり"],
-    "price": { "min": 11000, "max": 11000, "unit": "90分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "割引あり"
+    ],
+    "price": {
+      "min": 11000,
+      "max": 11000,
+      "unit": "90分コース目安"
+    },
     "hours": "11:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "12:00〜23:00", "discount": "クーポン適用あり" },
-    "options": { "ns": null, "nn": null, "extras": ["アロマトリートメント", "もみほぐし"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "12:00〜23:00",
+      "discount": "クーポン適用あり"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "アロマトリートメント",
+        "もみほぐし"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -991,16 +1758,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/29971/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/29971/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/29971/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・名駅エリア",
     "phone": "080-1395-1602",
     "description": "名古屋・伏見エリアのメンズエステ。掲載元で通常コース料金、営業時間、電話番号を確認。",
-    "tags": ["名古屋", "掲載元確認", "カード利用可"],
-    "price": { "min": 8000, "max": 20000, "unit": "60分〜150分コース目安" },
+    "tags": [
+      "名古屋",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 20000,
+      "unit": "60分〜150分コース目安"
+    },
     "hours": "24:00〜翌0:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "オイルリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "オイルリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1009,34 +1799,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33513/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33513/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33513/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 堺筋本町エリア",
     "phone": "080-3102-5059",
     "description": "大阪・堺筋本町エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["堺筋本町", "掲載元確認", "料金確認済み"],
-    "price": { "min": 14000, "max": 17000, "unit": "90分〜100分コース目安" },
+    "tags": [
+      "堺筋本町",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 17000,
+      "unit": "90分〜100分コース目安"
+    },
     "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["高級オイル", "独自手技"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-054",
-    "name": "PRIMO",
-    "area": "大阪",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/43421/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43421/menu/", "checkedAt": "2026-05-09" },
-    "address": "大阪府 梅田エリア",
-    "phone": "080-4589-2538",
-    "description": "大阪・梅田エリアのメンズエステ。掲載元で通常コース料金、電話番号、オプション内容を確認。",
-    "tags": ["梅田", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 32000, "unit": "60分〜180分コース目安" },
-    "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "初回限定", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ホットオイル", "ディープリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "高級オイル",
+        "独自手技"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1045,16 +1840,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/47321/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/47321/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/47321/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 堺筋本町エリア",
     "phone": "070-8521-7595",
     "description": "大阪・堺筋本町エリアのメンズエステ。掲載元で通常コース料金、営業時間、電話番号を確認。",
-    "tags": ["堺筋本町", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 20000, "unit": "90分〜120分コース目安" },
+    "tags": [
+      "堺筋本町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 20000,
+      "unit": "90分〜120分コース目安"
+    },
     "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1063,16 +1881,39 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/50666/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/50666/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/50666/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都 錦糸町エリア",
     "phone": "080-5722-1075",
     "description": "東京・錦糸町エリアの派遣型メンズエステ。掲載元でご褒美コース料金、電話番号を確認。",
-    "tags": ["錦糸町", "掲載元確認", "出張対応"],
-    "price": { "min": 12000, "max": 30000, "unit": "60分〜150分コース目安" },
+    "tags": [
+      "錦糸町",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 30000,
+      "unit": "60分〜150分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "ディープリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "ディープリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1081,16 +1922,41 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/32212/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/32212/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/32212/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都 錦糸町エリア",
     "phone": "080-7367-5515",
     "description": "東京・錦糸町エリアのメンズエステ。掲載元でSTANDARD COURSE料金、営業時間、カード利用情報を確認。",
-    "tags": ["錦糸町", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 37000, "unit": "70分〜180分コース目安" },
+    "tags": [
+      "錦糸町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 37000,
+      "unit": "70分〜180分コース目安"
+    },
     "hours": "11:00〜翌6:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "初回限定", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "ドライヘッドスパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "初回限定",
+      "discount": "2000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "ドライヘッドスパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1099,16 +1965,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/39316/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/39316/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/39316/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 長堀橋エリア",
     "phone": "090-7887-5103",
     "description": "大阪・長堀橋エリアのメンズエステ。掲載元でボディトリートメント/デトックスコース料金、営業時間を確認。",
-    "tags": ["長堀橋", "掲載元確認", "年中無休"],
-    "price": { "min": 10000, "max": 35000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "長堀橋",
+      "掲載元確認",
+      "年中無休"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 35000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "10:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["デトックスコース", "ロミロミ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "デトックスコース",
+        "ロミロミ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1117,16 +2006,41 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/39991/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/39991/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/39991/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "090-7285-5102",
     "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元でクラス別コース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "カード利用可"],
-    "price": { "min": 11000, "max": 25000, "unit": "70分〜120分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 11000,
+      "max": 25000,
+      "unit": "70分〜120分コース目安"
+    },
     "hours": "12:00〜翌4:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元クーポン", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["カード利用可", "クラス別コース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元クーポン",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "カード利用可",
+        "クラス別コース"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1135,16 +2049,39 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/47110/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/47110/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/47110/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都新宿区百人町1丁目",
     "phone": "03-6874-9758",
     "description": "東京・大久保エリアのメンズエステ。掲載元で泡泡洗体＋オイルリンパ癒しコース料金、営業時間を確認。",
-    "tags": ["大久保", "掲載元確認", "店舗型"],
-    "price": { "min": 8000, "max": 15000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "大久保",
+      "掲載元確認",
+      "店舗型"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 15000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "12:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["泡泡洗体", "オイルリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "泡泡洗体",
+        "オイルリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1153,16 +2090,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/49358/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/49358/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/49358/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 十三エリア",
     "phone": "070-8966-6037",
     "description": "大阪・十三エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["十三", "掲載元確認", "出張対応"],
-    "price": { "min": 13000, "max": 13000, "unit": "90分コース目安" },
+    "tags": [
+      "十三",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 13000,
+      "unit": "90分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1171,16 +2131,41 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/43797/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43797/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/43797/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 新大阪・西中島エリア",
     "phone": "080-5295-4870",
     "description": "大阪・新大阪/西中島エリアのメンズエステ。掲載元で通常/フリー限定コース料金、営業時間を確認。",
-    "tags": ["新大阪", "掲載元確認", "昼割あり"],
-    "price": { "min": 10000, "max": 34000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "新大阪",
+      "掲載元確認",
+      "昼割あり"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 34000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "17:00まで", "discount": "3000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["高級オイル", "衣装チェンジ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "17:00まで",
+      "discount": "3000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "高級オイル",
+        "衣装チェンジ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1189,16 +2174,41 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/41599/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/41599/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/41599/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・一宮・小牧エリア",
     "phone": "",
     "description": "名古屋・一宮・小牧エリアのメンズエステ。掲載元で90分コース料金と対応エリアを確認。",
-    "tags": ["名古屋", "掲載元確認", "割引あり"],
-    "price": { "min": 15000, "max": 18000, "unit": "90分コース目安" },
+    "tags": [
+      "名古屋",
+      "掲載元確認",
+      "割引あり"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 18000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "一宮ホテル利用限定", "discount": "3000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["集中ケアコース", "出張対応"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "一宮ホテル利用限定",
+      "discount": "3000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "集中ケアコース",
+        "出張対応"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1207,34 +2217,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://menesth.jp/15/shop/40962/system/",
-    "source": { "label": "メンズリラク 料金システム", "url": "https://menesth.jp/15/shop/40962/system/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "メンズリラク 料金システム",
+      "url": "https://menesth.jp/15/shop/40962/system/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋エリア",
     "phone": "",
     "description": "名古屋エリアのメンズエステ。掲載元で90分コース料金を確認。",
-    "tags": ["名古屋", "掲載元確認", "料金確認済み"],
-    "price": { "min": 17000, "max": 17000, "unit": "90分コース目安" },
+    "tags": [
+      "名古屋",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 17000,
+      "max": 17000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-065",
-    "name": "peach club",
-    "area": "名古屋",
-    "genre": "メンズエステ",
-    "url": "https://menesth.jp/15/shop/39605/system/",
-    "source": { "label": "メンズリラク 料金システム", "url": "https://menesth.jp/15/shop/39605/system/", "checkedAt": "2026-05-09" },
-    "address": "愛知県 名古屋エリア",
-    "phone": "",
-    "description": "名古屋エリアのメンズエステ。掲載元で90分コース料金を確認。",
-    "tags": ["名古屋", "掲載元確認", "料金確認済み"],
-    "price": { "min": 13000, "max": 13000, "unit": "90分コース目安" },
-    "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1243,16 +2258,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://menesth.jp/15/shop/48037/system/",
-    "source": { "label": "メンズリラク 料金システム", "url": "https://menesth.jp/15/shop/48037/system/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "メンズリラク 料金システム",
+      "url": "https://menesth.jp/15/shop/48037/system/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋エリア",
     "phone": "",
     "description": "名古屋エリアのメンズエステ。掲載元でスタンダード90分コース料金を確認。",
-    "tags": ["名古屋", "掲載元確認", "料金確認済み"],
-    "price": { "min": 16000, "max": 16000, "unit": "90分コース目安" },
+    "tags": [
+      "名古屋",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 16000,
+      "max": 16000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["スタンダードコース", "完全予約制"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "スタンダードコース",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1261,16 +2299,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://menesth.jp/15/shop/29429/system/",
-    "source": { "label": "メンズリラク 料金システム", "url": "https://menesth.jp/15/shop/29429/system/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "メンズリラク 料金システム",
+      "url": "https://menesth.jp/15/shop/29429/system/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋エリア",
     "phone": "",
     "description": "名古屋エリアの店舗型メンズエステ。掲載元で90分コース料金を確認。",
-    "tags": ["名古屋", "掲載元確認", "店舗型"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "名古屋",
+      "掲載元確認",
+      "店舗型"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["店舗型", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "店舗型",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1279,34 +2340,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://ceylon-spa.com/system",
-    "source": { "label": "CEYLON SPA 公式料金システム", "url": "https://ceylon-spa.com/system", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "CEYLON SPA 公式料金システム",
+      "url": "https://ceylon-spa.com/system",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・伏見エリア",
     "phone": "",
     "description": "名古屋・伏見エリアのメンズエステ。公式ページで料金システムと営業時間を確認。",
-    "tags": ["伏見", "公式サイト", "料金確認済み"],
-    "price": { "min": 15000, "max": 22000, "unit": "90分コース以上目安" },
+    "tags": [
+      "伏見",
+      "公式サイト",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 22000,
+      "unit": "90分コース以上目安"
+    },
     "hours": "10:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["リラクゼーション", "完全予約制"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-069",
-    "name": "リリカルタッチ",
-    "area": "福岡",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/31889/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/31889/menu/", "checkedAt": "2026-05-09" },
-    "address": "福岡県 博多・中洲・天神エリア",
-    "phone": "092-210-1106",
-    "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元で60分/90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "料金確認済み"],
-    "price": { "min": 10000, "max": 15000, "unit": "60分〜90分コース目安" },
-    "hours": "12:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["通常コース", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "リラクゼーション",
+        "完全予約制"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1315,16 +2381,39 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/27750/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/27750/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/27750/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜駅西口エリア",
     "phone": "080-7504-3388",
     "description": "横浜駅西口エリアのメンズエステ。掲載元で通常コース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "年中無休"],
-    "price": { "min": 13000, "max": 23000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "年中無休"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 23000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "10:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["通常コース", "延長あり"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "通常コース",
+        "延長あり"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1333,16 +2422,41 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/47906/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/47906/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/47906/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜駅エリア",
     "phone": "070-4173-8667",
     "description": "横浜駅エリアの派遣型メンズエステ。掲載元で基本コースと新規限定割引、営業時間を確認。",
-    "tags": ["横浜", "掲載元確認", "出張対応"],
-    "price": { "min": 14000, "max": 37000, "unit": "60分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 37000,
+      "unit": "60分〜180分コース目安"
+    },
     "hours": "10:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "新規限定", "discount": "7000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "ディープリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "新規限定",
+      "discount": "7000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "ディープリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1351,52 +2465,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/29187/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/29187/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/29187/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-7640-2863",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元でFlowerコース料金、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "09:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["Flowerコース", "カード利用可"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-073",
-    "name": "男癒館別邸",
-    "area": "札幌",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/43067/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43067/menu/", "checkedAt": "2026-05-09" },
-    "address": "北海道 札幌・すすきのエリア",
-    "phone": "090-3846-4683",
-    "description": "札幌・すすきのエリアの高級メンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 30000, "unit": "90分〜120分コース目安" },
-    "hours": "11:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["流解リンパケア", "出張対応"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-074",
-    "name": "東京絶対領域",
-    "area": "東京",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/44085/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/44085/menu/", "checkedAt": "2026-05-09" },
-    "address": "東京都 銀座エリア",
-    "phone": "03-6205-5546",
-    "description": "東京・銀座エリアの派遣型メンズエステ。掲載元で領域コース料金、営業時間、電話番号を確認。",
-    "tags": ["銀座", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 39000, "unit": "60分〜180分コース目安" },
-    "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "領域コース"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "Flowerコース",
+        "カード利用可"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1405,16 +2506,39 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/41913/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/41913/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/41913/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都 日本橋エリア",
     "phone": "080-7327-2732",
     "description": "東京・日本橋エリアの派遣型メンズエステ。掲載元で90分コース、営業時間、電話番号を確認。",
-    "tags": ["日本橋", "掲載元確認", "カード利用可"],
-    "price": { "min": 17000, "max": 17000, "unit": "90分コース目安" },
+    "tags": [
+      "日本橋",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 17000,
+      "max": 17000,
+      "unit": "90分コース目安"
+    },
     "hours": "18:00〜翌4:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "オイルトリートメント"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "オイルトリートメント"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1423,16 +2547,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/35712/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/35712/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/35712/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 堺筋本町エリア",
     "phone": "090-6756-4665",
     "description": "大阪・堺筋本町エリアのメンズエステ。掲載元で90分/120分/150分コース料金、営業時間を確認。",
-    "tags": ["堺筋本町", "掲載元確認", "カード利用可"],
-    "price": { "min": 12000, "max": 26000, "unit": "90分〜150分コース目安" },
+    "tags": [
+      "堺筋本町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 26000,
+      "unit": "90分〜150分コース目安"
+    },
     "hours": "09:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ホットオイル", "出張対応"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ホットオイル",
+        "出張対応"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1441,34 +2588,39 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33633/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33633/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33633/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 堺筋本町・心斎橋・本町エリア",
     "phone": "",
     "description": "大阪・堺筋本町/心斎橋/本町エリアのメンズエステ。掲載元でベーシック/プレミアムアロマコース料金を確認。",
-    "tags": ["堺筋本町", "掲載元確認", "カード利用可"],
-    "price": { "min": 11000, "max": 24000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "堺筋本町",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 11000,
+      "max": 24000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "10:00〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ディープリンパ", "オイル増量"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-078",
-    "name": "THE CLUB",
-    "area": "名古屋",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/48424/",
-    "source": { "label": "エステ魂 店舗情報", "url": "https://estama.jp/shop/48424/", "checkedAt": "2026-05-09" },
-    "address": "愛知県 名古屋・名駅エリア",
-    "phone": "090-8070-1122",
-    "description": "名古屋・名駅エリアのメンズエステ。掲載元で90分予算、営業時間、電話番号を確認。",
-    "tags": ["名駅", "掲載元確認", "料金確認済み"],
-    "price": { "min": 16000, "max": 16000, "unit": "90分コース目安" },
-    "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["マンション個室", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ディープリンパ",
+        "オイル増量"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1477,16 +2629,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/30866/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/30866/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/30866/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・名駅エリア",
     "phone": "070-8983-2034",
     "description": "名古屋・名駅エリアのメンズエステ。掲載元で90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["名駅", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "名駅",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "10:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "オイルケア"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "オイルケア"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1495,16 +2670,39 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/43315/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43315/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/43315/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・名駅エリア",
     "phone": "",
     "description": "名古屋・名駅エリアのメンズエステ。掲載元で70分〜150分コース料金を確認。",
-    "tags": ["名駅", "掲載元確認", "料金確認済み"],
-    "price": { "min": 12000, "max": 24000, "unit": "70分〜150分コース目安" },
+    "tags": [
+      "名駅",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 24000,
+      "unit": "70分〜150分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["指圧", "オイルマッサージ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "指圧",
+        "オイルマッサージ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1513,34 +2711,41 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/34753/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/34753/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/34753/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 心斎橋エリア",
     "phone": "",
     "description": "大阪・心斎橋エリアのメンズエステ。掲載元で来店/出張コース料金と出張交通費を確認。",
-    "tags": ["心斎橋", "掲載元確認", "出張対応"],
-    "price": { "min": 12000, "max": 22000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "心斎橋",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 22000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "衣装オプション"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-082",
-    "name": "Natural",
-    "area": "福岡",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/43483/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43483/menu/", "checkedAt": "2026-05-09" },
-    "address": "福岡県 福岡市・香椎エリア",
-    "phone": "080-2414-5029",
-    "description": "福岡市・香椎エリアのメンズエステ。掲載元で基本90分コース料金、営業時間、電話番号を確認。",
-    "tags": ["福岡市", "掲載元確認", "料金確認済み"],
-    "price": { "min": 12000, "max": 12000, "unit": "90分コース目安" },
-    "hours": "10:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["基本コース", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元キャンペーン",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "衣装オプション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1549,34 +2754,39 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/28672/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/28672/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/28672/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都 東京23区出張エリア",
     "phone": "050-5577-6783",
     "description": "東京23区出張対応のメンズエステ。掲載元でボディトリートメントコース料金、営業時間、電話番号を確認。",
-    "tags": ["東京23区", "掲載元確認", "カード利用可"],
-    "price": { "min": 13000, "max": 19000, "unit": "90分〜150分コース目安" },
+    "tags": [
+      "東京23区",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 19000,
+      "unit": "90分〜150分コース目安"
+    },
     "hours": "18:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "ボディトリートメント"] },
-    "castCount": "掲載元で確認"
-  },
-  {
-    "id": "shop-real-084",
-    "name": "メンズ魂",
-    "area": "横浜",
-    "genre": "メンズエステ",
-    "url": "https://estama.jp/shop/41053/",
-    "source": { "label": "エステ魂 店舗情報", "url": "https://estama.jp/shop/41053/", "checkedAt": "2026-05-09" },
-    "address": "神奈川県横浜市青葉区あざみ野1丁目3-1",
-    "phone": "080-8494-0399",
-    "description": "横浜・あざみ野エリアの店舗型メンズエステ。掲載元で平均予算、営業時間、住所、電話番号を確認。",
-    "tags": ["あざみ野", "掲載元確認", "店舗型"],
-    "price": { "min": 12000, "max": 12000, "unit": "90分コース目安" },
-    "hours": "12:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["店舗型", "アジアン"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "ボディトリートメント"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1585,16 +2795,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/43805/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43805/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/43805/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・東区・白石区エリア",
     "phone": "090-5220-4453",
     "description": "札幌・東区/白石区エリアのメンズエステ。掲載元でスタンダード/極コース料金、営業時間、電話番号を確認。",
-    "tags": ["札幌", "掲載元確認", "料金確認済み"],
-    "price": { "min": 10000, "max": 18000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "札幌",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 18000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "10:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["極コース", "水溶性オイル"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "極コース",
+        "水溶性オイル"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1603,16 +2836,39 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33725/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33725/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33725/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都品川区西五反田1-17-7 第19高橋ビル6F",
     "phone": "",
     "description": "東京・五反田エリアの店舗型メンズエステ。掲載元でおすすめセットコース料金、営業時間、住所を確認。",
-    "tags": ["五反田", "掲載元確認", "店舗型"],
-    "price": { "min": 8000, "max": 16000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "五反田",
+      "掲載元確認",
+      "店舗型"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 16000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "11:30〜LAST",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["アカスリ", "オイルリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "アカスリ",
+        "オイルリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1621,16 +2877,39 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/27542/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/27542/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/27542/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜・関内・海老名エリア",
     "phone": "070-3149-1122",
     "description": "横浜・関内・海老名エリアのメンズエステ。掲載元で90分コース、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "料金確認済み"],
-    "price": { "min": 16000, "max": 16000, "unit": "90分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 16000,
+      "max": 16000,
+      "unit": "90分コース目安"
+    },
     "hours": "12:00〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["HOTオイル", "マンション個室"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "HOTオイル",
+        "マンション個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1639,16 +2918,41 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33240/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33240/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33240/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "090-6428-0051",
     "description": "福岡・博多/中洲/天神エリアの店舗型メンズエステ。掲載元で新規限定コース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "店舗型"],
-    "price": { "min": 12000, "max": 20000, "unit": "75分〜120分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "店舗型"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 20000,
+      "unit": "75分〜120分コース目安"
+    },
     "hours": "11:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "新規限定", "discount": "3000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["出張プラン", "アロマトリートメント"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "新規限定",
+      "discount": "3000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張プラン",
+        "アロマトリートメント"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1657,16 +2961,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/40722/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/40722/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/40722/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "080-5254-3727",
     "description": "福岡・博多/中洲/天神エリアの派遣型メンズエステ。掲載元で60分/90分/110分コース料金、営業時間を確認。",
-    "tags": ["博多", "掲載元確認", "出張対応"],
-    "price": { "min": 10000, "max": 19000, "unit": "60分〜110分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "出張対応"
+    ],
+    "price": {
+      "min": 10000,
+      "max": 19000,
+      "unit": "60分〜110分コース目安"
+    },
     "hours": "15:00〜翌4:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["出張対応", "リンパマッサージ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "出張対応",
+        "リンパマッサージ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1675,16 +3002,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/28977/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/28977/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/28977/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県福岡市博多区博多駅前3丁目・4丁目",
     "phone": "070-2653-5311",
     "description": "福岡・博多エリアのメンズエステ。掲載元で90分/120分コース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 18000, "unit": "90分〜120分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 18000,
+      "unit": "90分〜120分コース目安"
+    },
     "hours": "10:30〜翌2:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["クイック90", "密着メイン"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "クイック90",
+        "密着メイン"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1693,16 +3043,39 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/42078/",
-    "source": { "label": "エステ魂 店舗情報", "url": "https://estama.jp/shop/42078/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 店舗情報",
+      "url": "https://estama.jp/shop/42078/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜駅エリア",
     "phone": "070-4707-5145",
     "description": "横浜駅エリアのメンズエステ。掲載元で90分/120分おすすめコース、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 20000, "unit": "90分〜120分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 20000,
+      "unit": "90分〜120分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["deep relaxation", "マンション個室"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "deep relaxation",
+        "マンション個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1711,16 +3084,41 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33748/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33748/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33748/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜駅エリア",
     "phone": "070-8358-3803",
     "description": "横浜駅エリアのメンズエステ。掲載元で早割/通常コース料金、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 32000, "unit": "70分〜180分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 32000,
+      "unit": "70分〜180分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "12:00〜17:59", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ホットオイル", "早割料金"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "12:00〜17:59",
+      "discount": "2000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ホットオイル",
+        "早割料金"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1729,16 +3127,39 @@
     "area": "横浜",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/30009/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/30009/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/30009/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "神奈川県 横浜エリア",
     "phone": "080-7843-1000",
     "description": "横浜エリアのメンズエステ。掲載元で基本90分コース、営業時間、電話番号を確認。",
-    "tags": ["横浜", "掲載元確認", "カード利用可"],
-    "price": { "min": 16000, "max": 16000, "unit": "90分コース目安" },
+    "tags": [
+      "横浜",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 16000,
+      "max": 16000,
+      "unit": "90分コース目安"
+    },
     "hours": "12:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["高級オイル", "リンパケア"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "高級オイル",
+        "リンパケア"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1747,16 +3168,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/41717/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/41717/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/41717/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "090-9018-4767",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元でメルティコース料金、運営表記、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 40000, "unit": "70分〜180分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 40000,
+      "unit": "70分〜180分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ホットオイル", "ディープリンパ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ホットオイル",
+        "ディープリンパ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1765,16 +3209,41 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/42645/",
-    "source": { "label": "エステ魂 店舗情報", "url": "https://estama.jp/shop/42645/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 店舗情報",
+      "url": "https://estama.jp/shop/42645/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道 札幌・すすきのエリア",
     "phone": "",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元でロイヤルエステコース料金と掲載情報を確認。",
-    "tags": ["すすきの", "掲載元確認", "料金確認済み"],
-    "price": { "min": 13000, "max": 23000, "unit": "90分〜150分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 13000,
+      "max": 23000,
+      "unit": "90分〜150分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["Web予約"],
-    "morning": { "available": true, "hours": "新規限定", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ロイヤルエステ", "オリジナルオイル"] },
+    "reservation": [
+      "Web予約"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "新規限定",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ロイヤルエステ",
+        "オリジナルオイル"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1783,16 +3252,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/35361/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/35361/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/35361/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県福岡市博多区博多駅前",
     "phone": "",
     "description": "福岡・博多エリアのメンズエステ。掲載元で90分コース料金と所在地を確認。",
-    "tags": ["博多", "掲載元確認", "料金確認済み"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルトリートメント",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1801,16 +3293,41 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/30039/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/30039/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/30039/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府大阪市淀川区十三東",
     "phone": "",
     "description": "大阪・十三エリアのメンズエステ。掲載元で90分通常料金と所在地を確認。",
-    "tags": ["十三", "掲載元確認", "料金確認済み"],
-    "price": { "min": 12000, "max": 12000, "unit": "90分コース目安" },
+    "tags": [
+      "十三",
+      "掲載元確認",
+      "料金確認済み"
+    ],
+    "price": {
+      "min": 12000,
+      "max": 12000,
+      "unit": "90分コース目安"
+    },
     "hours": "掲載元で確認",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "掲載元キャンペーン", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["オイルトリートメント", "リラクゼーション"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "掲載元キャンペーン",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルトリートメント",
+        "リラクゼーション"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1819,16 +3336,41 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/31614/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/31614/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/31614/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都港区東麻布3丁目",
     "phone": "050-1724-2546",
     "description": "東京・麻布エリアのメンズエステ。掲載元でスタンダードコース料金、営業時間、電話番号を確認。",
-    "tags": ["麻布", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 36000, "unit": "70分〜180分コース目安" },
+    "tags": [
+      "麻布",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 36000,
+      "unit": "70分〜180分コース目安"
+    },
     "hours": "11:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "ご新規限定", "discount": "3000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ホイップ", "ホットジェル"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "ご新規限定",
+      "discount": "3000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ホイップ",
+        "ホットジェル"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1837,16 +3379,41 @@
     "area": "東京",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/32836/",
-    "source": { "label": "エステ魂 店舗情報", "url": "https://estama.jp/shop/32836/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 店舗情報",
+      "url": "https://estama.jp/shop/32836/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "東京都小金井市本町5丁目",
     "phone": "080-4921-1612",
     "description": "東京・武蔵小金井エリアのメンズエステ。掲載元で平均予算、営業時間、電話番号、所在地を確認。",
-    "tags": ["武蔵小金井", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 24000, "unit": "80分〜90分コース目安" },
+    "tags": [
+      "武蔵小金井",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 24000,
+      "unit": "80分〜90分コース目安"
+    },
     "hours": "10:00〜翌5:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "ご新規限定", "discount": "2000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ディープリンパ", "マンション個室"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "ご新規限定",
+      "discount": "2000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ディープリンパ",
+        "マンション個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1855,16 +3422,39 @@
     "area": "札幌",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/33656/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/33656/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/33656/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "北海道札幌市中央区南五条東3丁目",
     "phone": "090-9857-2492",
     "description": "札幌・すすきのエリアのメンズエステ。掲載元でルーム/出張メニュー料金、営業時間、電話番号を確認。",
-    "tags": ["すすきの", "掲載元確認", "カード利用可"],
-    "price": { "min": 8000, "max": 18000, "unit": "60分〜120分コース目安" },
+    "tags": [
+      "すすきの",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 8000,
+      "max": 18000,
+      "unit": "60分〜120分コース目安"
+    },
     "hours": "09:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ルームメニュー", "出張メニュー"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ルームメニュー",
+        "出張メニュー"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1873,16 +3463,41 @@
     "area": "名古屋",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/27306/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/27306/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/27306/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "愛知県 名古屋・名駅エリア",
     "phone": "070-4102-9247",
     "description": "名古屋・名駅エリアのメンズエステ。掲載元で全身オイルマッサージ料金、営業時間、電話番号を確認。",
-    "tags": ["名駅", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 25000, "unit": "90分〜150分コース目安" },
+    "tags": [
+      "名駅",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 25000,
+      "unit": "90分〜150分コース目安"
+    },
     "hours": "11:00〜翌4:30",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "新人デビュー割", "discount": "5000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["鼠蹊部集中", "オイルマッサージ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "新人デビュー割",
+      "discount": "5000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "鼠蹊部集中",
+        "オイルマッサージ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1891,16 +3506,39 @@
     "area": "福岡",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/43110/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/43110/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/43110/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "福岡県 博多・中洲・天神エリア",
     "phone": "090-6474-0021",
     "description": "福岡・博多/中洲/天神エリアのメンズエステ。掲載元でラグジュアリーコース料金、営業時間、電話番号を確認。",
-    "tags": ["博多", "掲載元確認", "カード利用可"],
-    "price": { "min": 15000, "max": 15000, "unit": "90分コース目安" },
+    "tags": [
+      "博多",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 15000,
+      "max": 15000,
+      "unit": "90分コース目安"
+    },
     "hours": "12:00〜翌3:00",
-    "reservation": ["電話"],
-    "morning": { "available": false },
-    "options": { "ns": null, "nn": null, "extras": ["ラグジュアリーコース", "トロリッチ"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": false
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ラグジュアリーコース",
+        "トロリッチ"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1909,16 +3547,41 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/29684/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/29684/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/29684/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府 梅田エリア",
     "phone": "080-9753-0169",
     "description": "大阪・梅田エリアのメンズエステ。掲載元で90分オイルマッサージコース、営業時間、電話番号を確認。",
-    "tags": ["梅田", "掲載元確認", "カード利用可"],
-    "price": { "min": 14000, "max": 14000, "unit": "90分コース目安" },
+    "tags": [
+      "梅田",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 14000,
+      "max": 14000,
+      "unit": "90分コース目安"
+    },
     "hours": "10:00〜翌4:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "90分以上", "discount": "1000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["オイルマッサージ", "マンション個室"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "90分以上",
+      "discount": "1000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "オイルマッサージ",
+        "マンション個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   },
   {
@@ -1927,16 +3590,41 @@
     "area": "大阪",
     "genre": "メンズエステ",
     "url": "https://estama.jp/shop/40490/menu/",
-    "source": { "label": "エステ魂 料金システム", "url": "https://estama.jp/shop/40490/menu/", "checkedAt": "2026-05-09" },
+    "source": {
+      "label": "エステ魂 料金システム",
+      "url": "https://estama.jp/shop/40490/menu/",
+      "checkedAt": "2026-05-09"
+    },
     "address": "大阪府大阪市北区兎我野町",
     "phone": "080-4487-5062",
     "description": "大阪・梅田エリアのメンズエステ。掲載元で平均予算、営業時間、電話番号、所在地を確認。",
-    "tags": ["梅田", "掲載元確認", "カード利用可"],
-    "price": { "min": 7000, "max": 12000, "unit": "60分〜90分コース目安" },
+    "tags": [
+      "梅田",
+      "掲載元確認",
+      "カード利用可"
+    ],
+    "price": {
+      "min": 7000,
+      "max": 12000,
+      "unit": "60分〜90分コース目安"
+    },
     "hours": "11:00〜翌6:00",
-    "reservation": ["電話"],
-    "morning": { "available": true, "hours": "ご新規限定", "discount": "3000円OFF" },
-    "options": { "ns": null, "nn": null, "extras": ["ディープリンパ", "マンション個室"] },
+    "reservation": [
+      "電話"
+    ],
+    "morning": {
+      "available": true,
+      "hours": "ご新規限定",
+      "discount": "3000円OFF"
+    },
+    "options": {
+      "ns": null,
+      "nn": null,
+      "extras": [
+        "ディープリンパ",
+        "マンション個室"
+      ]
+    },
     "castCount": "掲載元で確認"
   }
 ]
