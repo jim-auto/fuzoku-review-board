@@ -28,6 +28,23 @@ const PRICE_RANGES = [
 
 const RESERVATION_METHODS = ['LINE', 'Web予約', '電話', 'Twitter DM']
 
+const REGION_SHORTCUTS = [
+  {
+    region: '東京',
+    items: [
+      { label: '吉原ソープ', area: '東京', genre: 'ソープランド', search: '吉原', desc: '総額・営業時間つきで比較' },
+      { label: '都内メンズエステ', area: '東京', genre: 'メンズエステ', search: '', desc: '錦糸町・日本橋・麻布など' },
+    ],
+  },
+  {
+    region: '東海',
+    items: [
+      { label: '名古屋メンズエステ', area: '名古屋', genre: 'メンズエステ', search: '', desc: '名駅・伏見周辺を中心に比較' },
+      { label: '岐阜金津園ソープ', area: '岐阜', genre: 'ソープランド', search: '金津園', desc: '金津園の総額目安を比較' },
+    ],
+  },
+] as const
+
 interface ShopFilter {
   region: string
   area: string
@@ -130,6 +147,7 @@ export default function ShopListPage() {
 
   const filtered = useMemo(() => applyFilter(allShops, filter), [filter])
   const sorted = useMemo(() => applySort(filtered, sort), [filtered, sort])
+  const activeRegionShortcuts = REGION_SHORTCUTS.find(group => group.region === filter.region)?.items ?? []
 
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter) => {
     const next = updater(filter)
@@ -211,6 +229,54 @@ export default function ShopListPage() {
           )
         })}
       </div>
+
+      {activeRegionShortcuts.length > 0 && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          {activeRegionShortcuts.map(shortcut => {
+            const color = GENRE_COLORS[shortcut.genre]
+            const active =
+              filter.area === shortcut.area &&
+              filter.genre === shortcut.genre &&
+              filter.search === shortcut.search
+            const count = allShops.filter(shop =>
+              shop.area === shortcut.area &&
+              shop.genre === shortcut.genre &&
+              (!shortcut.search ||
+                shop.name.includes(shortcut.search) ||
+                shop.description.includes(shortcut.search) ||
+                shop.tags.some(tag => tag.includes(shortcut.search))),
+            ).length
+            return (
+              <button
+                key={shortcut.label}
+                onClick={() => updateFilter(f => ({
+                  ...f,
+                  region: filter.region,
+                  area: shortcut.area,
+                  genre: shortcut.genre,
+                  search: shortcut.search,
+                }))}
+                className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
+                style={active
+                  ? { background: `${color}14`, borderColor: `${color}60`, boxShadow: `0 8px 24px ${color}12` }
+                  : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
+                }
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <div className="text-sm font-bold" style={{ color }}>{shortcut.label}</div>
+                    <div className="text-xs text-text-dim mt-1">{shortcut.desc}</div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-lg font-black text-text-bright">{count}</div>
+                    <div className="text-xs text-text-dim">件</div>
+                  </div>
+                </div>
+              </button>
+            )
+          })}
+        </div>
+      )}
 
       {/* Primary filters */}
       <div className="flex flex-wrap gap-2">
