@@ -24,11 +24,21 @@ const TRENDS = [
   '未確認のキャスト個人情報は掲載せず、店舗情報を優先します',
 ]
 
-const PRIORITY_SHORTCUTS = [
+interface PriorityShortcut {
+  label: string
+  area: Shop['area']
+  genre: Shop['genre']
+  search: string
+  desc: string
+  total?: boolean
+}
+
+const PRIORITY_SHORTCUTS: Array<{ region: string; items: PriorityShortcut[] }> = [
   {
     region: '東京',
     items: [
-      { label: '吉原ソープ', area: '東京', genre: 'ソープランド', search: '吉原', desc: '総額・営業時間を比較' },
+      { label: '東京ソープ全件', area: '東京', genre: 'ソープランド', search: '', desc: '吉原中心に掲載中の店を確認' },
+      { label: '東京総額ソープ', area: '東京', genre: 'ソープランド', search: '', total: true, desc: '総額確認済みだけを比較' },
       { label: '都内メンズエステ', area: '東京', genre: 'メンズエステ', search: '', desc: '錦糸町・日本橋・麻布など' },
     ],
   },
@@ -36,14 +46,16 @@ const PRIORITY_SHORTCUTS = [
     region: '東海',
     items: [
       { label: '名古屋メンズエステ', area: '名古屋', genre: 'メンズエステ', search: '', desc: '名駅・伏見周辺' },
-      { label: '岐阜金津園ソープ', area: '岐阜', genre: 'ソープランド', search: '金津園', desc: '金津園の総額目安' },
+      { label: '岐阜ソープ全件', area: '岐阜', genre: 'ソープランド', search: '', desc: '金津園中心に掲載中の店を確認' },
+      { label: '岐阜総額ソープ', area: '岐阜', genre: 'ソープランド', search: '', total: true, desc: '総額確認済みだけを比較' },
     ],
   },
-] as const
+]
 
-function matchesShortcut(shop: Shop, shortcut: (typeof PRIORITY_SHORTCUTS)[number]['items'][number]): boolean {
+function matchesShortcut(shop: Shop, shortcut: PriorityShortcut): boolean {
   if (shop.area !== shortcut.area) return false
   if (shop.genre !== shortcut.genre) return false
+  if ('total' in shortcut && shortcut.total && !isTotalComparableSoap(shop)) return false
   if (!shortcut.search) return true
 
   const query = shortcut.search.toLowerCase()
@@ -204,6 +216,8 @@ export default function HomePage() {
                       area: shortcut.area,
                       genre: shortcut.genre,
                       search: shortcut.search,
+                      sort: shortcut.genre === 'ソープランド' ? 'price_asc' : undefined,
+                      total: 'total' in shortcut ? shortcut.total : false,
                     })}
                     className="rounded-lg border px-3 py-2 transition-colors hover:border-neon-cyan/60 hover:bg-neon-cyan/5"
                     style={{ borderColor: `${GENRE_COLORS[shortcut.genre]}35`, background: `${GENRE_COLORS[shortcut.genre]}0c` }}

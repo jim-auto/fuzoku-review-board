@@ -31,11 +31,22 @@ const PRICE_RANGES = [
 
 const RESERVATION_METHODS = ['LINE', 'Web予約', '電話', 'Twitter DM']
 
-const REGION_SHORTCUTS = [
+interface RegionShortcut {
+  label: string
+  area: Shop['area']
+  genre: Shop['genre']
+  search: string
+  desc: string
+  total?: boolean
+  sort?: SortKey
+}
+
+const REGION_SHORTCUTS: Array<{ region: string; items: RegionShortcut[] }> = [
   {
     region: '東京',
     items: [
-      { label: '吉原ソープ', area: '東京', genre: 'ソープランド', search: '吉原', desc: '総額・営業時間つきで比較' },
+      { label: '東京ソープ全件', area: '東京', genre: 'ソープランド', search: '', total: false, sort: 'price_asc', desc: '吉原中心に掲載中のソープを全件確認' },
+      { label: '東京総額ソープ', area: '東京', genre: 'ソープランド', search: '', total: true, sort: 'price_asc', desc: '総額確認済みだけを安い順で比較' },
       { label: '都内メンズエステ', area: '東京', genre: 'メンズエステ', search: '', desc: '錦糸町・日本橋・麻布など' },
     ],
   },
@@ -43,10 +54,11 @@ const REGION_SHORTCUTS = [
     region: '東海',
     items: [
       { label: '名古屋メンズエステ', area: '名古屋', genre: 'メンズエステ', search: '', desc: '名駅・伏見周辺を中心に比較' },
-      { label: '岐阜金津園ソープ', area: '岐阜', genre: 'ソープランド', search: '金津園', desc: '金津園の総額目安を比較' },
+      { label: '岐阜ソープ全件', area: '岐阜', genre: 'ソープランド', search: '', total: false, sort: 'price_asc', desc: '金津園中心に掲載中のソープを全件確認' },
+      { label: '岐阜総額ソープ', area: '岐阜', genre: 'ソープランド', search: '', total: true, sort: 'price_asc', desc: '総額確認済みだけを安い順で比較' },
     ],
   },
-] as const
+]
 
 interface ShopFilter {
   region: string
@@ -328,16 +340,21 @@ export default function ShopListPage() {
       </div>
 
       {activeRegionShortcuts.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
           {activeRegionShortcuts.map(shortcut => {
             const color = GENRE_COLORS[shortcut.genre]
+            const shortcutTotal = shortcut.total === true
+            const shortcutSort = shortcut.sort ?? sort
             const active =
               filter.area === shortcut.area &&
               filter.genre === shortcut.genre &&
-              filter.search === shortcut.search
+              filter.search === shortcut.search &&
+              filter.total === shortcutTotal &&
+              sort === shortcutSort
             const count = allShops.filter(shop =>
               shop.area === shortcut.area &&
               shop.genre === shortcut.genre &&
+              (!shortcutTotal || isTotalComparableSoap(shop)) &&
               (!shortcut.search ||
                 shop.name.includes(shortcut.search) ||
                 shop.description.includes(shortcut.search) ||
@@ -352,7 +369,8 @@ export default function ShopListPage() {
                   area: shortcut.area,
                   genre: shortcut.genre,
                   search: shortcut.search,
-                }))}
+                  total: shortcutTotal,
+                }), shortcutSort)}
                 className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
                 style={active
                   ? { background: `${color}14`, borderColor: `${color}60`, boxShadow: `0 8px 24px ${color}12` }
