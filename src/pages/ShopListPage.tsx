@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { ArrowUpDown, Banknote, ChevronDown, CircleCheck, Sun, X } from 'lucide-react'
+import { ArrowUpDown, Banknote, ChevronDown, CircleCheck, ShowerHead, Sun, X } from 'lucide-react'
 import shopsData from '../data/shops.json'
 import type { Shop } from '../types'
 import ShopCard from '../components/ShopCard'
@@ -191,6 +191,7 @@ export default function ShopListPage() {
   const activeRegionShortcuts = REGION_SHORTCUTS.find(group => group.region === filter.region)?.items ?? []
   const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
   const morningCount = allShops.filter(shop => shop.morning.available).length
+  const soapCount = allShops.filter(shop => shop.genre === 'ソープランド').length
 
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter, nextSort: SortKey = sort) => {
     const next = updater(filter)
@@ -366,7 +367,29 @@ export default function ShopListPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+        <button
+          onClick={() => updateFilter(f => ({ ...f, genre: f.genre === 'ソープランド' ? '' : 'ソープランド' }), 'price_asc')}
+          className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
+          style={filter.genre === 'ソープランド' && sort === 'price_asc'
+            ? { background: 'rgba(180,79,255,0.12)', borderColor: 'rgba(180,79,255,0.5)', boxShadow: '0 8px 24px rgba(180,79,255,0.1)' }
+            : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
+          }
+        >
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-1.5 text-sm font-bold text-neon-purple">
+                <ShowerHead size={14} />安いソープランキング
+              </div>
+              <div className="text-xs text-text-dim mt-1">ソープランドだけを料金が安い順で表示</div>
+            </div>
+            <div className="text-right">
+              <div className="text-lg font-black text-text-bright">{soapCount}</div>
+              <div className="text-xs text-text-dim">件</div>
+            </div>
+          </div>
+        </button>
+
         <button
           onClick={() => updateFilter(f => ({ ...f, discount: !f.discount }), 'discount_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"

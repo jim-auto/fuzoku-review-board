@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, MapPin, Sparkles, TrendingUp, Tag } from 'lucide-react'
+import { ArrowRight, MapPin, Sparkles, TrendingUp, Tag, Trophy } from 'lucide-react'
 import shopsData from '../data/shops.json'
 import castsData from '../data/casts.json'
 import type { Shop, Cast } from '../types'
@@ -54,12 +54,13 @@ function matchesShortcut(shop: Shop, shortcut: (typeof PRIORITY_SHORTCUTS)[numbe
   )
 }
 
-function buildShopQuery(params: { region?: string; area?: string; genre?: string; search?: string }): string {
+function buildShopQuery(params: { region?: string; area?: string; genre?: string; search?: string; sort?: string }): string {
   const searchParams = new URLSearchParams()
   if (params.region) searchParams.set('region', params.region)
   if (params.area) searchParams.set('area', params.area)
   if (params.genre) searchParams.set('genre', params.genre)
   if (params.search) searchParams.set('q', params.search)
+  if (params.sort) searchParams.set('sort', params.sort)
   return `/shops?${searchParams.toString()}`
 }
 
@@ -81,6 +82,10 @@ export default function HomePage() {
       count: shops.filter(shop => matchesShortcut(shop, shortcut)).length,
     })),
   }))
+  const cheapSoapRanking = shops
+    .filter(shop => shop.genre === 'ソープランド')
+    .sort((a, b) => a.price.min - b.price.min)
+    .slice(0, 5)
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-14">
@@ -215,6 +220,42 @@ export default function HomePage() {
                 {region.name}をまとめて見る <ArrowRight size={12} />
               </Link>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Cheap Soap Ranking ──────────────────────────── */}
+      <section>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="section-title mb-0">
+            <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-amber to-neon-purple flex-shrink-0" />
+            <Trophy size={16} className="text-neon-amber" />
+            安いソープランキング
+          </h2>
+          <Link
+            to={buildShopQuery({ genre: 'ソープランド', sort: 'price_asc' })}
+            className="flex items-center gap-1 text-xs text-neon-cyan hover:text-neon-cyan/70 transition-colors"
+          >
+            すべて見る <ArrowRight size={12} />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
+          {cheapSoapRanking.map((shop, index) => (
+            <Link
+              key={shop.id}
+              to={`/shops/${shop.id}`}
+              className="rounded-xl border border-dark-500 bg-dark-800/70 p-3 transition-all hover:-translate-y-0.5 hover:border-neon-amber/50"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-black text-neon-amber">#{index + 1}</span>
+                <span className="text-xs text-text-dim">{shop.area}</span>
+              </div>
+              <div className="text-sm font-bold text-text-bright mt-2 truncate">{shop.name}</div>
+              <div className="text-lg font-black text-text-bright mt-2">
+                ¥{shop.price.min.toLocaleString()}
+              </div>
+              <div className="text-xs text-text-dim mt-1 truncate">{shop.price.unit}</div>
+            </Link>
           ))}
         </div>
       </section>
