@@ -20,10 +20,12 @@ const SORT_OPTIONS: { value: SortKey; label: string }[] = [
 ]
 
 const PRICE_RANGES = [
-  { value: '1000', label: '〜1,000円', max: 1000 },
-  { value: '5000', label: '〜5,000円', max: 5000 },
   { value: '10000', label: '〜10,000円', max: 10000 },
+  { value: '15000', label: '〜15,000円', max: 15000 },
   { value: '20000', label: '〜20,000円', max: 20000 },
+  { value: '30000', label: '〜30,000円', max: 30000 },
+  { value: '50000', label: '〜50,000円', max: 50000 },
+  { value: '80000', label: '〜80,000円', max: 80000 },
 ]
 
 const RESERVATION_METHODS = ['LINE', 'Web予約', '電話', 'Twitter DM']
