@@ -86,6 +86,10 @@ export default function HomePage() {
     .filter(shop => shop.genre === 'ソープランド')
     .sort((a, b) => a.price.min - b.price.min)
     .slice(0, 5)
+  const cheapTokyoSoapRanking = shops
+    .filter(shop => shop.area === '東京' && shop.genre === 'ソープランド')
+    .sort((a, b) => a.price.min - b.price.min)
+    .slice(0, 5)
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 space-y-14">
@@ -248,6 +252,42 @@ export default function HomePage() {
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="text-xs font-black text-neon-amber">#{index + 1}</span>
+                <span className="text-xs text-text-dim">{shop.area}</span>
+              </div>
+              <div className="text-sm font-bold text-text-bright mt-2 truncate">{shop.name}</div>
+              <div className="text-lg font-black text-text-bright mt-2">
+                ¥{shop.price.min.toLocaleString()}
+              </div>
+              <div className="text-xs text-text-dim mt-1 truncate">{shop.price.unit}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Cheap Tokyo Soap Ranking ────────────────────── */}
+      <section>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="section-title mb-0">
+            <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-cyan to-neon-purple flex-shrink-0" />
+            <Trophy size={16} className="text-neon-cyan" />
+            東京の安いソープランキング
+          </h2>
+          <Link
+            to={buildShopQuery({ area: '東京', genre: 'ソープランド', sort: 'price_asc' })}
+            className="flex items-center gap-1 text-xs text-neon-cyan hover:text-neon-cyan/70 transition-colors"
+          >
+            すべて見る <ArrowRight size={12} />
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-2">
+          {cheapTokyoSoapRanking.map((shop, index) => (
+            <Link
+              key={shop.id}
+              to={`/shops/${shop.id}`}
+              className="rounded-xl border border-dark-500 bg-dark-800/70 p-3 transition-all hover:-translate-y-0.5 hover:border-neon-cyan/50"
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="text-xs font-black text-neon-cyan">#{index + 1}</span>
                 <span className="text-xs text-text-dim">{shop.area}</span>
               </div>
               <div className="text-sm font-bold text-text-bright mt-2 truncate">{shop.name}</div>

@@ -192,6 +192,7 @@ export default function ShopListPage() {
   const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
   const morningCount = allShops.filter(shop => shop.morning.available).length
   const soapCount = allShops.filter(shop => shop.genre === 'ソープランド').length
+  const tokyoSoapCount = allShops.filter(shop => shop.area === '東京' && shop.genre === 'ソープランド').length
 
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter, nextSort: SortKey = sort) => {
     const next = updater(filter)
@@ -367,7 +368,7 @@ export default function ShopListPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         <button
           onClick={() => updateFilter(f => ({ ...f, genre: f.genre === 'ソープランド' ? '' : 'ソープランド' }), 'price_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
@@ -385,6 +386,33 @@ export default function ShopListPage() {
             </div>
             <div className="text-right">
               <div className="text-lg font-black text-text-bright">{soapCount}</div>
+              <div className="text-xs text-text-dim">件</div>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => updateFilter(f => ({
+            ...f,
+            region: '',
+            area: f.area === '東京' && f.genre === 'ソープランド' ? '' : '東京',
+            genre: f.area === '東京' && f.genre === 'ソープランド' ? '' : 'ソープランド',
+          }), 'price_asc')}
+          className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
+          style={filter.area === '東京' && filter.genre === 'ソープランド' && sort === 'price_asc'
+            ? { background: 'rgba(0,212,255,0.12)', borderColor: 'rgba(0,212,255,0.5)', boxShadow: '0 8px 24px rgba(0,212,255,0.1)' }
+            : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
+          }
+        >
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-1.5 text-sm font-bold text-neon-cyan">
+                <ShowerHead size={14} />東京ソープ安い順
+              </div>
+              <div className="text-xs text-text-dim mt-1">東京のソープランドだけを安い順で表示</div>
+            </div>
+            <div className="text-right">
+              <div className="text-lg font-black text-text-bright">{tokyoSoapCount}</div>
               <div className="text-xs text-text-dim">件</div>
             </div>
           </div>
