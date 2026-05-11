@@ -6,6 +6,7 @@ import type { Shop, Cast } from '../types'
 import ShopCard from '../components/ShopCard'
 import CastCard from '../components/CastCard'
 import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRES, REGION_GROUPS } from '../constants/taxonomy'
+import { isTotalComparableSoap } from '../utils/shops'
 
 const shops = shopsData as Shop[]
 const casts = castsData as Cast[]
@@ -54,13 +55,14 @@ function matchesShortcut(shop: Shop, shortcut: (typeof PRIORITY_SHORTCUTS)[numbe
   )
 }
 
-function buildShopQuery(params: { region?: string; area?: string; genre?: string; search?: string; sort?: string }): string {
+function buildShopQuery(params: { region?: string; area?: string; genre?: string; search?: string; sort?: string; total?: boolean }): string {
   const searchParams = new URLSearchParams()
   if (params.region) searchParams.set('region', params.region)
   if (params.area) searchParams.set('area', params.area)
   if (params.genre) searchParams.set('genre', params.genre)
   if (params.search) searchParams.set('q', params.search)
   if (params.sort) searchParams.set('sort', params.sort)
+  if (params.total) searchParams.set('total', '1')
   return `/shops?${searchParams.toString()}`
 }
 
@@ -83,11 +85,11 @@ export default function HomePage() {
     })),
   }))
   const cheapSoapRanking = shops
-    .filter(shop => shop.genre === 'ソープランド')
+    .filter(isTotalComparableSoap)
     .sort((a, b) => a.price.min - b.price.min)
     .slice(0, 5)
   const cheapTokyoSoapRanking = shops
-    .filter(shop => shop.area === '東京' && shop.genre === 'ソープランド')
+    .filter(shop => shop.area === '東京' && isTotalComparableSoap(shop))
     .sort((a, b) => a.price.min - b.price.min)
     .slice(0, 5)
 
@@ -234,10 +236,10 @@ export default function HomePage() {
           <h2 className="section-title mb-0">
             <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-amber to-neon-purple flex-shrink-0" />
             <Trophy size={16} className="text-neon-amber" />
-            安いソープランキング
+            総額で安いソープランキング
           </h2>
           <Link
-            to={buildShopQuery({ genre: 'ソープランド', sort: 'price_asc' })}
+            to={buildShopQuery({ genre: 'ソープランド', sort: 'price_asc', total: true })}
             className="flex items-center gap-1 text-xs text-neon-cyan hover:text-neon-cyan/70 transition-colors"
           >
             すべて見る <ArrowRight size={12} />
@@ -270,10 +272,10 @@ export default function HomePage() {
           <h2 className="section-title mb-0">
             <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-cyan to-neon-purple flex-shrink-0" />
             <Trophy size={16} className="text-neon-cyan" />
-            東京の安いソープランキング
+            東京の総額で安いソープランキング
           </h2>
           <Link
-            to={buildShopQuery({ area: '東京', genre: 'ソープランド', sort: 'price_asc' })}
+            to={buildShopQuery({ area: '東京', genre: 'ソープランド', sort: 'price_asc', total: true })}
             className="flex items-center gap-1 text-xs text-neon-cyan hover:text-neon-cyan/70 transition-colors"
           >
             すべて見る <ArrowRight size={12} />

@@ -6,6 +6,7 @@ import type { Shop } from '../types'
 import ShopCard from '../components/ShopCard'
 import SearchBar from '../components/SearchBar'
 import { getDiscountPrice } from '../utils/pricing'
+import { isTotalComparableSoap } from '../utils/shops'
 import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRE_NAMES, REGION_GROUPS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
@@ -55,6 +56,7 @@ interface ShopFilter {
   reservation: string
   discount: boolean
   morning: boolean
+  total: boolean
   ns: boolean
   nn: boolean
   search: string
@@ -79,6 +81,7 @@ const DEFAULT_FILTER: ShopFilter = {
   reservation: '',
   discount: false,
   morning: false,
+  total: false,
   ns: false,
   nn: false,
   search: '',
@@ -99,6 +102,7 @@ function applyFilter(shops: Shop[], f: ShopFilter): Shop[] {
     if (f.reservation && !s.reservation.includes(f.reservation)) return false
     if (f.discount && !getDiscountPrice(s).hasAmount) return false
     if (f.morning && !s.morning.available) return false
+    if (f.total && !isTotalComparableSoap(s)) return false
     if (f.ns && s.options.ns !== true) return false
     if (f.nn && s.options.nn !== true) return false
     if (f.search) {
@@ -174,6 +178,7 @@ export default function ShopListPage() {
     reservation: searchParams.get('reservation') ?? '',
     discount: searchParams.get('discount') === '1',
     morning: searchParams.get('morning') === '1',
+    total: searchParams.get('total') === '1',
     ns: searchParams.get('ns') === '1',
     nn: searchParams.get('nn') === '1',
     search: searchParams.get('q') ?? '',
@@ -191,8 +196,8 @@ export default function ShopListPage() {
   const activeRegionShortcuts = REGION_SHORTCUTS.find(group => group.region === filter.region)?.items ?? []
   const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
   const morningCount = allShops.filter(shop => shop.morning.available).length
-  const soapCount = allShops.filter(shop => shop.genre === 'ソープランド').length
-  const tokyoSoapCount = allShops.filter(shop => shop.area === '東京' && shop.genre === 'ソープランド').length
+  const soapCount = allShops.filter(isTotalComparableSoap).length
+  const tokyoSoapCount = allShops.filter(shop => shop.area === '東京' && isTotalComparableSoap(shop)).length
 
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter, nextSort: SortKey = sort) => {
     const next = updater(filter)
@@ -204,6 +209,7 @@ export default function ShopListPage() {
     if (next.reservation) params.set('reservation', next.reservation)
     if (next.discount) params.set('discount', '1')
     if (next.morning) params.set('morning', '1')
+    if (next.total) params.set('total', '1')
     if (next.ns) params.set('ns', '1')
     if (next.nn) params.set('nn', '1')
     if (next.search) params.set('q', next.search)
@@ -265,6 +271,7 @@ export default function ShopListPage() {
     filter.reservation && { key: 'reservation', label: filter.reservation, clear: () => updateFilter(f => ({ ...f, reservation: '' })) },
     filter.discount && { key: 'discount', label: '割引あり', clear: () => updateFilter(f => ({ ...f, discount: false })) },
     filter.morning && { key: 'morning', label: '朝活・早い時間', clear: () => updateFilter(f => ({ ...f, morning: false })) },
+    filter.total && { key: 'total', label: '総額確認済み', clear: () => updateFilter(f => ({ ...f, total: false })) },
     filter.ns && { key: 'ns', label: 'NS対応', clear: () => updateFilter(f => ({ ...f, ns: false })) },
     filter.nn && { key: 'nn', label: 'NN対応', clear: () => updateFilter(f => ({ ...f, nn: false })) },
     filter.search && { key: 'search', label: `検索: ${filter.search}`, clear: () => updateFilter(f => ({ ...f, search: '' })) },
@@ -370,9 +377,13 @@ export default function ShopListPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
         <button
-          onClick={() => updateFilter(f => ({ ...f, genre: f.genre === 'ソープランド' ? '' : 'ソープランド' }), 'price_asc')}
+          onClick={() => updateFilter(f => ({
+            ...f,
+            genre: f.genre === 'ソープランド' && f.total ? '' : 'ソープランド',
+            total: !(f.genre === 'ソープランド' && f.total),
+          }), 'price_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
-          style={filter.genre === 'ソープランド' && sort === 'price_asc'
+          style={filter.genre === 'ソープランド' && filter.total && sort === 'price_asc'
             ? { background: 'rgba(180,79,255,0.12)', borderColor: 'rgba(180,79,255,0.5)', boxShadow: '0 8px 24px rgba(180,79,255,0.1)' }
             : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
           }
@@ -380,9 +391,9 @@ export default function ShopListPage() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="flex items-center gap-1.5 text-sm font-bold text-neon-purple">
-                <ShowerHead size={14} />安いソープランキング
+                <ShowerHead size={14} />総額ソープ安い順
               </div>
-              <div className="text-xs text-text-dim mt-1">ソープランドだけを料金が安い順で表示</div>
+              <div className="text-xs text-text-dim mt-1">総額確認済みのソープだけを安い順で表示</div>
             </div>
             <div className="text-right">
               <div className="text-lg font-black text-text-bright">{soapCount}</div>
@@ -395,11 +406,12 @@ export default function ShopListPage() {
           onClick={() => updateFilter(f => ({
             ...f,
             region: '',
-            area: f.area === '東京' && f.genre === 'ソープランド' ? '' : '東京',
-            genre: f.area === '東京' && f.genre === 'ソープランド' ? '' : 'ソープランド',
+            area: f.area === '東京' && f.genre === 'ソープランド' && f.total ? '' : '東京',
+            genre: f.area === '東京' && f.genre === 'ソープランド' && f.total ? '' : 'ソープランド',
+            total: !(f.area === '東京' && f.genre === 'ソープランド' && f.total),
           }), 'price_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
-          style={filter.area === '東京' && filter.genre === 'ソープランド' && sort === 'price_asc'
+          style={filter.area === '東京' && filter.genre === 'ソープランド' && filter.total && sort === 'price_asc'
             ? { background: 'rgba(0,212,255,0.12)', borderColor: 'rgba(0,212,255,0.5)', boxShadow: '0 8px 24px rgba(0,212,255,0.1)' }
             : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
           }
@@ -407,9 +419,9 @@ export default function ShopListPage() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <div className="flex items-center gap-1.5 text-sm font-bold text-neon-cyan">
-                <ShowerHead size={14} />東京ソープ安い順
+                <ShowerHead size={14} />東京総額ソープ安い順
               </div>
-              <div className="text-xs text-text-dim mt-1">東京のソープランドだけを安い順で表示</div>
+              <div className="text-xs text-text-dim mt-1">東京の総額確認済みソープだけを安い順で表示</div>
             </div>
             <div className="text-right">
               <div className="text-lg font-black text-text-bright">{tokyoSoapCount}</div>
@@ -710,7 +722,7 @@ export default function ShopListPage() {
         <span className="text-sm text-text-dim">
           <span className="text-text-bright font-bold">{sorted.length}</span> 件の店舗
         </span>
-        {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.morning || filter.ns || filter.nn || filter.search) && (
+        {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.morning || filter.total || filter.ns || filter.nn || filter.search) && (
           <button
             onClick={() => updateFilter(() => DEFAULT_FILTER, 'default')}
             className="text-xs text-text-dim hover:text-neon-cyan transition-colors underline underline-offset-2"
