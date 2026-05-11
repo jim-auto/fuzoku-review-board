@@ -5,7 +5,7 @@ import castsData from '../data/casts.json'
 import type { Shop, Cast } from '../types'
 import ShopCard from '../components/ShopCard'
 import CastCard from '../components/CastCard'
-import { AREA_COLORS, AREA_NAMES, GENRES } from '../constants/taxonomy'
+import { AREA_COLORS, AREA_NAMES, GENRES, REGION_GROUPS } from '../constants/taxonomy'
 
 const shops = shopsData as Shop[]
 const casts = castsData as Cast[]
@@ -31,6 +31,11 @@ export default function HomePage() {
     name,
     color: AREA_COLORS[name],
     count: shops.filter(s => s.area === name).length,
+  }))
+
+  const priorityRegions = REGION_GROUPS.map(region => ({
+    ...region,
+    count: shops.filter(shop => region.areas.includes(shop.area)).length,
   }))
 
   return (
@@ -85,6 +90,59 @@ export default function HomePage() {
             </Link>
             <span className="text-text-dim text-sm">確認済み{shops.length}店舗</span>
           </div>
+        </div>
+      </section>
+
+      {/* ── Priority Regions ─────────────────────────────── */}
+      <section>
+        <h2 className="section-title">
+          <span className="w-0.5 h-5 rounded-full bg-gradient-to-b from-neon-cyan to-neon-green flex-shrink-0" />
+          <MapPin size={16} className="text-neon-cyan" />
+          重点エリア
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {priorityRegions.map(region => (
+            <Link
+              key={region.name}
+              to={`/shops?region=${encodeURIComponent(region.name)}`}
+              className="group rounded-xl border p-5 transition-all duration-200 hover:-translate-y-1"
+              style={{ background: `${region.color}0c`, borderColor: `${region.color}30` }}
+              onMouseEnter={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.boxShadow = `0 8px 28px ${region.color}18`
+                el.style.borderColor = `${region.color}60`
+              }}
+              onMouseLeave={e => {
+                const el = e.currentTarget as HTMLElement
+                el.style.boxShadow = ''
+                el.style.borderColor = `${region.color}30`
+              }}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <div className="text-2xl font-black" style={{ color: region.color, fontFamily: 'var(--font-display)' }}>
+                    {region.name}
+                  </div>
+                  <p className="text-sm text-text-muted mt-1">{region.desc}</p>
+                </div>
+                <div className="text-right">
+                  <div className="text-3xl font-black text-text-bright">{region.count}</div>
+                  <div className="text-xs text-text-dim">店舗</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-2 mt-4">
+                {region.areas.map(area => (
+                  <span
+                    key={area}
+                    className="text-xs px-2.5 py-1 rounded-full border"
+                    style={{ color: AREA_COLORS[area], borderColor: `${AREA_COLORS[area]}40`, background: `${AREA_COLORS[area]}10` }}
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 

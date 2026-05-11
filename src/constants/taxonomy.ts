@@ -1,4 +1,5 @@
 export const AREA_NAMES = ['東京', '大阪', '名古屋', '岐阜', '横浜', '福岡', '札幌'] as const
+export type AreaName = (typeof AREA_NAMES)[number]
 
 export const AREA_COLORS = {
   '東京': '#00d4ff',
@@ -9,6 +10,28 @@ export const AREA_COLORS = {
   '福岡': '#00ff9f',
   '札幌': '#4488ff',
 } as const
+
+interface RegionGroup {
+  name: string
+  areas: readonly AreaName[]
+  color: string
+  desc: string
+}
+
+export const REGION_GROUPS: readonly RegionGroup[] = [
+  {
+    name: '東京',
+    areas: ['東京'],
+    color: AREA_COLORS['東京'],
+    desc: '吉原ソープと都内メンズエステをまとめて比較',
+  },
+  {
+    name: '東海',
+    areas: ['名古屋', '岐阜'],
+    color: '#77ddaa',
+    desc: '名古屋メンズエステと金津園ソープを横断比較',
+  },
+] as const
 
 export const GENRES = [
   { name: 'デリバリーヘルス', short: 'DH', color: '#ff2d78', desc: '出張・宅配型' },

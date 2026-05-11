@@ -6,7 +6,7 @@ import type { Shop } from '../types'
 import ShopCard from '../components/ShopCard'
 import SearchBar from '../components/SearchBar'
 import { getDiscountPrice } from '../utils/pricing'
-import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRE_NAMES } from '../constants/taxonomy'
+import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRE_NAMES, REGION_GROUPS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
 
@@ -29,6 +29,7 @@ const PRICE_RANGES = [
 const RESERVATION_METHODS = ['LINE', 'Web予約', '電話', 'Twitter DM']
 
 interface ShopFilter {
+  region: string
   area: string
   genre: string
   priceMax: string
@@ -40,6 +41,7 @@ interface ShopFilter {
 }
 
 const DEFAULT_FILTER: ShopFilter = {
+  region: '',
   area: '',
   genre: '',
   priceMax: '',
@@ -56,7 +58,9 @@ function getComparablePrice(shop: Shop): number {
 }
 
 function applyFilter(shops: Shop[], f: ShopFilter): Shop[] {
+  const region = REGION_GROUPS.find(group => group.name === f.region)
   return shops.filter(s => {
+    if (region && !region.areas.includes(s.area)) return false
     if (f.area && s.area !== f.area) return false
     if (f.genre && s.genre !== f.genre) return false
     if (f.priceMax && getComparablePrice(s) > Number(f.priceMax)) return false
@@ -108,6 +112,7 @@ export default function ShopListPage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const filter = useMemo<ShopFilter>(() => ({
     ...DEFAULT_FILTER,
+    region: searchParams.get('region') ?? '',
     area: searchParams.get('area') ?? '',
     genre: searchParams.get('genre') ?? '',
     priceMax: searchParams.get('priceMax') ?? '',
@@ -129,6 +134,7 @@ export default function ShopListPage() {
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter) => {
     const next = updater(filter)
     const params = new URLSearchParams()
+    if (next.region) params.set('region', next.region)
     if (next.area) params.set('area', next.area)
     if (next.genre) params.set('genre', next.genre)
     if (next.priceMax) params.set('priceMax', next.priceMax)
@@ -141,6 +147,7 @@ export default function ShopListPage() {
   }
 
   const activeFilters = [
+    filter.region && { key: 'region', label: filter.region, clear: () => updateFilter(f => ({ ...f, region: '' })) },
     filter.area && { key: 'area', label: filter.area, clear: () => updateFilter(f => ({ ...f, area: '' })) },
     filter.genre && { key: 'genre', label: filter.genre, clear: () => updateFilter(f => ({ ...f, genre: '' })) },
     filter.priceMax && {
@@ -164,12 +171,53 @@ export default function ShopListPage() {
         placeholder="店舗名・ジャンル・タグで検索..."
       />
 
+      {/* Priority regions */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {REGION_GROUPS.map(region => {
+          const active = filter.region === region.name
+          const count = allShops.filter(shop => region.areas.includes(shop.area)).length
+          return (
+            <button
+              key={region.name}
+              onClick={() => updateFilter(f => ({ ...f, region: active ? '' : region.name, area: '' }))}
+              className="text-left rounded-xl border p-4 transition-all hover:-translate-y-0.5"
+              style={active
+                ? { background: `${region.color}14`, borderColor: `${region.color}60`, boxShadow: `0 8px 28px ${region.color}12` }
+                : { background: 'rgba(255,255,255,0.025)', borderColor: 'rgba(255,255,255,0.08)' }
+              }
+            >
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <div className="text-sm font-bold" style={{ color: region.color }}>{region.name}</div>
+                  <div className="text-xs text-text-dim mt-1">{region.desc}</div>
+                </div>
+                <div className="text-right">
+                  <div className="text-xl font-black text-text-bright">{count}</div>
+                  <div className="text-xs text-text-dim">店舗</div>
+                </div>
+              </div>
+              <div className="flex flex-wrap gap-1.5 mt-3">
+                {region.areas.map(area => (
+                  <span
+                    key={area}
+                    className="text-xs px-2 py-0.5 rounded-full border"
+                    style={{ color: AREA_COLORS[area], borderColor: `${AREA_COLORS[area]}40`, background: `${AREA_COLORS[area]}10` }}
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </button>
+          )
+        })}
+      </div>
+
       {/* Primary filters */}
       <div className="flex flex-wrap gap-2">
         <button
-          onClick={() => updateFilter(f => ({ ...f, area: '' }))}
+          onClick={() => updateFilter(f => ({ ...f, region: '', area: '' }))}
           className={`text-xs px-3 py-1.5 rounded-full border transition-colors ${
-            !filter.area
+            !filter.region && !filter.area
               ? 'bg-neon-cyan/10 border-neon-cyan/40 text-neon-cyan'
               : 'border-dark-500 text-text-dim hover:text-text-body'
           }`}
@@ -180,7 +228,7 @@ export default function ShopListPage() {
           return (
             <button
               key={area}
-              onClick={() => updateFilter(f => ({ ...f, area: active ? '' : area }))}
+              onClick={() => updateFilter(f => ({ ...f, region: '', area: active ? '' : area }))}
               className="text-xs px-3 py-1.5 rounded-full border transition-all"
               style={active
                 ? { background: `${color}15`, borderColor: `${color}50`, color }
@@ -385,7 +433,7 @@ export default function ShopListPage() {
         <span className="text-sm text-text-dim">
           <span className="text-text-bright font-bold">{sorted.length}</span> 件の店舗
         </span>
-        {(filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.ns || filter.nn || filter.search) && (
+        {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.ns || filter.nn || filter.search) && (
           <button
             onClick={() => updateFilter(() => DEFAULT_FILTER)}
             className="text-xs text-text-dim hover:text-neon-cyan transition-colors underline underline-offset-2"
