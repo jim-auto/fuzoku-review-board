@@ -63,6 +63,44 @@ export default function ShopDetailPage() {
   const discountPrice = getDiscountPrice(shop)
   const displayedMinPrice = discountPrice.isEstimateValid ? discountPrice.discountedMin : shop.price.min
   const hasServiceOptions = shop.options.ns !== null || shop.options.nn !== null
+  const optionSummary = [
+    shop.options.ns === true && 'NS対応',
+    shop.options.nn === true && 'NN対応',
+    shop.options.ns === false && 'NS非対応',
+    shop.options.nn === false && 'NN非対応',
+  ].filter(Boolean).join(' / ') || '条件未確認'
+  const quickFacts = [
+    {
+      label: discountPrice.isEstimateValid ? '割引後最安' : '通常最安',
+      value: `¥${displayedMinPrice.toLocaleString()}`,
+      note: shop.price.unit,
+      color: discountPrice.isEstimateValid ? '#00ff9f' : '#00d4ff',
+    },
+    {
+      label: '割引',
+      value: discountPrice.hasAmount ? `${discountPrice.amount.toLocaleString()}円OFF` : 'なし',
+      note: discountPrice.label ?? '金額データなし',
+      color: discountPrice.hasAmount ? '#00ff9f' : '#888',
+    },
+    {
+      label: '朝活',
+      value: shop.morning.available ? 'あり' : 'なし',
+      note: shop.morning.hours ?? '時間帯データなし',
+      color: shop.morning.available ? '#ffaa00' : '#888',
+    },
+    {
+      label: '予約',
+      value: shop.reservation[0] ?? '要確認',
+      note: shop.reservation.slice(1).join(' / ') || '主要予約方法',
+      color: '#b44fff',
+    },
+    {
+      label: 'NS/NN',
+      value: optionSummary,
+      note: shop.options.extras.slice(0, 2).join(' / ') || '追加条件なし',
+      color: '#ff2d78',
+    },
+  ]
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
@@ -105,6 +143,20 @@ export default function ShopDetailPage() {
                 </span>
               </div>
             </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
+            {quickFacts.map(fact => (
+              <div
+                key={fact.label}
+                className="rounded-xl border p-3 min-w-0"
+                style={{ background: `${fact.color}0c`, borderColor: `${fact.color}30` }}
+              >
+                <div className="text-xs font-semibold" style={{ color: fact.color }}>{fact.label}</div>
+                <div className="text-sm font-black text-text-bright mt-1 truncate">{fact.value}</div>
+                <div className="text-xs text-text-dim mt-1 truncate">{fact.note}</div>
+              </div>
+            ))}
           </div>
 
           <p className="text-sm text-text-body leading-relaxed">{shop.description}</p>
