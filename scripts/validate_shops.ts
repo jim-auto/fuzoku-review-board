@@ -82,6 +82,14 @@ for (const shop of shops) {
   if (!shop.price?.max || shop.price.max <= 0) fail(`${shop.id} is missing positive price.max`)
   if (shop.price.max < shop.price.min) fail(`${shop.id} price.max is lower than price.min`)
   if (!shop.price.unit) fail(`${shop.id} is missing price.unit`)
+  const text = JSON.stringify(shop)
+  const totalChecked = text.includes('総額確認済み') || text.includes('総額税込')
+  if (totalChecked) {
+    if (!text.includes('総額')) fail(`${shop.id} is tagged as total price but does not mention 総額`)
+    if (text.includes('入浴料') || text.includes('別途サービス料') || text.includes('総額は電話確認')) {
+      fail(`${shop.id} mixes total price tag with non-total fee wording`)
+    }
+  }
   if (!shop.hours) fail(`${shop.id} is missing hours`)
   if (!Array.isArray(shop.reservation) || shop.reservation.length === 0) {
     fail(`${shop.id} must have at least one reservation method`)
