@@ -5,7 +5,7 @@ import castsData from '../data/casts.json'
 import type { Shop, Cast } from '../types'
 import ShopCard from '../components/ShopCard'
 import CastCard from '../components/CastCard'
-import { AREA_COLORS, AREA_NAMES, GENRES, REGION_GROUPS } from '../constants/taxonomy'
+import { AREA_COLORS, AREA_NAMES, GENRE_COLORS, GENRES, REGION_GROUPS } from '../constants/taxonomy'
 
 const shops = shopsData as Shop[]
 const casts = castsData as Cast[]
@@ -23,6 +23,46 @@ const TRENDS = [
   '未確認のキャスト個人情報は掲載せず、店舗情報を優先します',
 ]
 
+const PRIORITY_SHORTCUTS = [
+  {
+    region: '東京',
+    items: [
+      { label: '吉原ソープ', area: '東京', genre: 'ソープランド', search: '吉原', desc: '総額・営業時間を比較' },
+      { label: '都内メンズエステ', area: '東京', genre: 'メンズエステ', search: '', desc: '錦糸町・日本橋・麻布など' },
+    ],
+  },
+  {
+    region: '東海',
+    items: [
+      { label: '名古屋メンズエステ', area: '名古屋', genre: 'メンズエステ', search: '', desc: '名駅・伏見周辺' },
+      { label: '岐阜金津園ソープ', area: '岐阜', genre: 'ソープランド', search: '金津園', desc: '金津園の総額目安' },
+    ],
+  },
+] as const
+
+function matchesShortcut(shop: Shop, shortcut: (typeof PRIORITY_SHORTCUTS)[number]['items'][number]): boolean {
+  if (shop.area !== shortcut.area) return false
+  if (shop.genre !== shortcut.genre) return false
+  if (!shortcut.search) return true
+
+  const query = shortcut.search.toLowerCase()
+  return (
+    shop.name.toLowerCase().includes(query) ||
+    shop.description.toLowerCase().includes(query) ||
+    shop.tags.some(tag => tag.toLowerCase().includes(query)) ||
+    (shop.address ?? '').toLowerCase().includes(query)
+  )
+}
+
+function buildShopQuery(params: { region?: string; area?: string; genre?: string; search?: string }): string {
+  const searchParams = new URLSearchParams()
+  if (params.region) searchParams.set('region', params.region)
+  if (params.area) searchParams.set('area', params.area)
+  if (params.genre) searchParams.set('genre', params.genre)
+  if (params.search) searchParams.set('q', params.search)
+  return `/shops?${searchParams.toString()}`
+}
+
 export default function HomePage() {
   const featuredShops = shops.slice(0, 6)
   const newCasts = casts.filter(c => c.isNew)
@@ -36,6 +76,10 @@ export default function HomePage() {
   const priorityRegions = REGION_GROUPS.map(region => ({
     ...region,
     count: shops.filter(shop => region.areas.includes(shop.area)).length,
+    shortcuts: (PRIORITY_SHORTCUTS.find(shortcut => shortcut.region === region.name)?.items ?? []).map(shortcut => ({
+      ...shortcut,
+      count: shops.filter(shop => matchesShortcut(shop, shortcut)).length,
+    })),
   }))
 
   return (
@@ -102,10 +146,9 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {priorityRegions.map(region => (
-            <Link
+            <div
               key={region.name}
-              to={`/shops?region=${encodeURIComponent(region.name)}`}
-              className="group rounded-xl border p-5 transition-all duration-200 hover:-translate-y-1"
+              className="rounded-xl border p-5 transition-all duration-200 hover:-translate-y-1"
               style={{ background: `${region.color}0c`, borderColor: `${region.color}30` }}
               onMouseEnter={e => {
                 const el = e.currentTarget as HTMLElement
@@ -141,7 +184,37 @@ export default function HomePage() {
                   </span>
                 ))}
               </div>
-            </Link>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4">
+                {region.shortcuts.map(shortcut => (
+                  <Link
+                    key={shortcut.label}
+                    to={buildShopQuery({
+                      region: region.name,
+                      area: shortcut.area,
+                      genre: shortcut.genre,
+                      search: shortcut.search,
+                    })}
+                    className="rounded-lg border px-3 py-2 transition-colors hover:border-neon-cyan/60 hover:bg-neon-cyan/5"
+                    style={{ borderColor: `${GENRE_COLORS[shortcut.genre]}35`, background: `${GENRE_COLORS[shortcut.genre]}0c` }}
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-sm font-semibold text-text-bright">{shortcut.label}</span>
+                      <span className="text-sm font-black" style={{ color: GENRE_COLORS[shortcut.genre] }}>
+                        {shortcut.count}店
+                      </span>
+                    </div>
+                    <p className="text-xs text-text-dim mt-1">{shortcut.desc}</p>
+                  </Link>
+                ))}
+              </div>
+              <Link
+                to={buildShopQuery({ region: region.name })}
+                className="inline-flex items-center gap-1.5 text-xs font-semibold mt-4 transition-colors hover:text-neon-cyan"
+                style={{ color: region.color }}
+              >
+                {region.name}をまとめて見る <ArrowRight size={12} />
+              </Link>
+            </div>
           ))}
         </div>
       </section>
