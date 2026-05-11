@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { ArrowUpDown, Banknote, ChevronDown, CircleCheck, X } from 'lucide-react'
+import { ArrowUpDown, Banknote, ChevronDown, CircleCheck, Sun, X } from 'lucide-react'
 import shopsData from '../data/shops.json'
 import type { Shop } from '../types'
 import ShopCard from '../components/ShopCard'
@@ -54,6 +54,7 @@ interface ShopFilter {
   priceMax: string
   reservation: string
   discount: boolean
+  morning: boolean
   ns: boolean
   nn: boolean
   search: string
@@ -66,6 +67,7 @@ const DEFAULT_FILTER: ShopFilter = {
   priceMax: '',
   reservation: '',
   discount: false,
+  morning: false,
   ns: false,
   nn: false,
   search: '',
@@ -85,6 +87,7 @@ function applyFilter(shops: Shop[], f: ShopFilter): Shop[] {
     if (f.priceMax && getComparablePrice(s) > Number(f.priceMax)) return false
     if (f.reservation && !s.reservation.includes(f.reservation)) return false
     if (f.discount && !getDiscountPrice(s).hasAmount) return false
+    if (f.morning && !s.morning.available) return false
     if (f.ns && s.options.ns !== true) return false
     if (f.nn && s.options.nn !== true) return false
     if (f.search) {
@@ -137,6 +140,7 @@ export default function ShopListPage() {
     priceMax: searchParams.get('priceMax') ?? '',
     reservation: searchParams.get('reservation') ?? '',
     discount: searchParams.get('discount') === '1',
+    morning: searchParams.get('morning') === '1',
     ns: searchParams.get('ns') === '1',
     nn: searchParams.get('nn') === '1',
     search: searchParams.get('q') ?? '',
@@ -150,6 +154,8 @@ export default function ShopListPage() {
   const filtered = useMemo(() => applyFilter(allShops, filter), [filter])
   const sorted = useMemo(() => applySort(filtered, sort), [filtered, sort])
   const activeRegionShortcuts = REGION_SHORTCUTS.find(group => group.region === filter.region)?.items ?? []
+  const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
+  const morningCount = allShops.filter(shop => shop.morning.available).length
 
   const updateFilter = (updater: (current: ShopFilter) => ShopFilter) => {
     const next = updater(filter)
@@ -160,6 +166,7 @@ export default function ShopListPage() {
     if (next.priceMax) params.set('priceMax', next.priceMax)
     if (next.reservation) params.set('reservation', next.reservation)
     if (next.discount) params.set('discount', '1')
+    if (next.morning) params.set('morning', '1')
     if (next.ns) params.set('ns', '1')
     if (next.nn) params.set('nn', '1')
     if (next.search) params.set('q', next.search)
@@ -177,6 +184,7 @@ export default function ShopListPage() {
     },
     filter.reservation && { key: 'reservation', label: filter.reservation, clear: () => updateFilter(f => ({ ...f, reservation: '' })) },
     filter.discount && { key: 'discount', label: '割引あり', clear: () => updateFilter(f => ({ ...f, discount: false })) },
+    filter.morning && { key: 'morning', label: '朝活・早い時間', clear: () => updateFilter(f => ({ ...f, morning: false })) },
     filter.ns && { key: 'ns', label: 'NS対応', clear: () => updateFilter(f => ({ ...f, ns: false })) },
     filter.nn && { key: 'nn', label: 'NN対応', clear: () => updateFilter(f => ({ ...f, nn: false })) },
     filter.search && { key: 'search', label: `検索: ${filter.search}`, clear: () => updateFilter(f => ({ ...f, search: '' })) },
@@ -280,6 +288,52 @@ export default function ShopListPage() {
         </div>
       )}
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+        <button
+          onClick={() => updateFilter(f => ({ ...f, discount: !f.discount }))}
+          className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
+          style={filter.discount
+            ? { background: 'rgba(0,255,159,0.12)', borderColor: 'rgba(0,255,159,0.5)', boxShadow: '0 8px 24px rgba(0,255,159,0.1)' }
+            : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
+          }
+        >
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-1.5 text-sm font-bold text-neon-green">
+                <Banknote size={14} />割引で安く
+              </div>
+              <div className="text-xs text-text-dim mt-1">割引額が明記されている店だけ表示</div>
+            </div>
+            <div className="text-right">
+              <div className="text-lg font-black text-text-bright">{discountCount}</div>
+              <div className="text-xs text-text-dim">件</div>
+            </div>
+          </div>
+        </button>
+
+        <button
+          onClick={() => updateFilter(f => ({ ...f, morning: !f.morning }))}
+          className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
+          style={filter.morning
+            ? { background: 'rgba(255,170,0,0.12)', borderColor: 'rgba(255,170,0,0.5)', boxShadow: '0 8px 24px rgba(255,170,0,0.1)' }
+            : { background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.08)' }
+          }
+        >
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="flex items-center gap-1.5 text-sm font-bold text-neon-amber">
+                <Sun size={14} />朝活・早い時間
+              </div>
+              <div className="text-xs text-text-dim mt-1">朝営業や朝の特典がある店を探す</div>
+            </div>
+            <div className="text-right">
+              <div className="text-lg font-black text-text-bright">{morningCount}</div>
+              <div className="text-xs text-text-dim">件</div>
+            </div>
+          </div>
+        </button>
+      </div>
+
       {/* Primary filters */}
       <div className="flex flex-wrap gap-2">
         <button
@@ -339,18 +393,6 @@ export default function ShopListPage() {
 
       {/* Quick filters row */}
       <div className="flex items-center gap-3 flex-wrap">
-        {/* Discount toggle */}
-        <button
-          onClick={() => updateFilter(f => ({ ...f, discount: !f.discount }))}
-          className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border transition-all"
-          style={filter.discount
-            ? { background: 'rgba(0,255,159,0.1)', borderColor: 'rgba(0,255,159,0.35)', color: '#00ff9f' }
-            : { background: 'transparent', borderColor: 'rgba(255,255,255,0.1)', color: '#888' }
-          }
-        >
-          <Banknote size={11} />割引ありのみ
-        </button>
-
         <button
           onClick={() => setAdvancedOpen(open => !open)}
           className="flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full border border-dark-500 text-text-muted hover:text-text-body transition-colors"
@@ -501,7 +543,7 @@ export default function ShopListPage() {
         <span className="text-sm text-text-dim">
           <span className="text-text-bright font-bold">{sorted.length}</span> 件の店舗
         </span>
-        {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.ns || filter.nn || filter.search) && (
+        {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.morning || filter.ns || filter.nn || filter.search) && (
           <button
             onClick={() => updateFilter(() => DEFAULT_FILTER)}
             className="text-xs text-text-dim hover:text-neon-cyan transition-colors underline underline-offset-2"
