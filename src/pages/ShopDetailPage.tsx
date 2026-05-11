@@ -8,6 +8,7 @@ import castsData from '../data/casts.json'
 import type { Cast, Shop } from '../types'
 import CastCard from '../components/CastCard'
 import { getDiscountPrice } from '../utils/pricing'
+import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { AREA_COLORS, GENRE_COLORS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
@@ -63,6 +64,8 @@ export default function ShopDetailPage() {
   const discountPrice = getDiscountPrice(shop)
   const displayedMinPrice = discountPrice.isEstimateValid ? discountPrice.discountedMin : shop.price.min
   const hasServiceOptions = shop.options.ns !== null || shop.options.nn !== null
+  const priceBasis = getSoapPriceBasis(shop)
+  const priceBasisLabel = getSoapPriceBasisLabel(shop)
   const optionSummary = [
     shop.options.ns === true && 'NS対応',
     shop.options.nn === true && 'NN対応',
@@ -73,8 +76,8 @@ export default function ShopDetailPage() {
     {
       label: discountPrice.isEstimateValid ? '割引後最安' : '通常最安',
       value: `¥${displayedMinPrice.toLocaleString()}`,
-      note: shop.price.unit,
-      color: discountPrice.isEstimateValid ? '#00ff9f' : '#00d4ff',
+      note: priceBasisLabel ? `${priceBasisLabel} / ${shop.price.unit}` : shop.price.unit,
+      color: priceBasis === 'total' ? '#00ff9f' : discountPrice.isEstimateValid ? '#00ff9f' : '#00d4ff',
     },
     {
       label: '割引',
@@ -177,6 +180,17 @@ export default function ShopDetailPage() {
                 {discountPrice.isEstimateValid && (
                   <span className="text-xs px-2 py-0.5 rounded-full border border-neon-green/30 bg-neon-green/10 text-neon-green font-semibold">
                     割引適用可
+                  </span>
+                )}
+                {priceBasisLabel && (
+                  <span
+                    className="text-xs px-2 py-0.5 rounded-full border font-semibold"
+                    style={priceBasis === 'total'
+                      ? { background: 'rgba(0,255,159,0.08)', borderColor: 'rgba(0,255,159,0.28)', color: '#00ff9f' }
+                      : { background: 'rgba(255,170,0,0.08)', borderColor: 'rgba(255,170,0,0.28)', color: '#ffaa00' }
+                    }
+                  >
+                    {priceBasisLabel}
                   </span>
                 )}
               </div>

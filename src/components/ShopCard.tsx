@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { MapPin, Clock, Banknote, CircleCheck, CircleX, Users, Phone } from 'lucide-react'
 import type { Shop } from '../types'
 import { getDiscountPrice } from '../utils/pricing'
+import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { AREA_COLORS, GENRE_COLORS, GENRE_SHORT } from '../constants/taxonomy'
 
 interface Props { shop: Shop }
@@ -12,6 +13,8 @@ export default function ShopCard({ shop }: Props) {
   const short = GENRE_SHORT[shop.genre] ?? '??'
   const discountPrice = getDiscountPrice(shop)
   const hasOptions = shop.options.ns !== null || shop.options.nn !== null
+  const priceBasis = getSoapPriceBasis(shop)
+  const priceBasisLabel = getSoapPriceBasisLabel(shop)
 
   return (
     <Link
@@ -99,6 +102,17 @@ export default function ShopCard({ shop }: Props) {
                 </span>
               )}
             </div>
+          )}
+          {priceBasisLabel && (
+            <span
+              className="inline-flex text-xs px-2 py-0.5 rounded-full border font-semibold"
+              style={priceBasis === 'total'
+                ? { background: 'rgba(0,255,159,0.08)', borderColor: 'rgba(0,255,159,0.28)', color: '#00ff9f' }
+                : { background: 'rgba(255,170,0,0.08)', borderColor: 'rgba(255,170,0,0.28)', color: '#ffaa00' }
+              }
+            >
+              {priceBasisLabel}
+            </span>
           )}
         </div>
 
