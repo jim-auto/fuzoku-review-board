@@ -132,6 +132,8 @@ function applySort(shops: Shop[], sort: SortKey): Shop[] {
 
 export default function ShopListPage() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const sortParam = searchParams.get('sort')
+  const sort: SortKey = SORT_OPTIONS.some(option => option.value === sortParam) ? sortParam as SortKey : 'default'
   const filter = useMemo<ShopFilter>(() => ({
     ...DEFAULT_FILTER,
     region: searchParams.get('region') ?? '',
@@ -145,7 +147,6 @@ export default function ShopListPage() {
     nn: searchParams.get('nn') === '1',
     search: searchParams.get('q') ?? '',
   }), [searchParams])
-  const [sort, setSort] = useState<SortKey>('default')
   const [sortOpen, setSortOpen] = useState(false)
   const [advancedOpen, setAdvancedOpen] = useState(() =>
     Boolean(searchParams.get('genre') || searchParams.get('reservation') || searchParams.get('ns') || searchParams.get('nn')),
@@ -157,7 +158,7 @@ export default function ShopListPage() {
   const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
   const morningCount = allShops.filter(shop => shop.morning.available).length
 
-  const updateFilter = (updater: (current: ShopFilter) => ShopFilter) => {
+  const updateFilter = (updater: (current: ShopFilter) => ShopFilter, nextSort: SortKey = sort) => {
     const next = updater(filter)
     const params = new URLSearchParams()
     if (next.region) params.set('region', next.region)
@@ -170,6 +171,17 @@ export default function ShopListPage() {
     if (next.ns) params.set('ns', '1')
     if (next.nn) params.set('nn', '1')
     if (next.search) params.set('q', next.search)
+    if (nextSort !== 'default') params.set('sort', nextSort)
+    setSearchParams(params, { replace: true })
+  }
+
+  const updateSort = (nextSort: SortKey) => {
+    const params = new URLSearchParams(searchParams)
+    if (nextSort === 'default') {
+      params.delete('sort')
+    } else {
+      params.set('sort', nextSort)
+    }
     setSearchParams(params, { replace: true })
   }
 
@@ -290,7 +302,7 @@ export default function ShopListPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
         <button
-          onClick={() => updateFilter(f => ({ ...f, discount: !f.discount }))}
+          onClick={() => updateFilter(f => ({ ...f, discount: !f.discount }), 'discount_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
           style={filter.discount
             ? { background: 'rgba(0,255,159,0.12)', borderColor: 'rgba(0,255,159,0.5)', boxShadow: '0 8px 24px rgba(0,255,159,0.1)' }
@@ -312,7 +324,7 @@ export default function ShopListPage() {
         </button>
 
         <button
-          onClick={() => updateFilter(f => ({ ...f, morning: !f.morning }))}
+          onClick={() => updateFilter(f => ({ ...f, morning: !f.morning }), 'price_asc')}
           className="text-left rounded-xl border p-3 transition-all hover:-translate-y-0.5"
           style={filter.morning
             ? { background: 'rgba(255,170,0,0.12)', borderColor: 'rgba(255,170,0,0.5)', boxShadow: '0 8px 24px rgba(255,170,0,0.1)' }
@@ -417,7 +429,7 @@ export default function ShopListPage() {
               {SORT_OPTIONS.map(opt => (
                 <button
                   key={opt.value}
-                  onClick={() => { setSort(opt.value); setSortOpen(false) }}
+                  onClick={() => { updateSort(opt.value); setSortOpen(false) }}
                   className={`w-full text-left px-4 py-2.5 text-xs transition-colors hover:bg-dark-700 ${
                     sort === opt.value ? 'text-neon-cyan' : 'text-text-muted'
                   }`}
@@ -545,7 +557,7 @@ export default function ShopListPage() {
         </span>
         {(filter.region || filter.area || filter.genre || filter.priceMax || filter.reservation || filter.discount || filter.morning || filter.ns || filter.nn || filter.search) && (
           <button
-            onClick={() => updateFilter(() => DEFAULT_FILTER)}
+            onClick={() => updateFilter(() => DEFAULT_FILTER, 'default')}
             className="text-xs text-text-dim hover:text-neon-cyan transition-colors underline underline-offset-2"
           >
             フィルターをリセット
