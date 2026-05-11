@@ -18,6 +18,7 @@ interface UrlResult {
 }
 
 const TIMEOUT_MS = 12_000
+const CONCURRENCY = 8
 const ALLOW_NETWORK_FAILURES = process.env.ALLOW_URL_NETWORK_FAILURES === '1'
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'
@@ -82,13 +83,25 @@ async function fetchWithTimeout(url: string, method: 'HEAD' | 'GET'): Promise<Re
 const shops = JSON.parse(fs.readFileSync('src/data/shops.json', 'utf-8')) as Shop[]
 const urls = unique(shops.flatMap(shop => [shop.url, shop.source?.url].filter(Boolean) as string[]))
 
-const results: UrlResult[] = []
-for (const url of urls) {
-  const result = await checkUrl(url)
-  results.push(result)
+const results: UrlResult[] = new Array(urls.length)
+let nextIndex = 0
+
+async function worker(): Promise<void> {
+  while (nextIndex < urls.length) {
+    const currentIndex = nextIndex
+    nextIndex += 1
+    results[currentIndex] = await checkUrl(urls[currentIndex])
+  }
+}
+
+await Promise.all(
+  Array.from({ length: Math.min(CONCURRENCY, urls.length) }, () => worker()),
+)
+
+for (const result of results) {
   const label = result.ok ? (result.warning ? 'WARN' : 'OK') : 'FAIL'
   const status = result.status ? ` ${result.status}` : ''
-  console.log(`${label}${status} ${url} ${result.warning ? `(${result.message})` : ''}`)
+  console.log(`${label}${status} ${result.url} ${result.warning ? `(${result.message})` : ''}`)
 }
 
 const failures = results.filter(result => !result.ok)
