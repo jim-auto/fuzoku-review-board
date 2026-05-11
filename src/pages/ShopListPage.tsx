@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowUpDown, Banknote, ChevronDown, CircleCheck, Sun, X } from 'lucide-react'
 import shopsData from '../data/shops.json'
 import type { Shop } from '../types'
@@ -58,6 +58,17 @@ interface ShopFilter {
   ns: boolean
   nn: boolean
   search: string
+}
+
+interface RecommendationCard {
+  key: string
+  label: string
+  shop: Shop
+  price: string
+  detail: string
+  color: string
+  actionLabel?: string
+  action?: () => void
 }
 
 const DEFAULT_FILTER: ShopFilter = {
@@ -130,6 +141,26 @@ function applySort(shops: Shop[], sort: SortKey): Shop[] {
   }
 }
 
+function formatYen(value: number): string {
+  return `¥${value.toLocaleString()}`
+}
+
+function getCheapest(shops: Shop[]): Shop | undefined {
+  return [...shops].sort((a, b) => a.price.min - b.price.min)[0]
+}
+
+function getCheapestDiscount(shops: Shop[]): Shop | undefined {
+  return [...shops]
+    .filter(shop => getDiscountPrice(shop).isEstimateValid)
+    .sort((a, b) => getDiscountPrice(a).discountedMin - getDiscountPrice(b).discountedMin)[0]
+}
+
+function getCheapestMorning(shops: Shop[]): Shop | undefined {
+  return [...shops]
+    .filter(shop => shop.morning.available)
+    .sort((a, b) => a.price.min - b.price.min)[0]
+}
+
 export default function ShopListPage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const sortParam = searchParams.get('sort')
@@ -154,6 +185,9 @@ export default function ShopListPage() {
 
   const filtered = useMemo(() => applyFilter(allShops, filter), [filter])
   const sorted = useMemo(() => applySort(filtered, sort), [filtered, sort])
+  const cheapestShop = useMemo(() => getCheapest(filtered), [filtered])
+  const cheapestDiscountShop = useMemo(() => getCheapestDiscount(filtered), [filtered])
+  const cheapestMorningShop = useMemo(() => getCheapestMorning(filtered), [filtered])
   const activeRegionShortcuts = REGION_SHORTCUTS.find(group => group.region === filter.region)?.items ?? []
   const discountCount = allShops.filter(shop => getDiscountPrice(shop).hasAmount).length
   const morningCount = allShops.filter(shop => shop.morning.available).length
@@ -184,6 +218,38 @@ export default function ShopListPage() {
     }
     setSearchParams(params, { replace: true })
   }
+
+  const recommendationCandidates: Array<RecommendationCard | undefined> = [
+    cheapestShop && {
+      key: 'cheapest',
+      label: 'この条件の最安',
+      shop: cheapestShop,
+      price: formatYen(cheapestShop.price.min),
+      detail: cheapestShop.price.unit,
+      color: '#00d4ff',
+    },
+    cheapestDiscountShop && {
+      key: 'discount',
+      label: '割引後の最安',
+      shop: cheapestDiscountShop,
+      price: formatYen(getDiscountPrice(cheapestDiscountShop).discountedMin),
+      detail: getDiscountPrice(cheapestDiscountShop).label ?? cheapestDiscountShop.price.unit,
+      color: '#00ff9f',
+      actionLabel: '割引で並べる',
+      action: () => updateFilter(f => ({ ...f, discount: true }), 'discount_asc'),
+    },
+    cheapestMorningShop && {
+      key: 'morning',
+      label: '朝活の最安',
+      shop: cheapestMorningShop,
+      price: formatYen(cheapestMorningShop.price.min),
+      detail: cheapestMorningShop.morning.hours ?? cheapestMorningShop.price.unit,
+      color: '#ffaa00',
+      actionLabel: '朝活で絞る',
+      action: () => updateFilter(f => ({ ...f, morning: true }), 'price_asc'),
+    },
+  ]
+  const recommendationCards = recommendationCandidates.filter((item): item is RecommendationCard => Boolean(item))
 
   const activeFilters = [
     filter.region && { key: 'region', label: filter.region, clear: () => updateFilter(f => ({ ...f, region: '' })) },
@@ -546,6 +612,44 @@ export default function ShopListPage() {
               {item.label}
               <X size={11} />
             </button>
+          ))}
+        </div>
+      )}
+
+      {filtered.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+          {recommendationCards.map(item => (
+            <div
+              key={item.key}
+              className="rounded-xl border p-3"
+              style={{ background: `${item.color}0c`, borderColor: `${item.color}30` }}
+            >
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <div className="text-xs font-semibold" style={{ color: item.color }}>{item.label}</div>
+                  <Link
+                    to={`/shops/${item.shop.id}`}
+                    className="block text-sm font-bold text-text-bright mt-1 truncate hover:text-white transition-colors"
+                  >
+                    {item.shop.name}
+                  </Link>
+                  <div className="text-xs text-text-dim mt-1 truncate">{item.detail}</div>
+                </div>
+                <div className="text-right flex-shrink-0">
+                  <div className="text-xl font-black text-text-bright">{item.price}</div>
+                  <div className="text-xs text-text-dim">{item.shop.area}</div>
+                </div>
+              </div>
+              {'action' in item && item.action && (
+                <button
+                  onClick={item.action}
+                  className="text-xs font-semibold mt-3 transition-colors hover:text-white"
+                  style={{ color: item.color }}
+                >
+                  {item.actionLabel}
+                </button>
+              )}
+            </div>
           ))}
         </div>
       )}
