@@ -3,6 +3,7 @@ import { MapPin, Clock, Banknote, CircleCheck, CircleX, Users, Phone } from 'luc
 import type { Shop } from '../types'
 import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
+import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
 import { AREA_COLORS, GENRE_COLORS, GENRE_SHORT } from '../constants/taxonomy'
 
 interface Props { shop: Shop }
@@ -15,6 +16,8 @@ export default function ShopCard({ shop }: Props) {
   const hasOptions = shop.options.ns !== null || shop.options.nn !== null
   const priceBasis = getSoapPriceBasis(shop)
   const priceBasisLabel = getSoapPriceBasisLabel(shop)
+  const openStatus = getOpenStatus(shop.hours)
+  const openStatusStyle = getOpenStatusStyle(openStatus.kind)
 
   return (
     <Link
@@ -117,9 +120,18 @@ export default function ShopCard({ shop }: Props) {
         </div>
 
         {/* Hours */}
-        <div className="flex items-center gap-1.5 text-xs text-text-dim min-w-0">
-          <Clock size={11} className="text-neon-cyan flex-shrink-0" />
-          <span className="truncate">{shop.hours}</span>
+        <div className="flex items-center gap-2 text-xs min-w-0">
+          <span
+            className="inline-flex items-center gap-1 px-2 py-1 rounded-full border font-bold flex-shrink-0"
+            style={openStatusStyle}
+          >
+            <Clock size={11} />
+            {openStatus.label}
+          </span>
+          <div className="min-w-0 text-text-dim">
+            <div className="truncate font-semibold text-text-body">{shop.hours}</div>
+            <div className="truncate">{openStatus.detail}</div>
+          </div>
         </div>
 
         {/* Reservation + NS/NN */}

@@ -9,6 +9,7 @@ import type { Cast, Shop } from '../types'
 import CastCard from '../components/CastCard'
 import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
+import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
 import { AREA_COLORS, GENRE_COLORS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
@@ -66,6 +67,8 @@ export default function ShopDetailPage() {
   const hasServiceOptions = shop.options.ns !== null || shop.options.nn !== null
   const priceBasis = getSoapPriceBasis(shop)
   const priceBasisLabel = getSoapPriceBasisLabel(shop)
+  const openStatus = getOpenStatus(shop.hours)
+  const openStatusStyle = getOpenStatusStyle(openStatus.kind)
   const optionSummary = [
     shop.options.ns === true && 'NS対応',
     shop.options.nn === true && 'NN対応',
@@ -90,6 +93,12 @@ export default function ShopDetailPage() {
       value: shop.morning.available ? 'あり' : 'なし',
       note: shop.morning.hours ?? '時間帯データなし',
       color: shop.morning.available ? '#ffaa00' : '#888',
+    },
+    {
+      label: '営業状況',
+      value: openStatus.label,
+      note: openStatus.detail,
+      color: openStatusStyle.color,
     },
     {
       label: '予約',
@@ -248,7 +257,18 @@ export default function ShopDetailPage() {
                   <div className="flex items-center gap-1.5 text-xs text-text-dim mb-1">
                     <Clock size={12} className="text-neon-cyan" />営業時間
                   </div>
-                  <div className="text-sm font-bold text-text-bright">{shop.hours}</div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span
+                      className="text-xs px-2.5 py-1 rounded-full border font-bold"
+                      style={openStatusStyle}
+                    >
+                      {openStatus.label}
+                    </span>
+                    <div>
+                      <div className="text-sm font-bold text-text-bright">{shop.hours}</div>
+                      <div className="text-xs text-text-dim">{openStatus.detail}</div>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
