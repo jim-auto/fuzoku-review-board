@@ -4,6 +4,7 @@ import type { Shop } from '../types'
 import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
+import { getTimeValue } from '../utils/value'
 import { AREA_COLORS, GENRE_COLORS, GENRE_SHORT } from '../constants/taxonomy'
 
 interface Props { shop: Shop }
@@ -18,6 +19,7 @@ export default function ShopCard({ shop }: Props) {
   const priceBasisLabel = getSoapPriceBasisLabel(shop)
   const openStatus = getOpenStatus(shop.hours)
   const openStatusStyle = getOpenStatusStyle(openStatus.kind)
+  const timeValue = getTimeValue(shop)
 
   return (
     <Link
@@ -116,6 +118,16 @@ export default function ShopCard({ shop }: Props) {
             >
               {priceBasisLabel}
             </span>
+          )}
+          {timeValue && (
+            <div className="grid grid-cols-2 gap-1.5 pt-1">
+              <span className="text-xs px-2 py-1 rounded-lg border border-neon-cyan/25 bg-neon-cyan/5 text-neon-cyan font-semibold">
+                {timeValue.label}
+              </span>
+              <span className="text-xs px-2 py-1 rounded-lg border border-dark-500 bg-dark-700 text-text-body font-semibold truncate">
+                {timeValue.detail}
+              </span>
+            </div>
           )}
         </div>
 

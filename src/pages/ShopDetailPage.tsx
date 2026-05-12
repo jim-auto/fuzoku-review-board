@@ -10,6 +10,7 @@ import CastCard from '../components/CastCard'
 import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
+import { getTimeValue } from '../utils/value'
 import { AREA_COLORS, GENRE_COLORS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
@@ -69,6 +70,7 @@ export default function ShopDetailPage() {
   const priceBasisLabel = getSoapPriceBasisLabel(shop)
   const openStatus = getOpenStatus(shop.hours)
   const openStatusStyle = getOpenStatusStyle(openStatus.kind)
+  const timeValue = getTimeValue(shop)
   const optionSummary = [
     shop.options.ns === true && 'NS対応',
     shop.options.nn === true && 'NN対応',
@@ -87,6 +89,12 @@ export default function ShopDetailPage() {
       value: discountPrice.hasAmount ? `${discountPrice.amount.toLocaleString()}円OFF` : 'なし',
       note: discountPrice.label ?? '金額データなし',
       color: discountPrice.hasAmount ? '#00ff9f' : '#888',
+    },
+    timeValue && {
+      label: '時間単価',
+      value: timeValue.label,
+      note: timeValue.detail,
+      color: '#00d4ff',
     },
     {
       label: '朝活',
@@ -112,7 +120,7 @@ export default function ShopDetailPage() {
       note: shop.options.extras.slice(0, 2).join(' / ') || '追加条件なし',
       color: '#ff2d78',
     },
-  ]
+  ].filter(Boolean) as { label: string; value: string; note: string; color: string }[]
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
@@ -157,7 +165,7 @@ export default function ShopDetailPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
             {quickFacts.map(fact => (
               <div
                 key={fact.label}
@@ -235,6 +243,14 @@ export default function ShopDetailPage() {
                       {discountPrice.isEstimateValid ? `¥${discountPrice.discountedMin.toLocaleString()}〜` : '条件確認'}
                     </span>
                   </div>
+                  {timeValue && (
+                    <div className="grid grid-cols-2 gap-3 px-3 py-2 text-xs">
+                      <span className="text-text-dim">時間あたり</span>
+                      <span className="text-right text-neon-cyan font-bold">
+                        {timeValue.label} / {timeValue.detail}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 {discountPrice.hasAmount && !discountPrice.isEstimateValid && (
