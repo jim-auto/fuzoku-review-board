@@ -79,7 +79,15 @@
         "カード利用可"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 19,
+      "ageMin": 18,
+      "ageMax": 20,
+      "sampleSize": 2,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-004",
@@ -247,7 +255,15 @@
         "オプションあり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.4,
+      "ageMin": 20,
+      "ageMax": 25,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-008",
@@ -593,7 +609,15 @@
         "延長あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.9,
+      "ageMin": 20,
+      "ageMax": 24,
+      "sampleSize": 8,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-021",
@@ -1033,7 +1057,15 @@
         "延長あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.5,
+      "ageMin": 19,
+      "ageMax": 27,
+      "sampleSize": 22,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-032",
@@ -1074,7 +1106,15 @@
         "完全個室"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.5,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 22,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-034",
@@ -1115,7 +1155,15 @@
         "税込表示"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.8,
+      "ageMin": 19,
+      "ageMax": 27,
+      "sampleSize": 8,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-035",
@@ -1157,7 +1205,15 @@
         "延長あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.8,
+      "ageMin": 19,
+      "ageMax": 26,
+      "sampleSize": 8,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-037",
@@ -1198,7 +1254,15 @@
         "複数コース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 23,
+      "ageMax": 25,
+      "sampleSize": 6,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-038",
@@ -2442,7 +2506,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.8,
+      "ageMin": 21,
+      "ageMax": 27,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-066",
@@ -2483,7 +2555,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25,
+      "ageMin": 22,
+      "ageMax": 29,
+      "sampleSize": 4,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-067",
@@ -3548,7 +3628,15 @@
         "オリジナルオイル"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.6,
+      "ageMin": 21,
+      "ageMax": 25,
+      "sampleSize": 5,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-096",
@@ -4099,7 +4187,15 @@
         "延長あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 38.3,
+      "ageMin": 33,
+      "ageMax": 45,
+      "sampleSize": 3,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-108",
@@ -4140,7 +4236,15 @@
         "キャンセル規定あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.2,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 22,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-109",
@@ -4524,7 +4628,15 @@
         "JR岐阜駅送迎"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.9,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-118",
@@ -5135,7 +5247,15 @@
         "公式サイトあり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20,
+      "ageMin": 20,
+      "ageMax": 20,
+      "sampleSize": 1,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-132",
@@ -5395,7 +5515,15 @@
         "カード利用可"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.9,
+      "ageMin": 19,
+      "ageMax": 45,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-138",
@@ -5708,7 +5836,15 @@
         "年中無休"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 12,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-145",
@@ -5750,7 +5886,15 @@
         "カード利用OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.3,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 14,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-146",
@@ -5794,7 +5938,15 @@
         "先行予約あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 35.6,
+      "ageMin": 18,
+      "ageMax": 45,
+      "sampleSize": 99,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-147",
@@ -5882,7 +6034,15 @@
         "割引クーポンあり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.4,
+      "ageMin": 20,
+      "ageMax": 23,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-149",
@@ -5968,7 +6128,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 29.1,
+      "ageMin": 18,
+      "ageMax": 42,
+      "sampleSize": 87,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-151",
@@ -6100,7 +6268,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34.8,
+      "ageMin": 18,
+      "ageMax": 43,
+      "sampleSize": 169,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-154",
@@ -6144,7 +6320,15 @@
         "前日予約あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.4,
+      "ageMin": 18,
+      "ageMax": 26,
+      "sampleSize": 107,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-155",
@@ -6276,7 +6460,15 @@
         "前日予約あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.8,
+      "ageMin": 18,
+      "ageMax": 38,
+      "sampleSize": 98,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-158",
@@ -6360,7 +6552,15 @@
         "ポイントカードあり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.7,
+      "ageMin": 20,
+      "ageMax": 29,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-160",
@@ -6404,7 +6604,15 @@
         "ネット指名あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26,
+      "ageMin": 18,
+      "ageMax": 40,
+      "sampleSize": 211,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-161",
@@ -6448,7 +6656,15 @@
         "写真指名あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.9,
+      "ageMin": 18,
+      "ageMax": 35,
+      "sampleSize": 198,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-162",
@@ -6492,7 +6708,15 @@
         "キャンペーン情報あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.1,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 59,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-163",
@@ -6536,7 +6760,15 @@
         "延長料金あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 6,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-164",
@@ -6710,7 +6942,15 @@
         "ネット予約は掲載元確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.9,
+      "ageMin": 18,
+      "ageMax": 39,
+      "sampleSize": 135,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-168",
@@ -6754,7 +6994,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.2,
+      "ageMin": 18,
+      "ageMax": 35,
+      "sampleSize": 87,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-169",
@@ -6798,7 +7046,15 @@
         "写真指名あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31,
+      "ageMin": 18,
+      "ageMax": 42,
+      "sampleSize": 180,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-170",
@@ -6926,7 +7182,15 @@
         "割引情報あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.9,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 41,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-173",
@@ -6970,7 +7234,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.9,
+      "ageMin": 18,
+      "ageMax": 37,
+      "sampleSize": 420,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-174",
@@ -7012,7 +7284,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.5,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 90,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-175",
@@ -7056,7 +7336,15 @@
         "三ノ輪駅徒歩圏"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.2,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 157,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-176",
@@ -7098,7 +7386,15 @@
         "予約は電話確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.2,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 62,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-177",
@@ -7142,7 +7438,15 @@
         "入谷駅エリア"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.8,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 87,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-178",
@@ -7186,7 +7490,15 @@
         "高級/ハイクラス"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.3,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 95,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-179",
@@ -7228,7 +7540,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.8,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-180",
@@ -7272,7 +7592,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.5,
+      "ageMin": 19,
+      "ageMax": 31,
+      "sampleSize": 24,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-181",
@@ -7356,7 +7684,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 19,
+      "ageMin": 18,
+      "ageMax": 20,
+      "sampleSize": 4,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-183",
@@ -7484,7 +7820,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.4,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 65,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-186",
@@ -7528,7 +7872,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.4,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 81,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-187",
@@ -7572,7 +7924,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 47.5,
+      "ageMin": 18,
+      "ageMax": 57,
+      "sampleSize": 112,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-188",
@@ -7616,7 +7976,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.5,
+      "ageMin": 18,
+      "ageMax": 22,
+      "sampleSize": 69,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-189",
@@ -7704,7 +8072,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 33.1,
+      "ageMin": 18,
+      "ageMax": 38,
+      "sampleSize": 138,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-191",
@@ -7792,7 +8168,15 @@
         "領収書発行OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.1,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 54,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-193",
@@ -7836,7 +8220,15 @@
         "領収書発行OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.5,
+      "ageMin": 18,
+      "ageMax": 39,
+      "sampleSize": 104,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-194",
@@ -7880,7 +8272,15 @@
         "予約受付10:00〜22:00"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.1,
+      "ageMin": 18,
+      "ageMax": 37,
+      "sampleSize": 29,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-195",
@@ -7924,7 +8324,15 @@
         "人妻/熟女系"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 40.6,
+      "ageMin": 18,
+      "ageMax": 51,
+      "sampleSize": 54,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-196",
@@ -7968,7 +8376,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.3,
+      "ageMin": 18,
+      "ageMax": 27,
+      "sampleSize": 55,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-197",
@@ -8012,7 +8428,15 @@
         "領収書発行OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.9,
+      "ageMin": 18,
+      "ageMax": 31,
+      "sampleSize": 57,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-198",
@@ -8056,7 +8480,15 @@
         "公式サイト掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.1,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 45,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-199",
@@ -8144,7 +8576,15 @@
         "領収書発行OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.5,
+      "ageMin": 18,
+      "ageMax": 33,
+      "sampleSize": 44,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-201",
@@ -8188,7 +8628,15 @@
         "駐車場あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.8,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 79,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-202",
@@ -8232,7 +8680,15 @@
         "領収書発行OK"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.6,
+      "ageMin": 18,
+      "ageMax": 55,
+      "sampleSize": 102,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-203",
@@ -8275,7 +8731,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.3,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-204",
@@ -8318,7 +8782,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.2,
+      "ageMin": 20,
+      "ageMax": 24,
+      "sampleSize": 5,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-205",
@@ -8360,7 +8832,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.6,
+      "ageMin": 20,
+      "ageMax": 26,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-206",
@@ -8402,7 +8882,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.1,
+      "ageMin": 20,
+      "ageMax": 22,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-207",
@@ -8444,7 +8932,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.8,
+      "ageMin": 19,
+      "ageMax": 23,
+      "sampleSize": 4,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-208",
@@ -8487,7 +8983,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.3,
+      "ageMin": 21,
+      "ageMax": 34,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-209",
@@ -8528,7 +9032,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.7,
+      "ageMin": 20,
+      "ageMax": 25,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-210",
@@ -8570,7 +9082,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34.1,
+      "ageMin": 22,
+      "ageMax": 42,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-211",
@@ -8612,7 +9132,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 33.5,
+      "ageMin": 28,
+      "ageMax": 40,
+      "sampleSize": 4,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-212",
@@ -8655,7 +9183,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.2,
+      "ageMin": 19,
+      "ageMax": 28,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-213",
@@ -8698,7 +9234,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.3,
+      "ageMin": 20,
+      "ageMax": 23,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-214",
@@ -8741,7 +9285,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 29.4,
+      "ageMin": 23,
+      "ageMax": 39,
+      "sampleSize": 10,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-215",
@@ -8783,7 +9335,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23,
+      "ageMin": 21,
+      "ageMax": 26,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-216",
@@ -8825,7 +9385,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21,
+      "ageMin": 19,
+      "ageMax": 23,
+      "sampleSize": 9,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-217",
@@ -8868,7 +9436,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.5,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 13,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-218",
@@ -8910,7 +9486,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.5,
+      "ageMin": 20,
+      "ageMax": 23,
+      "sampleSize": 6,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-219",
@@ -8952,7 +9536,15 @@
         "駅ちか掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.9,
+      "ageMin": 19,
+      "ageMax": 29,
+      "sampleSize": 11,
+      "source": "掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-220",
