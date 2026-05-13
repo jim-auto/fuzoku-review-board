@@ -17,8 +17,8 @@ interface UrlResult {
   message: string
 }
 
-const TIMEOUT_MS = 12_000
-const CONCURRENCY = 8
+const TIMEOUT_MS = 30_000
+const CONCURRENCY = 6
 const ALLOW_NETWORK_FAILURES = process.env.ALLOW_URL_NETWORK_FAILURES === '1'
 const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'

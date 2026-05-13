@@ -10,5 +10,5 @@ export function getAgeDetail(shop: Shop): string | undefined {
   const data = shop.demographics
   if (!data?.averageAge || !data.sampleSize) return undefined
   const range = data.ageMin && data.ageMax ? `${data.ageMin}〜${data.ageMax}歳` : '年齢幅未取得'
-  return `${range} / ${data.sampleSize}名掲載`
+  return `${range} / 年齢データ${data.sampleSize}件`
 }

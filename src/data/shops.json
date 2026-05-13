@@ -2902,7 +2902,15 @@
         "オイルケア"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25,
+      "ageMin": 25,
+      "ageMax": 25,
+      "sampleSize": 1,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-080",
@@ -2943,7 +2951,15 @@
         "オイルマッサージ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.2,
+      "ageMin": 20,
+      "ageMax": 55,
+      "sampleSize": 19,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-081",
@@ -3027,7 +3043,15 @@
         "ボディトリートメント"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.8,
+      "ageMin": 20,
+      "ageMax": 37,
+      "sampleSize": 41,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-085",
@@ -3109,7 +3133,15 @@
         "オイルリンパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.6,
+      "ageMin": 22,
+      "ageMax": 30,
+      "sampleSize": 45,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-087",
@@ -3150,7 +3182,15 @@
         "マンション個室"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.7,
+      "ageMin": 20,
+      "ageMax": 30,
+      "sampleSize": 34,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-088",
@@ -3316,7 +3356,15 @@
         "マンション個室"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.1,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 55,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-092",
@@ -3359,7 +3407,15 @@
         "早割料金"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.7,
+      "ageMin": 19,
+      "ageMax": 26,
+      "sampleSize": 48,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-093",
@@ -3400,7 +3456,15 @@
         "リンパケア"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23,
+      "ageMin": 19,
+      "ageMax": 28,
+      "sampleSize": 61,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-094",
@@ -3611,7 +3675,15 @@
         "ホットジェル"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 19,
+      "ageMax": 31,
+      "sampleSize": 130,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-099",
@@ -3654,7 +3726,15 @@
         "マンション個室"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.9,
+      "ageMin": 19,
+      "ageMax": 30,
+      "sampleSize": 35,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-100",
@@ -3738,7 +3818,15 @@
         "オイルマッサージ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 18,
+      "ageMax": 34,
+      "sampleSize": 148,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-102",
@@ -3908,7 +3996,15 @@
         "新人割引"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.1,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 52,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-106",
@@ -3952,7 +4048,15 @@
         "フリーコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.2,
+      "ageMin": 19,
+      "ageMax": 34,
+      "sampleSize": 80,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-107",
@@ -8890,7 +8994,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.5,
+      "ageMin": 20,
+      "ageMax": 36,
+      "sampleSize": 38,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-221",
@@ -8932,7 +9044,15 @@
         "エステ魂掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.9,
+      "ageMin": 19,
+      "ageMax": 32,
+      "sampleSize": 27,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-222",
@@ -8976,7 +9096,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.6,
+      "ageMin": 19,
+      "ageMax": 30,
+      "sampleSize": 14,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-223",
@@ -9020,7 +9148,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.8,
+      "ageMin": 18,
+      "ageMax": 35,
+      "sampleSize": 57,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-224",
@@ -9064,7 +9200,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.9,
+      "ageMin": 20,
+      "ageMax": 39,
+      "sampleSize": 38,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-225",
@@ -9108,7 +9252,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 27.8,
+      "ageMin": 24,
+      "ageMax": 31,
+      "sampleSize": 20,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-226",
@@ -9150,7 +9302,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.9,
+      "ageMin": 20,
+      "ageMax": 33,
+      "sampleSize": 37,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-227",
@@ -9194,7 +9354,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.1,
+      "ageMin": 20,
+      "ageMax": 29,
+      "sampleSize": 8,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-228",
@@ -9238,7 +9406,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.7,
+      "ageMin": 20,
+      "ageMax": 45,
+      "sampleSize": 79,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-229",
@@ -9280,7 +9456,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 29,
+      "ageMin": 19,
+      "ageMax": 44,
+      "sampleSize": 24,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-230",
@@ -9322,7 +9506,15 @@
         "エステ魂掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25,
+      "ageMin": 19,
+      "ageMax": 29,
+      "sampleSize": 28,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-231",
@@ -9366,7 +9558,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 41,
+      "ageMin": 30,
+      "ageMax": 53,
+      "sampleSize": 55,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-232",
@@ -9408,7 +9608,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.2,
+      "ageMin": 19,
+      "ageMax": 35,
+      "sampleSize": 38,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-233",
@@ -9452,7 +9660,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.3,
+      "ageMin": 19,
+      "ageMax": 36,
+      "sampleSize": 50,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-234",
@@ -9496,7 +9712,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26,
+      "ageMin": 18,
+      "ageMax": 42,
+      "sampleSize": 101,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-235",
@@ -9540,7 +9764,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.3,
+      "ageMin": 20,
+      "ageMax": 49,
+      "sampleSize": 40,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-236",
@@ -9584,7 +9816,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23,
+      "ageMin": 18,
+      "ageMax": 28,
+      "sampleSize": 49,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-237",
@@ -9626,7 +9866,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 27.9,
+      "ageMin": 19,
+      "ageMax": 57,
+      "sampleSize": 7,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-238",
@@ -9668,7 +9916,15 @@
         "エステ魂掲載"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.2,
+      "ageMin": 28,
+      "ageMax": 37,
+      "sampleSize": 20,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-239",
@@ -9712,7 +9968,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.1,
+      "ageMin": 18,
+      "ageMax": 23,
+      "sampleSize": 41,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-240",
@@ -9756,7 +10020,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.8,
+      "ageMin": 19,
+      "ageMax": 29,
+      "sampleSize": 53,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-241",
@@ -9800,7 +10072,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.2,
+      "ageMin": 22,
+      "ageMax": 49,
+      "sampleSize": 35,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-242",
@@ -9844,7 +10124,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.4,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 47,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-243",
@@ -9888,7 +10176,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.4,
+      "ageMin": 24,
+      "ageMax": 41,
+      "sampleSize": 26,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-244",
@@ -9932,7 +10228,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 27.4,
+      "ageMin": 20,
+      "ageMax": 47,
+      "sampleSize": 28,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-245",
@@ -9976,7 +10280,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.5,
+      "ageMin": 19,
+      "ageMax": 24,
+      "sampleSize": 8,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-246",
@@ -10068,7 +10380,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.8,
+      "ageMin": 22,
+      "ageMax": 34,
+      "sampleSize": 53,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-248",
@@ -10111,7 +10431,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.2,
+      "ageMin": 23,
+      "ageMax": 38,
+      "sampleSize": 18,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-249",
@@ -10208,7 +10536,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.9,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 117,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-251",
@@ -10250,7 +10586,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.8,
+      "ageMin": 18,
+      "ageMax": 42,
+      "sampleSize": 100,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-252",
@@ -10292,7 +10636,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 46.8,
+      "ageMin": 43,
+      "ageMax": 49,
+      "sampleSize": 16,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-253",
@@ -10336,7 +10688,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 37.7,
+      "ageMin": 30,
+      "ageMax": 48,
+      "sampleSize": 67,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-254",
@@ -10378,7 +10738,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.4,
+      "ageMin": 18,
+      "ageMax": 35,
+      "sampleSize": 85,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-255",
@@ -10420,7 +10788,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.2,
+      "ageMin": 20,
+      "ageMax": 29,
+      "sampleSize": 55,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-256",
@@ -10462,7 +10838,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.8,
+      "ageMin": 18,
+      "ageMax": 33,
+      "sampleSize": 73,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-257",
@@ -10504,7 +10888,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.7,
+      "ageMin": 19,
+      "ageMax": 29,
+      "sampleSize": 35,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-258",
@@ -10546,7 +10938,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.5,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 70,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-259",
@@ -10588,7 +10988,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 19,
+      "ageMax": 29,
+      "sampleSize": 54,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-260",
@@ -10633,7 +11041,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.7,
+      "ageMin": 18,
+      "ageMax": 27,
+      "sampleSize": 49,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-261",
@@ -10675,7 +11091,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.8,
+      "ageMin": 20,
+      "ageMax": 40,
+      "sampleSize": 80,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-262",
@@ -10720,7 +11144,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.4,
+      "ageMin": 18,
+      "ageMax": 28,
+      "sampleSize": 38,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-263",
@@ -10764,7 +11196,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.9,
+      "ageMin": 23,
+      "ageMax": 41,
+      "sampleSize": 36,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-264",
@@ -10806,7 +11246,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.3,
+      "ageMin": 19,
+      "ageMax": 26,
+      "sampleSize": 43,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-265",
@@ -10848,7 +11296,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 43.5,
+      "ageMin": 30,
+      "ageMax": 53,
+      "sampleSize": 44,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-266",
@@ -10890,7 +11346,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34,
+      "ageMin": 27,
+      "ageMax": 45,
+      "sampleSize": 47,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-267",
@@ -10934,7 +11398,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34.7,
+      "ageMin": 21,
+      "ageMax": 48,
+      "sampleSize": 86,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-268",
@@ -11030,7 +11502,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.7,
+      "ageMin": 19,
+      "ageMax": 38,
+      "sampleSize": 106,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-270",
@@ -11128,7 +11608,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.9,
+      "ageMin": 20,
+      "ageMax": 33,
+      "sampleSize": 264,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-272",
@@ -11222,7 +11710,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.2,
+      "ageMin": 19,
+      "ageMax": 31,
+      "sampleSize": 79,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-274",
@@ -11267,7 +11763,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.7,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 88,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-275",
@@ -11312,7 +11816,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.4,
+      "ageMin": 20,
+      "ageMax": 33,
+      "sampleSize": 162,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-276",
@@ -11357,7 +11869,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.8,
+      "ageMin": 19,
+      "ageMax": 38,
+      "sampleSize": 109,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-277",
@@ -11403,7 +11923,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 37.9,
+      "ageMin": 30,
+      "ageMax": 59,
+      "sampleSize": 211,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-278",
@@ -11445,7 +11973,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.6,
+      "ageMin": 22,
+      "ageMax": 30,
+      "sampleSize": 45,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-279",
@@ -11490,7 +12026,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 20,
+      "ageMax": 28,
+      "sampleSize": 110,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-280",
@@ -11534,7 +12078,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.2,
+      "ageMin": 20,
+      "ageMax": 33,
+      "sampleSize": 252,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-281",
@@ -11576,7 +12128,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.7,
+      "ageMin": 18,
+      "ageMax": 24,
+      "sampleSize": 30,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-282",
@@ -11618,7 +12178,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.8,
+      "ageMin": 22,
+      "ageMax": 35,
+      "sampleSize": 130,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-283",
@@ -11662,7 +12230,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 37.7,
+      "ageMin": 30,
+      "ageMax": 52,
+      "sampleSize": 118,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-284",
@@ -11707,7 +12283,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 42.7,
+      "ageMin": 30,
+      "ageMax": 59,
+      "sampleSize": 173,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-285",
@@ -11752,7 +12336,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 42.6,
+      "ageMin": 30,
+      "ageMax": 59,
+      "sampleSize": 188,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-286",
@@ -11796,7 +12388,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.5,
+      "ageMin": 20,
+      "ageMax": 27,
+      "sampleSize": 31,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-287",
@@ -11838,7 +12438,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.3,
+      "ageMin": 21,
+      "ageMax": 33,
+      "sampleSize": 65,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-288",
@@ -11930,7 +12538,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.1,
+      "ageMin": 18,
+      "ageMax": 30,
+      "sampleSize": 63,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-290",
@@ -12026,7 +12642,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.3,
+      "ageMin": 19,
+      "ageMax": 35,
+      "sampleSize": 77,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-292",
@@ -12070,7 +12694,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.2,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 87,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-293",
@@ -12114,7 +12746,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 33.8,
+      "ageMin": 26,
+      "ageMax": 45,
+      "sampleSize": 41,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-294",
@@ -12156,7 +12796,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24.4,
+      "ageMin": 22,
+      "ageMax": 27,
+      "sampleSize": 29,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-295",
@@ -12200,7 +12848,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.5,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 55,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-296",
@@ -12242,7 +12898,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25.2,
+      "ageMin": 20,
+      "ageMax": 33,
+      "sampleSize": 81,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-297",
@@ -12284,7 +12948,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23,
+      "ageMin": 18,
+      "ageMax": 33,
+      "sampleSize": 84,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-298",
@@ -12328,7 +13000,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.5,
+      "ageMin": 18,
+      "ageMax": 29,
+      "sampleSize": 99,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-299",
@@ -12372,7 +13052,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.5,
+      "ageMin": 18,
+      "ageMax": 28,
+      "sampleSize": 246,
+      "source": "エステ魂掲載ページ年齢表記",
+      "checkedAt": "2026-05-14"
+    }
   },
   {
     "id": "shop-real-300",
