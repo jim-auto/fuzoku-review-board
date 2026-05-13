@@ -459,7 +459,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 30.2,
+      "ageMin": 20,
+      "ageMax": 49,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-017",
@@ -754,7 +762,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.7,
+      "ageMin": 20,
+      "ageMax": 45,
+      "sampleSize": 16,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-025",
@@ -797,7 +813,15 @@
         "リラクゼーション"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.8,
+      "ageMin": 18,
+      "ageMax": 28,
+      "sampleSize": 13,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-026",
@@ -1297,7 +1321,15 @@
         "アロマコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.9,
+      "ageMin": 19,
+      "ageMax": 33,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-041",
@@ -1338,7 +1370,15 @@
         "ディープ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.4,
+      "ageMin": 20,
+      "ageMax": 35,
+      "sampleSize": 12,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-042",
@@ -1379,7 +1419,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 25,
+      "ageMin": 19,
+      "ageMax": 44,
+      "sampleSize": 7,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-043",
@@ -1420,7 +1468,15 @@
         "Wコースあり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.6,
+      "ageMin": 20,
+      "ageMax": 35,
+      "sampleSize": 14,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-044",
@@ -1461,7 +1517,15 @@
         "アロマコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 33.7,
+      "ageMin": 22,
+      "ageMax": 47,
+      "sampleSize": 13,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-045",
@@ -1502,7 +1566,15 @@
         "オイルコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.8,
+      "ageMin": 23,
+      "ageMax": 32,
+      "sampleSize": 9,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-046",
@@ -1543,7 +1615,15 @@
         "お試しコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34.1,
+      "ageMin": 24,
+      "ageMax": 48,
+      "sampleSize": 7,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-047",
@@ -1584,7 +1664,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.3,
+      "ageMin": 20,
+      "ageMax": 27,
+      "sampleSize": 15,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-048",
@@ -1625,7 +1713,15 @@
         "完全予約制"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.8,
+      "ageMin": 24,
+      "ageMax": 44,
+      "sampleSize": 14,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-049",
@@ -1666,7 +1762,15 @@
         "キングコース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 31.6,
+      "ageMin": 25,
+      "ageMax": 46,
+      "sampleSize": 15,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-050",
@@ -1750,7 +1854,15 @@
         "もみほぐし"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.4,
+      "ageMin": 22,
+      "ageMax": 41,
+      "sampleSize": 9,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-052",
@@ -1791,7 +1903,15 @@
         "オイルリンパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 28.6,
+      "ageMin": 20,
+      "ageMax": 55,
+      "sampleSize": 14,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-053",
@@ -1832,7 +1952,15 @@
         "独自手技"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.6,
+      "ageMin": 21,
+      "ageMax": 34,
+      "sampleSize": 15,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-055",
@@ -1914,7 +2042,15 @@
         "ディープリンパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.1,
+      "ageMin": 20,
+      "ageMax": 39,
+      "sampleSize": 8,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-057",
@@ -1957,7 +2093,15 @@
         "ドライヘッドスパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.2,
+      "ageMin": 18,
+      "ageMax": 26,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-058",
@@ -1998,7 +2142,15 @@
         "ロミロミ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 26.4,
+      "ageMin": 18,
+      "ageMax": 42,
+      "sampleSize": 8,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-059",
@@ -2041,7 +2193,15 @@
         "クラス別コース"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.1,
+      "ageMin": 19,
+      "ageMax": 25,
+      "sampleSize": 14,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-060",
@@ -2082,7 +2242,15 @@
         "オイルリンパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.9,
+      "ageMin": 18,
+      "ageMax": 28,
+      "sampleSize": 7,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-061",
@@ -2123,7 +2291,15 @@
         "リラクゼーション"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.8,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-062",
@@ -2166,7 +2342,15 @@
         "衣装チェンジ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.7,
+      "ageMin": 21,
+      "ageMax": 26,
+      "sampleSize": 15,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-063",
@@ -2209,7 +2393,15 @@
         "出張対応"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 30,
+      "ageMin": 25,
+      "ageMax": 37,
+      "sampleSize": 8,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-064",
@@ -2414,7 +2606,15 @@
         "延長あり"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 27.5,
+      "ageMin": 20,
+      "ageMax": 40,
+      "sampleSize": 8,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-071",
@@ -2457,7 +2657,15 @@
         "ディープリンパ"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.4,
+      "ageMin": 19,
+      "ageMax": 24,
+      "sampleSize": 9,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-072",
@@ -2498,7 +2706,15 @@
         "カード利用可"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.3,
+      "ageMin": 20,
+      "ageMax": 31,
+      "sampleSize": 12,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-075",
@@ -2539,7 +2755,15 @@
         "オイルトリートメント"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 30,
+      "ageMin": 24,
+      "ageMax": 45,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-076",
@@ -2580,7 +2804,15 @@
         "出張対応"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 27.8,
+      "ageMin": 22,
+      "ageMax": 33,
+      "sampleSize": 10,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-077",
@@ -2621,7 +2853,15 @@
         "オイル増量"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 22.8,
+      "ageMin": 21,
+      "ageMax": 28,
+      "sampleSize": 13,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-079",
@@ -9778,7 +10018,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 34.3,
+      "ageMin": 22,
+      "ageMax": 39,
+      "sampleSize": 10,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-247",
@@ -9908,7 +10156,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 24,
+      "ageMin": 19,
+      "ageMax": 30,
+      "sampleSize": 12,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-250",
@@ -10721,7 +10977,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 20.3,
+      "ageMin": 18,
+      "ageMax": 25,
+      "sampleSize": 18,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-269",
@@ -10811,7 +11075,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 23.3,
+      "ageMin": 20,
+      "ageMax": 25,
+      "sampleSize": 12,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-271",
@@ -10899,7 +11171,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 21.8,
+      "ageMin": 19,
+      "ageMax": 25,
+      "sampleSize": 11,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-273",
@@ -11600,7 +11880,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 30.7,
+      "ageMin": 26,
+      "ageMax": 37,
+      "sampleSize": 6,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-289",
@@ -11686,7 +11974,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 32.6,
+      "ageMin": 29,
+      "ageMax": 39,
+      "sampleSize": 12,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-291",
@@ -12162,7 +12458,15 @@
         "料金ページ確認"
       ]
     },
-    "castCount": "掲載元で確認"
+    "castCount": "掲載元で確認",
+    "demographics": {
+      "averageAge": 30.9,
+      "ageMin": 23,
+      "ageMax": 43,
+      "sampleSize": 9,
+      "source": "エステ魂掲載プロフィール",
+      "checkedAt": "2026-05-13"
+    }
   },
   {
     "id": "shop-real-302",

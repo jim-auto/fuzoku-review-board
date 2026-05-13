@@ -5,6 +5,7 @@ import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
 import { getTimeValue } from '../utils/value'
+import { getAgeDetail, getAgeSummary } from '../utils/demographics'
 import { AREA_COLORS, GENRE_COLORS, GENRE_SHORT } from '../constants/taxonomy'
 
 interface Props { shop: Shop }
@@ -20,6 +21,8 @@ export default function ShopCard({ shop }: Props) {
   const openStatus = getOpenStatus(shop.hours)
   const openStatusStyle = getOpenStatusStyle(openStatus.kind)
   const timeValue = getTimeValue(shop)
+  const ageSummary = getAgeSummary(shop)
+  const ageDetail = getAgeDetail(shop)
 
   return (
     <Link
@@ -132,17 +135,23 @@ export default function ShopCard({ shop }: Props) {
         </div>
 
         {/* Hours */}
-        <div className="flex items-center gap-2 text-xs min-w-0">
-          <span
-            className="inline-flex items-center gap-1 px-2 py-1 rounded-full border font-bold flex-shrink-0"
-            style={openStatusStyle}
-          >
-            <Clock size={11} />
-            {openStatus.label}
-          </span>
-          <div className="min-w-0 text-text-dim">
-            <div className="truncate font-semibold text-text-body">{shop.hours}</div>
-            <div className="truncate">{openStatus.detail}</div>
+        <div className="space-y-2">
+          <div className="flex items-center gap-2 text-xs min-w-0">
+            <span
+              className="inline-flex items-center gap-1 px-2 py-1 rounded-full border font-bold flex-shrink-0"
+              style={openStatusStyle}
+            >
+              <Clock size={11} />
+              {openStatus.label}
+            </span>
+            <div className="min-w-0 text-text-dim">
+              <div className="truncate font-semibold text-text-body">{shop.hours}</div>
+              <div className="truncate">{openStatus.detail}</div>
+            </div>
+          </div>
+          <div className="flex items-center justify-between gap-2 text-xs rounded-lg border border-dark-600 bg-dark-700 px-2 py-1.5">
+            <span className="font-semibold text-text-body">{ageSummary ?? '平均年齢 未取得'}</span>
+            <span className="text-text-dim truncate">{ageDetail ?? '掲載プロフィール未取得'}</span>
           </div>
         </div>
 

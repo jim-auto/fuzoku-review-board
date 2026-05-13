@@ -11,6 +11,7 @@ import { getDiscountPrice } from '../utils/pricing'
 import { getSoapPriceBasis, getSoapPriceBasisLabel } from '../utils/shops'
 import { getOpenStatus, getOpenStatusStyle } from '../utils/hours'
 import { getTimeValue } from '../utils/value'
+import { getAgeDetail, getAgeSummary } from '../utils/demographics'
 import { AREA_COLORS, GENRE_COLORS } from '../constants/taxonomy'
 
 const allShops = shopsData as Shop[]
@@ -71,6 +72,8 @@ export default function ShopDetailPage() {
   const openStatus = getOpenStatus(shop.hours)
   const openStatusStyle = getOpenStatusStyle(openStatus.kind)
   const timeValue = getTimeValue(shop)
+  const ageSummary = getAgeSummary(shop)
+  const ageDetail = getAgeDetail(shop)
   const optionSummary = [
     shop.options.ns === true && 'NS対応',
     shop.options.nn === true && 'NN対応',
@@ -95,6 +98,12 @@ export default function ShopDetailPage() {
       value: timeValue.label,
       note: timeValue.detail,
       color: '#00d4ff',
+    },
+    {
+      label: '平均年齢',
+      value: ageSummary ?? '未取得',
+      note: ageDetail ?? '掲載プロフィール未取得',
+      color: ageSummary ? '#ffaa00' : '#888',
     },
     {
       label: '朝活',
@@ -212,6 +221,19 @@ export default function ShopDetailPage() {
                 )}
               </div>
               <div className="p-4">
+                <div className="mb-3 rounded-lg border border-dark-600 bg-dark-800 px-3 py-2">
+                  <div className="flex items-center justify-between gap-3">
+                    <div>
+                      <div className="text-xs text-text-dim mb-0.5">年齢サマリー</div>
+                      <div className="text-lg font-black text-text-bright">{ageSummary ?? '未取得'}</div>
+                    </div>
+                    <div className="text-right text-xs text-text-dim">
+                      <div>{ageDetail ?? '掲載プロフィール未取得'}</div>
+                      {shop.demographics?.source && <div>{shop.demographics.source}</div>}
+                    </div>
+                  </div>
+                </div>
+
                 <div className="flex items-end gap-2 mb-3">
                   <div>
                     <div className="text-xs text-text-dim mb-0.5">

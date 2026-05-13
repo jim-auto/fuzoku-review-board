@@ -42,6 +42,15 @@ export interface ShopOptions {
   extras: string[]
 }
 
+export interface ShopDemographics {
+  averageAge?: number
+  ageMin?: number
+  ageMax?: number
+  sampleSize?: number
+  source?: string
+  checkedAt?: string
+}
+
 export interface Shop {
   id: string
   name: string
@@ -62,6 +71,7 @@ export interface Shop {
   reservation: string[]
   morning: ShopMorning
   options: ShopOptions
+  demographics?: ShopDemographics
   castCount: string
 }
 
